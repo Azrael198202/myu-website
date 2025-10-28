@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0a0f1c;
+  color: #e4e7eb;
+  overflow-x: hidden;
+}
+
+/* 顶部导航 */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  background: rgba(10, 15, 28, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #00e0ff;
+  font-size: 20px;
+}
+
+.logo img {
+  height: 32px;
+}
+
+nav a {
+  color: #d1d5db;
+  margin-left: 30px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00e0ff;
+}
+
+/* 英雄区域 */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at 30% 50%, #112240, #000);
+  position: relative;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-family: 'Orbitron', sans-serif;
+  color: #00e0ff;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #c0c8d0;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #00e0ff, #0066ff);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00e0ff;
+}
+
+/* 内容区域 */
+section {
+  padding: 100px 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e0ff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about p {
+  line-height: 1.8;
+  text-align: center;
+  color: #dce3ec;
+  font-size: 17px;
+}
+
+.scope ul {
+  list-style: none;
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.scope li {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #00e0ff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.scope li:hover {
+  transform: translateX(5px);
+}
+
+/* 页脚 */
+.footer {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(10, 15, 28, 0.95);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e0ff;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #c0c8d0;
+  font-size: 14px;
+}
+
+/* 背景动效 */
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('assets/bg-lines.svg') center/cover no-repeat;
+  opacity: 0.08;
+  z-index: -1;
+  animation: moveBg 20s linear infinite;
+}
+
+@keyframes moveBg {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
