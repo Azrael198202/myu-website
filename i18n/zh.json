@@ -108,18 +108,17 @@
       "title": "公司信息"
     },
     "labels": {
-      "companyName": "社名 / 公司名称",
-      "established": "设立年月日 / 成立日期",
-      "hqAddress": "本店的所在地 / 总部地址",
+      "companyName": "公司名称",
+      "established": "设成立日期",
+      "hqAddress": "总部地址",
       "postal": "邮政编码",
       "phone": "电话",
-      "directors": "代表者 / 董事",
-      "ceo": "代表执行役 / 执行役社长兼CEO",
-      "capital": "注册资本 / 资本金",
-      "locations": "所在地 / 办公地点",
+      "directors": "董事",
+      "ceo": "执行董事兼CEO",
+      "capital": "注册资本",
+      "locations": "办公地点",
       "group": "所属集团",
-      "parent": "母集团公司",
-      "peers": "同级公司 / 兄弟公司"
+      "peers": " 兄弟公司"
     },
     "values": {
       "companyName": "迈域科技有限公司（MyuTech Co., Ltd.）",
