@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
+  padding: 0 200px;
   background: rgba(10, 15, 28, 0.85);
   backdrop-filter: blur(10px);
   z-index: 100;
@@ -136,7 +136,7 @@ h2 {
   text-align: center;
   padding: 50px 20px;
   background: rgba(10, 15, 28, 0.95);
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer h3 {
@@ -153,8 +153,10 @@ h2 {
 /* 背景动效 */
 .background {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: url('assets/bg-lines.svg') center/cover no-repeat;
   opacity: 0.08;
   z-index: -1;
@@ -162,8 +164,13 @@ h2 {
 }
 
 @keyframes moveBg {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
 /* 子页 Hero */
@@ -173,17 +180,20 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 70px; /* 顶部导航高度 */
-  background: radial-gradient(1200px 600px at 20% 30%, rgba(0,224,255,0.2), rgba(0,0,0,0)) , #0a0f1c;
+  margin-top: 70px;
+  /* 顶部导航高度 */
+  background: radial-gradient(1200px 600px at 20% 30%, rgba(0, 224, 255, 0.2), rgba(0, 0, 0, 0)), #0a0f1c;
   color: #fff;
   position: relative;
 }
+
 .sub-hero-content h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 40px;
   color: #00e0ff;
   margin-bottom: 10px;
 }
+
 .sub-hero-content p {
   color: #c0c8d0;
 }
@@ -195,57 +205,231 @@ nav a.active {
   padding-bottom: 6px;
 }
 
-/* 团队 */
-.team { padding: 80px 10%; max-width: 1200px; margin: 0 auto; }
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 24px;
-}
-@media (min-width: 768px) {
-  .team-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (min-width: 1200px) {
-  .team-grid { grid-template-columns: repeat(3, 1fr); }
-}
-.member-card {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 18px;
-  padding: 18px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 14px;
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-.member-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0,224,255,0.06);
-}
-.member-card img {
-  width: 110px; height: 110px; object-fit: cover; border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.12);
-}
-.member-info h3 { font-size: 20px; margin-bottom: 4px; }
-.member-info .role { color: #9fb3c8; margin-bottom: 8px; }
-.member-info .bio { color: #dce3ec; line-height: 1.7; font-size: 15px; }
-.tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
-.tag {
-  font-size: 12px; padding: 4px 10px; border-radius: 999px;
-  border: 1px solid rgba(0,224,255,0.35);
-  background: rgba(0,224,255,0.08);
-  color: #b9f3ff;
-}
 
 /* 隐私政策 */
-.policy { padding: 80px 10%; max-width: 900px; margin: 0 auto; }
+.policy {
+  padding: 80px 10%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .policy h2 {
   font-family: 'Orbitron', sans-serif;
   color: #00e0ff;
   font-size: 22px;
   margin: 28px 0 12px;
 }
-.policy p { line-height: 1.9; color: #dce3ec; }
-.policy-list { margin-left: 1.1em; }
-.policy-list li { margin: 8px 0; color: #dce3ec; }
 
+.policy p {
+  line-height: 1.9;
+  color: #dce3ec;
+}
+
+.policy-list {
+  margin-left: 1.1em;
+}
+
+.policy-list li {
+  margin: 8px 0;
+  color: #dce3ec;
+}
+
+
+/* 语言切换按钮 */
+.lang-switch {
+  position: absolute;
+  top: 18px;
+  right: 60px;
+}
+
+.lang-switch button {
+  margin-left: 8px;
+  background: rgba(0, 224, 255, 0.1);
+  color: #00e0ff;
+  border: 1px solid rgba(0, 224, 255, 0.4);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all .2s;
+}
+
+.lang-switch button.active {
+  background: #00e0ff;
+  color: #001018;
+  font-weight: 600;
+}
+
+/* 子页 Hero（teams/privacy） */
+.sub-hero {
+  height: 42vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+  background: radial-gradient(1200px 600px at 20% 30%, rgba(0, 224, 255, 0.2), rgba(0, 0, 0, 0)), #0a0f1c;
+  color: #fff;
+  position: relative;
+}
+
+/* --- 团队布局：每人一整行 --- */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 每行一个 */
+  gap: 24px;
+  justify-items: stretch;
+  align-items: start;
+  width: 100%;
+  max-width: 900px;  /* 可根据页面宽度调整 */
+  margin: 0 auto;    /* 居中 */
+}
+
+.member-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 224, 255, 0.15);
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-info h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.member-info .role {
+  color: #9fb3c8;
+  margin-bottom: 8px;
+}
+
+.member-info .bio {
+  color: #dce3ec;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .member-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .member-card img {
+    margin-bottom: 12px;
+  }
+}
+
+/* 隐私政策 */
+.policy {
+  padding: 80px 10%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.policy h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e0ff;
+  font-size: 22px;
+  margin: 28px 0 12px;
+}
+
+.policy p,
+.policy li {
+  color: #dce3ec;
+  line-height: 1.9;
+}
+
+.policy-list {
+  margin-left: 1.1em;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,224,255,0.45);
+  background: rgba(0,224,255,0.08);
+  color: #b9f3ff;
+  text-decoration: none;
+  font-size: 13px;
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  background: rgba(0,224,255,0.16);
+  box-shadow: 0 6px 14px rgba(0,224,255,0.18);
+}
+
+
+/* --- 语言下拉框（透明科技风） --- */
+.lang-select {
+  position: absolute;
+  top: 18px;
+  right: 40px;
+  z-index: 999;
+}
+
+.lang-select select {
+  background: rgba(0, 0, 0, 0.2); /* 半透明背景 */
+  backdrop-filter: blur(8px);     /* 毛玻璃效果 */
+  border: 1px solid rgba(0, 224, 255, 0.6);
+  color: #00e0ff;
+  font-size: 13px;
+  padding: 6px 28px 6px 10px;
+  border-radius: 8px;
+  appearance: none;
+  cursor: pointer;
+  transition: all .25s ease;
+  outline: none;
+}
+
+.lang-select select:hover {
+  border-color: #00ffff;
+  box-shadow: 0 0 8px rgba(0, 224, 255, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.lang-select::after {
+  content: "▼";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%) scale(0.7);
+  color: #00e0ff;
+  pointer-events: none;
+}
+
+/* 打开下拉时的选项背景 */
+.lang-select select option {
+  background: rgba(15, 20, 30, 0.85);
+  color: #00e0ff;
+  border: none;
+}
+
+/* 选中项高亮但仍然透明 */
+.lang-select select option:checked {
+  background: rgba(0, 224, 255, 0.1);
+  color: #00ffff;
+}

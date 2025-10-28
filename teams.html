@@ -1,86 +1,82 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>团队 | 迈域科技 MyuTech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="nav.team">团队</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <header class="navbar">
     <div class="logo">
-      <img src="assets/logo.png" alt="MyuTech Logo"/>
-      <span>迈域科技 MyuTech</span>
+      <img src="assets/logo.png" alt="MyuTech Logo" />
+      <span id="site-name" data-i18n="site.name">迈域科技 MyuTech</span>
     </div>
     <nav>
-      <a href="index.html#about">公司介绍</a>
-      <a href="index.html#scope">业务范围</a>
-      <a href="team.html" class="active">团队</a>
-      <a href="privacy.html">隐私政策</a>
-      <a href="index.html#contact">联系我们</a>
+      <a href="index.html#about" data-i18n="nav.about">公司介绍</a>
+      <a href="index.html#scope" data-i18n="nav.scope">业务范围</a>
+      <a href="teams.html" class="active" data-i18n="nav.team">团队</a>
+      <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
+      <a href="index.html#contact" data-i18n="nav.contact">联系我们</a>
     </nav>
+    <div class="lang-select">
+      <select id="langSelect">
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+        <option value="en">English</option>
+      </select>
+    </div>
   </header>
 
   <section class="sub-hero">
     <div class="sub-hero-content">
-      <h1>我们的团队</h1>
-      <p>跨学科 · 融合创新 · 面向未来</p>
+      <h1 id="teams-hero-title" data-i18n="teams.hero.title">我们的团队</h1>
+      <p id="teams-hero-sub" data-i18n="teams.hero.sub">跨学科 · 融合创新 · 面向未来</p>
     </div>
   </section>
 
   <section class="team">
-    <h2>核心成员</h2>
+    <h2 id="teams-title" data-i18n="teams.title">核心成员</h2>
+
     <div class="team-grid">
-      <!-- 成员卡片示例 1 -->
-      <article class="member-card">
-        <img src="assets/team/alex.jpg" alt="Alex"/>
+      <article class="member-card" data-i18n-team="0">
+        <img src="assets/team/alex.jpg" alt="Alex Chen" />
         <div class="member-info">
-          <h3>Alex Chen</h3>
-          <p class="role">首席执行官 · CEO</p>
-          <p class="bio">连续创业者，专注 AI 与产业数字化落地，擅长战略规划与产品增长。</p>
-          <div class="tags">
-            <span class="tag">战略</span><span class="tag">产品</span><span class="tag">增长</span>
-          </div>
+          <h3 class="member-name">Alex Chen</h3>
+          <p class="member-role">CEO</p>
+          <p class="member-bio">...</p>
         </div>
       </article>
 
-      <!-- 示例 2 -->
-      <article class="member-card">
-        <img src="assets/team/mei.jpg" alt="Mei"/>
+      <article class="member-card" data-i18n-team="1">
+        <img src="assets/team/mei.jpg" alt="Mei Nakamura" />
         <div class="member-info">
-          <h3>Mei Nakamura</h3>
-          <p class="role">首席技术官 · CTO</p>
-          <p class="bio">主导 AI、XR、IoT 融合架构，关注高可用云原生与边缘智能。</p>
-          <div class="tags">
-            <span class="tag">AI</span><span class="tag">XR</span><span class="tag">云原生</span>
-          </div>
+          <h3 class="member-name">Mei Nakamura</h3>
+          <p class="member-role">CTO</p>
+          <p class="member-bio">...</p>
         </div>
       </article>
 
-      <!-- 示例 3 -->
-      <article class="member-card">
-        <img src="assets/team/ryo.jpg" alt="Ryo"/>
+      <article class="member-card" data-i18n-team="2">
+        <img src="assets/team/ryo.jpg" alt="Ryo Suzuki" />
         <div class="member-info">
-          <h3>Ryo Suzuki</h3>
-          <p class="role">产品总监 · Head of Product</p>
-          <p class="bio">将复杂技术转译为可用产品体验，热衷数据驱动与设计系统。</p>
-          <div class="tags">
-            <span class="tag">UX</span><span class="tag">数据驱动</span><span class="tag">设计系统</span>
-          </div>
+          <h3 class="member-name">Ryo Suzuki</h3>
+          <p class="member-role">Head of Product</p>
+          <p class="member-bio">...</p>
         </div>
       </article>
 
-      <!-- 示例 4 -->
-      <article class="member-card">
-        <img src="assets/team/lily.jpg" alt="Lily"/>
+      <article class="member-card" data-i18n-team="3">
+        <img src="assets/team/lily.jpg" alt="Lily Wang" />
         <div class="member-info">
-          <h3>Lily Wang</h3>
-          <p class="role">解决方案架构师</p>
-          <p class="bio">专注企业信息化与数字化转型方案设计与实施。</p>
-          <div class="tags">
-            <span class="tag">SaaS</span><span class="tag">集成</span><span class="tag">BPO</span>
-          </div>
+          <h3 class="member-name">Lily Wang</h3>
+          <p class="member-role">Solution Architect</p>
+          <p class="member-bio">...</p>
         </div>
       </article>
     </div>
@@ -88,12 +84,14 @@
 
   <footer class="footer">
     <div class="footer-content">
-      <h3>迈域科技 MyuTech</h3>
-      <p>智能 · 融合 · 创新 · 连接未来</p>
-      <p>© 2025 迈域科技有限公司 | All Rights Reserved</p>
+      <h3 id="site-motto" data-i18n="site.motto">智能 · 融合 · 创新 · 连接未来</h3>
+      <p id="footer-rights" data-i18n="footer.rights">© 2025 迈域科技有限公司 | All Rights Reserved</p>
     </div>
   </footer>
 
   <div class="background"></div>
+
+  <script src="lang.js"></script>
 </body>
+
 </html>

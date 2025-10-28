@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>迈域科技 | MyuTech</title>
+  <title data-i18n="site.name">迈域科技 MyuTech</title>
   <link rel="stylesheet" href="style.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
@@ -15,58 +15,53 @@
   <header class="navbar">
     <div class="logo">
       <img src="assets/logo.png" alt="MyuTech Logo" />
-      <span>迈域科技 MyuTech</span>
+      <span id="site-name" data-i18n="site.name">迈域科技 MyuTech</span>
     </div>
     <nav>
-      <a href="#about">公司介绍</a>
-      <a href="#scope">业务范围</a>
-      <a href="teams.html">团队</a>
-      <a href="privacy.html">隐私政策</a>
-      <a href="#contact">联系我们</a>
+      <a href="#about" data-i18n="nav.about">公司介绍</a>
+      <a href="#scope" data-i18n="nav.scope">业务范围</a>
+      <a href="teams.html" data-i18n="nav.team">团队</a>
+      <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
+      <a href="#contact" data-i18n="nav.contact">联系我们</a>
     </nav>
+    <div class="lang-select">
+      <select id="langSelect">
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+        <option value="en">English</option>
+      </select>
+    </div>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>迈向未来的智能世界</h1>
-      <p>迈域科技专注于 AI · XR · IoT · 云计算 等前沿技术的融合与创新</p>
-      <a href="#about" class="btn-primary">了解更多</a>
+      <h1 id="index-hero-title" data-i18n="index.hero.title">迈向未来的智能世界</h1>
+      <p id="index-hero-sub" data-i18n="index.hero.sub">专注 AI · XR · IoT · 云计算 等前沿技术的融合与创新</p>
+      <a href="#about" id="index-cta" class="btn-primary" data-i18n="index.cta">了解更多</a>
     </div>
   </section>
 
   <section id="about" class="about">
-    <h2>公司简介</h2>
-    <p>
-      迈域科技（MyuTech）是一家面向未来的高科技企业，专注于计算机软硬件、人工智能、
-      虚拟现实（VR）、增强现实（AR）、混合现实（MR）、物联网及云计算等领域的创新研发。
-      我们致力于为全球企业提供领先的数字化解决方案与智能化服务。
+    <h2 id="index-about-title" data-i18n="index.about.title">公司简介</h2>
+    <p id="index-about-text" data-i18n="index.about.text">
+      迈域科技（MyuTech）是一家面向未来的高科技企业，专注于计算机软硬件、人工智能、VR/AR/MR、物联网及云计算等领域的创新研发。
     </p>
   </section>
 
   <section id="scope" class="scope">
-    <h2>主要业务范围</h2>
-    <ul>
-      <li>💡 计算机软硬件的研发、设计、生产、销售及技术服务</li>
-      <li>🤖 人工智能技术、虚拟现实（VR）、增强现实（AR）、混合现实（MR）技术研发与应用</li>
-      <li>☁️ 物联网、云计算、大数据、区块链、移动互联网技术开发与技术咨询</li>
-      <li>🛰️ 网络系统集成、信息系统集成服务、数据处理与存储服务</li>
-      <li>🧩 软件外包服务、信息技术外包（ITO）、业务流程外包（BPO）</li>
-      <li>🏢 企业信息化建设咨询、数字化转型解决方案设计与实施</li>
-      <li>📱 电子产品、智能设备、可穿戴设备、计算机及配件的销售与维护</li>
-      <li>🌐 技术进出口、货物进出口业务</li>
-      <li>👩‍💻 信息技术人员与软件工程师的派遣与管理服务</li>
-    </ul>
+    <h2 id="index-scope-title" data-i18n="index.scope.title">主要业务范围</h2>
+    <ul data-i18n-list="index.scope.items"></ul>
   </section>
 
   <footer id="contact" class="footer">
     <div class="footer-content">
-      <h3>迈域科技 MyuTech</h3>
-      <p>智能 · 融合 · 创新 · 连接未来</p>
-      <p>© 2025 迈域科技有限公司 | All Rights Reserved</p>
+      <h3 id="site-motto" data-i18n="site.motto">智能 · 融合 · 创新 · 连接未来</h3>
+      <p id="footer-rights" data-i18n="footer.rights">© 2025 迈域科技有限公司 | All Rights Reserved</p>
     </div>
   </footer>
 
   <div class="background"></div>
+  <script src="lang.js"></script>
 </body>
 
 </html>
