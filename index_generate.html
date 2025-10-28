@@ -1,0 +1,3538 @@
+<nav id="navigation-main" class="navigation-container" role="navigation" aria-label="主导航">
+  <div class="navigation-wrapper">
+    <!-- Logo with Homepage Link -->
+    <a href="/" class="navigation-logo" aria-label="迈域科技主页">
+      <span class="navigation-logo-text">Myu<span class="navigation-logo-highlight">Tech</span></span>
+      <span class="navigation-logo-glow"></span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <ul class="navigation-menu" role="menubar">
+      <li class="navigation-menu-item" role="none">
+        <a href="#solutions" class="navigation-menu-link" role="menuitem">
+          <span class="navigation-link-text">解决方案</span>
+          <span class="navigation-link-underline"></span>
+        </a>
+      </li>
+      <li class="navigation-menu-item" role="none">
+        <a href="#services" class="navigation-menu-link" role="menuitem">
+          <span class="navigation-link-text">专业服务</span>
+          <span class="navigation-link-underline"></span>
+        </a>
+      </li>
+      <li class="navigation-menu-item" role="none">
+        <a href="#technology" class="navigation-menu-link" role="menuitem">
+          <span class="navigation-link-text">核心技术</span>
+          <span class="navigation-link-underline"></span>
+        </a>
+      </li>
+      <li class="navigation-menu-item" role="none">
+        <a href="#about" class="navigation-menu-link" role="menuitem">
+          <span class="navigation-link-text">关于我们</span>
+          <span class="navigation-link-underline"></span>
+        </a>
+      </li>
+      <li class="navigation-menu-item" role="none">
+        <a href="#contact" class="navigation-menu-link" role="menuitem">
+          <span class="navigation-link-text">联系我们</span>
+          <span class="navigation-link-underline"></span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- CTA Button -->
+    <div class="navigation-cta">
+      <button class="btn btn-primary navigation-cta-button">
+        开始咨询
+      </button>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button 
+      id="navigation-toggle" 
+      class="navigation-toggle" 
+      aria-label="切换导航菜单"
+      aria-expanded="false"
+      aria-controls="navigation-mobile-menu"
+    >
+      <span class="navigation-toggle-icon navigation-toggle-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16M4 12h16M4 19h16"/></svg>
+      </span>
+      <span class="navigation-toggle-icon navigation-toggle-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"/></svg>
+      </span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="navigation-mobile-menu" class="navigation-mobile" role="menu" aria-hidden="true">
+    <div class="navigation-mobile-content">
+      <ul class="navigation-mobile-list">
+        <li class="navigation-mobile-item">
+          <a href="#solutions" class="navigation-mobile-link" role="menuitem">
+            <span class="navigation-mobile-link-text">解决方案</span>
+            <span class="navigation-mobile-link-indicator"></span>
+          </a>
+        </li>
+        <li class="navigation-mobile-item">
+          <a href="#services" class="navigation-mobile-link" role="menuitem">
+            <span class="navigation-mobile-link-text">专业服务</span>
+            <span class="navigation-mobile-link-indicator"></span>
+          </a>
+        </li>
+        <li class="navigation-mobile-item">
+          <a href="#technology" class="navigation-mobile-link" role="menuitem">
+            <span class="navigation-mobile-link-text">核心技术</span>
+            <span class="navigation-mobile-link-indicator"></span>
+          </a>
+        </li>
+        <li class="navigation-mobile-item">
+          <a href="#about" class="navigation-mobile-link" role="menuitem">
+            <span class="navigation-mobile-link-text">关于我们</span>
+            <span class="navigation-mobile-link-indicator"></span>
+          </a>
+        </li>
+        <li class="navigation-mobile-item">
+          <a href="#contact" class="navigation-mobile-link" role="menuitem">
+            <span class="navigation-mobile-link-text">联系我们</span>
+            <span class="navigation-mobile-link-indicator"></span>
+          </a>
+        </li>
+      </ul>
+      <div class="navigation-mobile-cta">
+        <button class="btn btn-primary btn-lg">
+          开始咨询
+        </button>
+      </div>
+    </div>
+    <div class="navigation-mobile-overlay"></div>
+  </div>
+
+  <!-- Decorative Tech Elements -->
+  <div class="navigation-tech-grid" aria-hidden="true"></div>
+  <div class="navigation-scanline" aria-hidden="true"></div>
+</nav>
+<style>
+/* ============================================
+   NAVIGATION - TECH-SAVVY FUTURISTIC DESIGN
+   ============================================ */
+
+.navigation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: color-mix(in srgb, var(--color-surface) 85%, transparent);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+  box-shadow: 0 4px 24px color-mix(in srgb, var(--color-primary) 10%, transparent);
+  animation: navigation-slide-down 0.8s var(--animation-curve-primary);
+}
+
+.navigation-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-primary) 50%,
+    transparent 100%
+  );
+  opacity: 0.5;
+  animation: navigation-glow-pulse 3s ease-in-out infinite;
+}
+
+.navigation-wrapper {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================================
+   LOGO DESIGN WITH GLOW EFFECT
+   ============================================ */
+
+.navigation-logo {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.navigation-logo-text {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--color-on-surface);
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 40%, transparent);
+}
+
+.navigation-logo-highlight {
+  color: var(--color-primary);
+  position: relative;
+  animation: navigation-logo-glow 2s ease-in-out infinite alternate;
+}
+
+.navigation-logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--color-primary) 30%, transparent),
+    transparent 70%
+  );
+  opacity: 0;
+  animation: navigation-logo-pulse 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ============================================
+   DESKTOP NAVIGATION MENU
+   ============================================ */
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.navigation-menu-item {
+  position: relative;
+}
+
+.navigation-menu-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-decoration: none;
+  color: var(--color-on-surface);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  white-space: nowrap;
+  transition: color var(--animation-duration-fast) var(--animation-curve-primary);
+  overflow: hidden;
+}
+
+.navigation-link-text {
+  position: relative;
+  z-index: 1;
+}
+
+.navigation-link-underline {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  box-shadow: var(--ui-glow);
+  transform: translateX(-50%);
+  transition: width var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.navigation-menu-link:hover {
+  color: var(--color-primary);
+}
+
+.navigation-menu-link:hover .navigation-link-underline {
+  width: 100%;
+}
+
+.navigation-menu-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* ============================================
+   CTA BUTTON AREA
+   ============================================ */
+
+.navigation-cta {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-cta-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.navigation-cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: color-mix(in srgb, var(--color-on-primary) 20%, transparent);
+  border-radius: var(--border-radius-full);
+  transform: translate(-50%, -50%);
+  transition: width var(--animation-duration-standard) var(--animation-curve-primary),
+              height var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.navigation-cta-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* ============================================
+   MOBILE TOGGLE BUTTON
+   ============================================ */
+
+.navigation-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background: color-mix(in srgb, var(--color-surface-elevated) 50%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.navigation-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-primary);
+  opacity: 0;
+  transition: opacity var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.navigation-toggle:hover::before {
+  opacity: 0.1;
+}
+
+.navigation-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.navigation-toggle-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-on-surface);
+  transition: transform var(--animation-duration-standard) var(--animation-curve-primary),
+              opacity var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.navigation-toggle-menu {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.navigation-toggle-close {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.navigation-toggle[aria-expanded="true"] .navigation-toggle-menu {
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+
+.navigation-toggle[aria-expanded="true"] .navigation-toggle-close {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+
+.navigation-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.navigation-mobile[aria-hidden="false"] {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.navigation-mobile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: color-mix(in srgb, var(--color-scrim) 80%, transparent);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.navigation-mobile[aria-hidden="false"] .navigation-mobile-overlay {
+  opacity: 1;
+}
+
+.navigation-mobile-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(320px, 85vw);
+  height: 100vh;
+  background: var(--color-surface);
+  border-left: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+  box-shadow: -4px 0 24px color-mix(in srgb, var(--color-primary) 15%, transparent);
+  padding: calc(72px + var(--spacing-lg)) var(--spacing-xl) var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+  transform: translateX(100%);
+  transition: transform var(--animation-duration-standard) var(--animation-curve-primary);
+  overflow-y: auto;
+}
+
+.navigation-mobile[aria-hidden="false"] .navigation-mobile-content {
+  transform: translateX(0);
+}
+
+.navigation-mobile-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.navigation-mobile-item {
+  position: relative;
+}
+
+.navigation-mobile-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-lg);
+  text-decoration: none;
+  color: var(--color-on-surface);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  white-space: nowrap;
+  border-radius: var(--border-radius-md);
+  background: color-mix(in srgb, var(--color-surface-elevated) 30%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.navigation-mobile-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--color-primary);
+  box-shadow: var(--ui-glow);
+  transform: translateX(-100%);
+  transition: transform var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.navigation-mobile-link:hover,
+.navigation-mobile-link:focus-visible {
+  background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  border-color: color-mix(in srgb, var(--color-primary) 50%, transparent);
+  color: var(--color-primary);
+}
+
+.navigation-mobile-link:hover::before {
+  transform: translateX(0);
+}
+
+.navigation-mobile-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.navigation-mobile-link-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--border-radius-full);
+  background: color-mix(in srgb, var(--color-primary) 20%, transparent);
+  border: 2px solid var(--color-primary);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.navigation-mobile-link-indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: var(--color-primary);
+  border-radius: var(--border-radius-full);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.navigation-mobile-link:hover .navigation-mobile-link-indicator::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.navigation-mobile-cta {
+  margin-top: auto;
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
+}
+
+.navigation-mobile-cta .btn {
+  width: 100%;
+}
+
+/* ============================================
+   DECORATIVE TECH ELEMENTS
+   ============================================ */
+
+.navigation-tech-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color-primary) 3%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      0deg,
+      color-mix(in srgb, var(--color-primary) 3%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 40px 40px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.navigation-scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-primary) 50%,
+    transparent 100%
+  );
+  box-shadow: 0 0 10px var(--color-primary);
+  opacity: 0.6;
+  animation: navigation-scanline-move 4s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes navigation-slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes navigation-glow-pulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes navigation-logo-glow {
+  from {
+    text-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 40%, transparent);
+  }
+  to {
+    text-shadow: 0 0 30px color-mix(in srgb, var(--color-primary) 60%, transparent),
+                 0 0 40px color-mix(in srgb, var(--color-primary) 30%, transparent);
+  }
+}
+
+@keyframes navigation-logo-pulse {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+@keyframes navigation-scanline-move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 991px) {
+  .navigation-wrapper {
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+
+  .navigation-cta {
+    display: none;
+  }
+
+  .navigation-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation-wrapper {
+    padding: var(--spacing-sm) var(--spacing-md);
+    gap: var(--spacing-md);
+  }
+
+  .navigation-logo-text {
+    font-size: 1.5rem;
+  }
+
+  .navigation-mobile-content {
+    width: min(300px, 90vw);
+    padding: calc(64px + var(--spacing-md)) var(--spacing-lg) var(--spacing-lg);
+  }
+
+  .navigation-mobile-link {
+    font-size: var(--font-size-base);
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+}
+
+@media (max-width: 479px) {
+  .navigation-wrapper {
+    padding: var(--spacing-sm);
+  }
+
+  .navigation-logo-text {
+    font-size: 1.25rem;
+  }
+
+  .navigation-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  .navigation-mobile-content {
+    width: 100vw;
+    border-left: none;
+    padding: calc(60px + var(--spacing-md)) var(--spacing-md) var(--spacing-md);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation-container,
+  .navigation-logo-glow,
+  .navigation-link-underline,
+  .navigation-toggle-icon,
+  .navigation-mobile,
+  .navigation-mobile-overlay,
+  .navigation-mobile-content,
+  .navigation-mobile-link::before,
+  .navigation-scanline {
+    animation: none;
+    transition: none;
+  }
+}
+</style>
+<script defer data-name="navigation">
+const navigationToggle = document.getElementById('navigation-toggle');
+const navigationMobile = document.getElementById('navigation-mobile-menu');
+const mobileLinks = navigationMobile.querySelectorAll('.navigation-mobile-link');
+const mobileOverlay = navigationMobile.querySelector('.navigation-mobile-overlay');
+
+function toggleMobileMenu() {
+  const isExpanded = navigationToggle.getAttribute('aria-expanded') === 'true';
+  
+  navigationToggle.setAttribute('aria-expanded', !isExpanded);
+  navigationMobile.setAttribute('aria-hidden', isExpanded);
+  
+  // Prevent body scroll when menu is open
+  if (!isExpanded) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+}
+
+function closeMobileMenu() {
+  navigationToggle.setAttribute('aria-expanded', 'false');
+  navigationMobile.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+// Toggle button click
+navigationToggle.addEventListener('click', toggleMobileMenu);
+
+// Close on overlay click
+mobileOverlay.addEventListener('click', closeMobileMenu);
+
+// Close on link click
+mobileLinks.forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
+});
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && navigationMobile.getAttribute('aria-hidden') === 'false') {
+    closeMobileMenu();
+  }
+});
+
+// Add active state on scroll
+let lastScroll = 0;
+const navigationContainer = document.getElementById('navigation-main');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  
+  if (currentScroll > 50) {
+    navigationContainer.style.boxShadow = '0 8px 32px color-mix(in srgb, var(--color-primary) 15%, transparent)';
+  } else {
+    navigationContainer.style.boxShadow = '0 4px 24px color-mix(in srgb, var(--color-primary) 10%, transparent)';
+  }
+  
+  lastScroll = currentScroll;
+});
+</script><main id="myutech-homepage">
+  <!-- Hero Section -->
+  <section class="hero-section" role="region" aria-labelledby="hero-headline">
+    <div class="hero-container">
+      <div class="hero-content-panel">
+        <div class="hero-text-wrapper">
+          <h1 id="hero-headline" class="hero-title">迈域科技<span class="hero-separator">——</span>以智能引领未来</h1>
+          <p class="hero-subhead">融合 AI、XR、IoT 与云原生架构，打造可落地、可扩展的企业级智能平台，帮助企业在数字化浪潮中实现跨越式增长。</p>
+          <div class="hero-cta-wrapper">
+            <button class="btn btn-primary btn-lg hero-cta" aria-label="探索核心解决方案">即刻探索核心解决方案</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual-plane">
+        <video class="hero-video" autoplay loop muted playsinline aria-hidden="true">
+          <source src="https://videos.pexels.com/video-files/3141208/3141208-hd_1280_720_25fps.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Solutions Section -->
+  <section class="solutions-section" role="region" aria-labelledby="solutions-headline">
+    <div class="solutions-container">
+      <div class="solutions-hero-card">
+        <div class="solutions-hero-content">
+          <h2 id="solutions-headline" class="section-title">核心解决方案 — 以技术驱动业务跃迁</h2>
+          <p class="section-subtitle">迈域科技将 AI、XR、IoT 与云计算深度融合，打造可落地、可扩展的智能平台和定制化产品，帮助企业实现运营智能化、体验沉浸化与数据驱动的商业决策。我们聚焦结果：降低成本、提升效率、创造新商业模式。</p>
+        </div>
+        <div class="solutions-hero-image">
+          <img src="https://images.pexels.com/photos/17486100/pexels-photo-17486100.png?auto=compress&cs=tinysrgb&h=650&w=940" alt="Future technology neural network" />
+        </div>
+      </div>
+
+      <div class="solutions-services-wrapper">
+        <article class="solution-card solution-card-featured">
+          <div class="solution-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="solution-icon"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 18V5m3 8a4.17 4.17 0 0 1-3-4a4.17 4.17 0 0 1-3 4m8.598-6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></g></svg>
+          </div>
+          <span class="solution-label">AI 平台</span>
+          <h3 class="solution-title">智能引擎</h3>
+          <p class="solution-description">面向企业级场景的端到端 AI 能力：定制化模型训练、实时推理服务、自动化数据标注与模型治理。适配从供应链预测、智能客服到视觉质检等多类场景，支持本地化部署与云端混合部署，兼顾性能与合规性。</p>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="solution-icon"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 16.008V7.99a1.98 1.98 0 0 0-1-1.717l-7-4.008a2.02 2.02 0 0 0-2 0L4 6.273c-.619.355-1 1.01-1 1.718v8.018c0 .709.381 1.363 1 1.717l7 4.008a2.02 2.02 0 0 0 2 0l7-4.008c.619-.355 1-1.01 1-1.718M12 22V12m0 0l8.73-5.04m-17.46 0L12 12"/></svg>
+          </div>
+          <span class="solution-label">XR</span>
+          <h3 class="solution-title">沉浸体验</h3>
+          <p class="solution-description">沉浸式交互与数字孪生：AR 导览、VR 培训、混合现实运维与可视化数字孪生平台。为产品设计、远程协作与场景仿真提供可量产的 XR 模块。</p>
+        </article>
+
+        <article class="solution-card">
+          <div class="solution-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="solution-icon"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="6" height="6" x="16" y="16" rx="1"/><rect width="6" height="6" x="2" y="16" rx="1"/><rect width="6" height="6" x="9" y="2" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3m-7-4V8"/></g></svg>
+          </div>
+          <span class="solution-label">IoT</span>
+          <h3 class="solution-title">智联终端</h3>
+          <p class="solution-description">从传感器到边缘计算的完整链路：定制传感器集成、边缘网关开发、低功耗连通与设备云管理。实现数据实时采集、边缘智能预警与远程运维。</p>
+        </article>
+      </div>
+
+      <div class="solutions-action-row">
+        <div class="solution-action-card">
+          <div class="solution-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="solution-icon"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9"/></svg>
+          </div>
+          <h3 class="solution-title">云原生架构</h3>
+          <p class="solution-description">构建安全、弹性与可扩展的云原生平台：微服务、容器化、CI/CD 与多云编排。我们提供快速交付流水线、数据湖与治理策略，帮助企业在不增加复杂度的前提下实现业务弹性与成本优化。</p>
+        </div>
+        <div class="solution-action-card solution-action-highlight">
+          <div class="solution-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="solution-icon"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0m1 7v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></g></svg>
+          </div>
+          <h3 class="solution-title">一站式落地路径</h3>
+          <p class="solution-description">快速定制：需求评估 → 方案原型 → 联合迭代 → 部署与运维。迈域科技提供软件定制、智能硬件设计与系统集成的无缝交付能力，确保从 PoC 到量产的每一步都可控、可衡量。</p>
+          <button class="btn btn-primary" aria-label="立即行动">立即行动</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Applications Section -->
+  <section class="industry-section" role="region" aria-labelledby="industry-headline">
+    <div class="industry-container">
+      <div class="industry-featured-card">
+        <div class="industry-featured-content">
+          <h2 id="industry-headline" class="section-title">行业应用</h2>
+          <p class="section-subtitle">迈域科技将前沿技术落地到关键行业，驱动业务效率、用户体验与可持续增长。每一项部署都以场景为导向，结合AI、XR、IoT与云计算，带来可衡量的商业回报。</p>
+        </div>
+        <div class="industry-featured-image">
+          <img src="https://images.pexels.com/photos/18068747/pexels-photo-18068747.png?auto=compress&cs=tinysrgb&h=650&w=940" alt="Technology neural network visualization" />
+        </div>
+      </div>
+
+      <div class="industry-grid">
+        <article class="industry-card">
+          <div class="industry-card-header">
+            <div class="industry-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="industry-icon"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01"/></svg>
+            </div>
+            <h3 class="industry-card-title">智能制造</h3>
+          </div>
+          <p class="industry-card-subtitle">预测性运维与柔性生产</p>
+          <p class="industry-card-description">通过工业物联网与边缘AI，我们为制造企业构建实时设备数字孪生与预测性维护平台，降低非计划停机时间超过40%，生产效率提升30%。</p>
+          <div class="industry-card-kpi">
+            <span class="kpi-value">-40%</span>
+            <span class="kpi-label">停机时间</span>
+          </div>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-card-header">
+            <div class="industry-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="industry-icon"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/><rect width="16" height="20" x="4" y="2" rx="2"/></g></svg>
+            </div>
+            <h3 class="industry-card-title">智慧城市</h3>
+          </div>
+          <p class="industry-card-subtitle">以数据驱动的城市运营</p>
+          <p class="industry-card-description">在智慧交通、能源管理与公共安全领域，迈域科技部署了云端感知网络与多模态数据融合引擎，实现交通拥堵预测、能耗优化与事件快速响应。</p>
+          <button class="btn btn-outline btn-sm industry-cta">查看案例</button>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-card-header">
+            <div class="industry-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="industry-icon"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+            </div>
+            <h3 class="industry-card-title">医疗健康</h3>
+          </div>
+          <p class="industry-card-subtitle">辅助诊断与远程协作</p>
+          <p class="industry-card-description">我们将AI影像分析、可穿戴IoT与XR远程协作整合，为医疗机构提供快速筛查、远程会诊与康复训练方案。该方案提升诊断效率、降低医疗成本。</p>
+          <button class="btn btn-outline btn-sm industry-cta">了解详情</button>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-card-header">
+            <div class="industry-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="industry-icon"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 10a4 4 0 0 1-8 0M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></g></svg>
+            </div>
+            <h3 class="industry-card-title">零售与体验经济</h3>
+          </div>
+          <p class="industry-card-subtitle">智能感知驱动的全渠道体验</p>
+          <p class="industry-card-description">结合计算机视觉与个性化推荐引擎，迈域科技帮助零售商实现店内行为分析、库存智能补货与沉浸式XR展示，提升客单价与转化率。</p>
+          <button class="btn btn-outline btn-sm industry-cta">咨询方案</button>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-card-header">
+            <div class="industry-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="industry-icon"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></g></svg>
+            </div>
+            <h3 class="industry-card-title">能源与可持续发展</h3>
+          </div>
+          <p class="industry-card-subtitle">智能调度与减碳落地</p>
+          <p class="industry-card-description">面向能源企业，我们提供分布式能源管理与负荷预测解决方案，结合IoT传感与云端优化算法，实现精细化调度与减少碳排放的可视化报告。</p>
+          <div class="industry-card-kpi">
+            <span class="kpi-value">ESG</span>
+            <span class="kpi-label">量化推进</span>
+          </div>
+        </article>
+
+        <article class="industry-card industry-card-cta">
+          <div class="industry-card-header">
+            <div class="industry-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="industry-icon"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></g></svg>
+            </div>
+            <h3 class="industry-card-title">为何选择我们</h3>
+          </div>
+          <p class="industry-card-description">场景优先：从业务痛点出发设计可落地的技术路径。可扩展性：模块化架构，适配不同规模与复杂度的组织。可衡量的成效：关键KPI对齐，交付透明且数据驱动。</p>
+          <button class="btn btn-primary">查看行业白皮书</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates Section -->
+  <section class="updates-section" role="region" aria-labelledby="updates-headline">
+    <div class="updates-container">
+      <div class="updates-lead-rail">
+        <h2 id="updates-headline" class="section-title">最新动态</h2>
+        <p class="section-subtitle">迈域速递：把握未来脉搏 — 我们定期发布产品进展、研究成果与行业观察，帮助您在智能化浪潮中先人一步。</p>
+        
+        <div class="updates-milestone-cards">
+          <article class="update-card update-card-milestone">
+            <span class="update-label">里程碑</span>
+            <h3 class="update-title">MyuCore 2.0 正式发布</h3>
+            <p class="update-description">实现边缘AI与云端协同，响应延迟降低 60%，适配 20+ 行业场景。</p>
+            <div class="update-meta">
+              <span class="update-metric">-60%</span>
+              <span class="update-date">2025年1月</span>
+            </div>
+          </article>
+
+          <article class="update-card">
+            <span class="update-label">战略合作</span>
+            <h3 class="update-title">全球制造龙头合作</h3>
+            <p class="update-description">启动智能工厂 XR+IoT 试点项目，覆盖预测性运维与数字孪生场景。</p>
+            <span class="update-date">2024年12月</span>
+          </article>
+
+          <article class="update-card">
+            <span class="update-label">荣誉</span>
+            <h3 class="update-title">年度创新科技企业提名</h3>
+            <p class="update-description">科研团队发表三篇顶会论文，在边缘推理与可解释AI领域获得业界认可。</p>
+            <span class="update-date">2024年11月</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="updates-spotlight-column">
+        <div class="updates-tabs" role="tablist" aria-label="更新类型">
+          <button class="update-tab update-tab-active" role="tab" aria-selected="true" aria-controls="tech-insights-panel" id="tech-insights-tab">技术洞见</button>
+          <button class="update-tab" role="tab" aria-selected="false" aria-controls="media-panel" id="media-tab">媒体与观点</button>
+        </div>
+
+        <div class="update-tab-panel update-tab-panel-active" role="tabpanel" id="tech-insights-panel" aria-labelledby="tech-insights-tab">
+          <article class="spotlight-card">
+            <div class="spotlight-image">
+              <img src="https://images.pexels.com/photos/8294566/pexels-photo-8294566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Robot technology" />
+            </div>
+            <div class="spotlight-content">
+              <span class="spotlight-label">报告</span>
+              <h4 class="spotlight-title">边缘推理在供应链实时决策中的五大应用场景</h4>
+              <p class="spotlight-excerpt">从需求预测到库存优化，探索边缘AI如何在毫秒级延迟下实现智能决策。</p>
+              <button class="btn btn-link">阅读报告</button>
+            </div>
+          </article>
+
+          <article class="spotlight-card">
+            <div class="spotlight-content">
+              <span class="spotlight-label">专栏</span>
+              <h4 class="spotlight-title">元宇宙交互设计的可用性与可持续性平衡</h4>
+              <p class="spotlight-excerpt">如何在沉浸体验中保持能源效率与用户体验的双赢。</p>
+              <button class="btn btn-link">深入阅读</button>
+            </div>
+          </article>
+
+          <article class="spotlight-card">
+            <div class="spotlight-content">
+              <span class="spotlight-label">快评</span>
+              <h4 class="spotlight-title">生成式AI在企业服务化落地的三个核心挑战</h4>
+              <p class="spotlight-excerpt">从数据合规、成本控制到可解释性，企业级AI部署的关键考量。</p>
+              <button class="btn btn-link">查看观点</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="update-tab-panel" role="tabpanel" id="media-panel" aria-labelledby="media-tab" hidden>
+          <article class="spotlight-card">
+            <div class="spotlight-image">
+              <img src="https://images.pexels.com/photos/8294619/pexels-photo-8294619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Future technology" />
+            </div>
+            <div class="spotlight-content">
+              <span class="spotlight-label">媒体报道</span>
+              <h4 class="spotlight-title">财经周刊：迈域推动制造业智能化转型</h4>
+              <p class="spotlight-excerpt">深度报道迈域科技如何通过工业IoT与边缘AI赋能传统制造业。</p>
+              <button class="btn btn-link">阅读全文</button>
+            </div>
+          </article>
+
+          <article class="spotlight-card">
+            <div class="spotlight-content">
+              <span class="spotlight-label">行业圆桌</span>
+              <h4 class="spotlight-title">首席科学家谈'可解释AI与企业信任'</h4>
+              <p class="spotlight-excerpt">在企业级AI应用中，如何构建透明、可审计的决策系统。</p>
+              <button class="btn btn-link">观看视频</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="updates-cta">
+          <p class="updates-cta-text">订阅我们的技术简报，获得每月精选动态、白皮书与专属活动邀请。</p>
+          <button class="btn btn-accent">订阅简报</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="vision-section" role="region" aria-labelledby="vision-headline">
+    <div class="vision-container">
+      <div class="vision-lead-panel">
+        <h2 id="vision-headline" class="section-title">关于愿景</h2>
+        <p class="vision-mission">我们的愿景是用智能技术重塑未来生产与生活边界。迈域科技致力于将 AI、XR、IoT 与云端能力无缝融合，打造可扩展、低能耗且可审计的智能系统，帮助企业实现高效决策与可持续增长。</p>
+        <div class="vision-image">
+          <img src="https://images.pexels.com/photos/18799044/pexels-photo-18799044.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Futuristic robot technology" />
+        </div>
+        <p class="vision-statement">选择迈域，就是选择面向十年、百年的技术路线：前瞻性的研发投入、严苛的工程实践与可量化的可持续指标，确保每一次落地都具备商业价值与社会责任。</p>
+      </div>
+
+      <div class="vision-cluster">
+        <article class="vision-card" role="group" aria-label="人本与可持续承诺">
+          <div class="vision-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8c0 5.5-4.78 10-10 10"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></g></svg>
+          </div>
+          <h3 class="vision-card-title">以人为本 · 可持续</h3>
+          <p class="vision-card-description">在产品设计与部署中优先考虑能源效率、数据隐私与社会影响，推动绿色计算与负责任的 AI 实践。</p>
+        </article>
+
+        <article class="vision-card" role="group" aria-label="开放生态承诺">
+          <div class="vision-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="6" height="6" x="16" y="16" rx="1"/><rect width="6" height="6" x="2" y="16" rx="1"/><rect width="6" height="6" x="9" y="2" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3m-7-4V8"/></g></svg>
+          </div>
+          <h3 class="vision-card-title">开放生态</h3>
+          <p class="vision-card-description">通过标准化接口、透明算法与行业合作，赋能合作伙伴与开发者，共同加速垂直行业的数字化转型。</p>
+        </article>
+
+        <article class="vision-card" role="group" aria-label="技术价值承诺">
+          <div class="vision-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></g></svg>
+          </div>
+          <h3 class="vision-card-title">可衡量的业务与环境效益</h3>
+          <p class="vision-card-description">将科技价值转化为长期社会回报，创造可量化的业务增长与环境保护双重价值。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" role="region" aria-labelledby="contact-headline">
+    <div class="contact-container">
+      <div class="contact-featured-card">
+        <h2 id="contact-headline" class="section-title">立即对接迈域科技团队</h2>
+        <p class="section-subtitle">开启智能化转型之旅</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-lead-column">
+          <h3 class="contact-column-title">快速咨询</h3>
+          <p class="contact-description">填写需求，我们将在24小时内与您联系，为您量身匹配最优技术方案。无论是AI模型定制、XR体验、IoT部署还是云端架构，我们提供端到端技术与落地支持。</p>
+          <div class="contact-why">
+            <h4 class="contact-why-title">为什么选择我们</h4>
+            <ul class="contact-why-list">
+              <li>行业级交付能力</li>
+              <li>快速原型验证</li>
+              <li>可扩展架构</li>
+              <li>可量化ROI</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form-column">
+          <form class="contact-form" aria-label="企业合作咨询表">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="company-name" class="form-label">公司名称</label>
+                <input type="text" id="company-name" name="company-name" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">联系人姓名</label>
+                <input type="text" id="contact-name" name="contact-name" class="form-input" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="position" class="form-label">职位/部门</label>
+                <input type="text" id="position" name="position" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">联系电话</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">邮箱地址</label>
+              <input type="email" id="email" name="email" class="form-input" required />
+            </div>
+
+            <div class="form-group">
+              <label for="project-type" class="form-label">项目类型</label>
+              <select id="project-type" name="project-type" class="form-input">
+                <option value="">请选择</option>
+                <option value="ai">AI 人工智能</option>
+                <option value="xr">XR 扩展现实</option>
+                <option value="iot">IoT 物联网</option>
+                <option value="cloud">云与架构</option>
+                <option value="integration">系统集成</option>
+                <option value="other">其他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="project-description" class="form-label">项目简介（200字以内）</label>
+              <textarea id="project-description" name="project-description" class="form-input form-textarea" rows="4"></textarea>
+            </div>
+
+            <p class="form-privacy">隐私与保密承诺：我们对所有商业信息严守保密协议，支持签署NDA。</p>
+
+            <button type="submit" class="btn btn-primary btn-lg">立即提交并预约专属顾问</button>
+          </form>
+        </div>
+
+        <div class="contact-info-column">
+          <h3 class="contact-column-title">直接联系</h3>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect width="20" height="16" x="2" y="4" rx="2"/></g></svg>
+            </div>
+            <div class="contact-info-content">
+              <span class="contact-info-label">商务邮箱</span>
+              <span class="contact-info-value">partner@myutech.com</span>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"/></svg>
+            </div>
+            <div class="contact-info-content">
+              <span class="contact-info-label">销售与咨询</span>
+              <span class="contact-info-value">+86 400-800-****</span>
+              <span class="contact-info-note">工作日 9:00–18:00</span>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect width="20" height="16" x="2" y="4" rx="2"/></g></svg>
+            </div>
+            <div class="contact-info-content">
+              <span class="contact-info-label">技术支持</span>
+              <span class="contact-info-value">support@myutech.com</span>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 10h.01M12 14h.01M12 6h.01M16 10h.01M16 14h.01M16 6h.01M8 10h.01M8 14h.01M8 6h.01M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/><rect width="16" height="20" x="4" y="2" rx="2"/></g></svg>
+            </div>
+            <div class="contact-info-content">
+              <span class="contact-info-label">公司总部</span>
+              <span class="contact-info-value">上海市浦东新区创新大道88号</span>
+            </div>
+          </div>
+
+          <div class="contact-quick-links">
+            <button class="btn btn-outline btn-sm">预约参观</button>
+            <button class="btn btn-outline btn-sm">下载白皮书</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<style>
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: var(--color-backplate);
+  padding: var(--section-gap) var(--spacing-lg);
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--section-gap);
+  align-items: center;
+  position: relative;
+}
+
+.hero-content-panel {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-4xl);
+  background: var(--color-surface-elevated);
+  color: var(--color-on-surface);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-level-2);
+  outline: 1px solid var(--color-outline);
+  transition: box-shadow var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.hero-content-panel:hover,
+.hero-content-panel:focus-within {
+  box-shadow: var(--shadow-level-2), 0 0 18px var(--ui-glow);
+}
+
+.hero-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.hero-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.hero-separator {
+  display: inline-block;
+  margin: 0 0.2em;
+  opacity: 0.6;
+}
+
+.hero-subhead {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface-secondary);
+  line-height: var(--line-height-default);
+  margin: 0;
+}
+
+.hero-cta-wrapper {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+  margin-top: var(--spacing-md);
+}
+
+.hero-cta {
+  transition: transform var(--animation-duration-fast) var(--animation-curve-primary), 
+              box-shadow var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.hero-cta:hover,
+.hero-cta:focus {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-level-2), 0 0 16px var(--ui-glow);
+}
+
+.hero-visual-plane {
+  position: relative;
+  height: 600px;
+  border-radius: var(--border-radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-level-3);
+  margin-left: calc(var(--spacing-lg) * -0.5);
+  z-index: 2;
+  transform: translateZ(0);
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    color-mix(in srgb, var(--color-scrim) 40%, transparent),
+    color-mix(in srgb, var(--color-primary) 20%, transparent));
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Solutions Section */
+.solutions-section {
+  padding: var(--section-gap) var(--spacing-lg);
+  background: var(--color-surface);
+}
+
+.solutions-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+.solutions-hero-card {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-3xl);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-level-2);
+  border: 1px solid var(--color-border);
+  align-items: center;
+}
+
+.solutions-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.solutions-hero-image {
+  position: relative;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  height: 320px;
+}
+
+.solutions-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.solutions-services-wrapper {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.solution-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xl);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-level-1);
+  border: 1px solid var(--color-border);
+  transition: transform var(--animation-duration-fast) var(--animation-curve-primary),
+              box-shadow var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.solution-card:hover,
+.solution-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-level-2), 0 0 12px var(--ui-glow);
+}
+
+.solution-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-backplate);
+  border-radius: var(--border-radius-md);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent-90);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
+
+.solution-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.solution-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-accent-90);
+}
+
+.solution-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.solution-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+}
+
+.solution-card-featured {
+  position: relative;
+  overflow: hidden;
+}
+
+.solution-card-featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--color-primary), var(--color-accent));
+  box-shadow: 0 0 8px var(--ui-glow);
+}
+
+.solutions-action-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.solution-action-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-2xl);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-level-1);
+  border: 1px solid var(--color-border);
+}
+
+.solution-action-highlight {
+  background: var(--color-backplate);
+  border: 1px solid var(--color-accent-90);
+  box-shadow: var(--shadow-level-2), 0 0 16px color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+
+/* Industry Section */
+.industry-section {
+  padding: var(--section-gap) var(--spacing-lg);
+  background: var(--color-backplate);
+}
+
+.industry-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.industry-featured-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-3xl);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-level-2);
+  border: 1px solid var(--color-border);
+  align-items: center;
+}
+
+.industry-featured-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.industry-featured-image {
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  height: 280px;
+}
+
+.industry-featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.industry-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--color-surface);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-level-1);
+  border: 1px solid var(--color-border);
+  transition: transform var(--animation-duration-fast) var(--animation-curve-primary),
+              box-shadow var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.industry-card:hover,
+.industry-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-level-2), 0 0 12px var(--ui-glow);
+}
+
+.industry-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.industry-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-backplate);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent-90);
+}
+
+.industry-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.industry-card-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.industry-card-subtitle {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface-secondary);
+  line-height: var(--line-height-default);
+  margin: 0;
+}
+
+.industry-card-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+}
+
+.industry-card-kpi {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs);
+  background: var(--color-backplate);
+  border-radius: var(--border-radius-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.kpi-value {
+  font-family: monospace;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-90);
+}
+
+.kpi-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+}
+
+.industry-card-cta {
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-accent-90);
+  box-shadow: var(--shadow-level-2), 0 0 12px color-mix(in srgb, var(--color-accent) 15%, transparent);
+}
+
+.industry-cta {
+  margin-top: var(--spacing-sm);
+}
+
+/* Updates Section */
+.updates-section {
+  padding: var(--section-gap) var(--spacing-lg);
+  background: var(--color-surface);
+}
+
+.updates-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--section-gap);
+}
+
+.updates-lead-rail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.updates-milestone-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.update-card {
+  padding: var(--spacing-lg);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-level-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  transition: box-shadow var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.update-card:hover {
+  box-shadow: var(--shadow-level-2), 0 0 10px var(--ui-glow);
+}
+
+.update-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--color-backplate);
+  border-radius: var(--border-radius-sm);
+  align-self: flex-start;
+}
+
+.update-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.update-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-default);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+}
+
+.update-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-xs);
+}
+
+.update-metric {
+  font-family: monospace;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+}
+
+.update-date {
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+}
+
+.update-card-milestone {
+  background: linear-gradient(135deg, 
+    var(--color-surface-elevated), 
+    color-mix(in srgb, var(--color-primary) 5%, var(--color-surface-elevated)));
+  border: 1px solid var(--color-accent-90);
+}
+
+.updates-spotlight-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.updates-tabs {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.update-tab {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface-secondary);
+  background: transparent;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: color var(--animation-duration-fast) var(--animation-curve-primary),
+              background var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.update-tab:hover {
+  background: var(--color-surface-elevated);
+}
+
+.update-tab-active {
+  color: var(--color-on-surface);
+  background: var(--color-surface-elevated);
+  box-shadow: 0 0 8px var(--ui-glow);
+  border: 1px solid var(--color-accent-90);
+}
+
+.update-tab-panel {
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.update-tab-panel-active {
+  display: flex;
+}
+
+.spotlight-card {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-level-1);
+  transition: transform var(--animation-duration-fast) var(--animation-curve-primary),
+              box-shadow var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.spotlight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-level-2);
+}
+
+.spotlight-image {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+
+.spotlight-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.spotlight-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.spotlight-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-accent-90);
+}
+
+.spotlight-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.spotlight-excerpt {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-default);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+}
+
+.updates-cta {
+  padding: var(--spacing-xl);
+  background: var(--color-backplate);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-accent-90);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--color-accent) 15%, transparent);
+}
+
+.updates-cta-text {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+/* Vision Section */
+.vision-section {
+  padding: var(--section-gap) var(--spacing-lg);
+  background: var(--color-backplate);
+}
+
+.vision-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: var(--section-gap);
+  align-items: start;
+  padding: var(--spacing-4xl) var(--spacing-3xl);
+}
+
+.vision-lead-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-3xl);
+  background: var(--color-surface-elevated);
+  color: var(--color-on-surface);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-level-2);
+  border: 1px solid var(--color-border);
+}
+
+.vision-mission {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-default);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+}
+
+.vision-image {
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  height: 240px;
+  margin: var(--spacing-md) 0;
+}
+
+.vision-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vision-statement {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.vision-cluster {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: min-content;
+  gap: var(--spacing-md);
+  align-content: start;
+}
+
+.vision-card {
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-level-1);
+  border: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  transition: transform var(--animation-duration-fast) var(--animation-curve-primary),
+              box-shadow var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.vision-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-level-2), 0 0 10px var(--ui-glow);
+}
+
+.vision-card-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+}
+
+.vision-card-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.vision-card-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: var(--section-gap) var(--spacing-lg);
+  background: var(--color-surface);
+  position: relative;
+}
+
+.contact-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  position: relative;
+  padding: var(--spacing-3xl);
+}
+
+.contact-featured-card {
+  position: absolute;
+  left: var(--spacing-lg);
+  right: var(--spacing-lg);
+  top: 0;
+  transform: translateY(calc(-1 * var(--spacing-lg)));
+  box-shadow: var(--shadow-level-3);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-xl);
+  text-align: center;
+  z-index: 2;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: var(--section-gap);
+  margin-top: calc(var(--spacing-4xl) + var(--spacing-xl));
+}
+
+.contact-lead-column,
+.contact-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.contact-column-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.contact-description {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-default);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+}
+
+.contact-why {
+  padding: var(--spacing-md);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  margin-top: var(--spacing-md);
+}
+
+.contact-why-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-on-surface);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.contact-why-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.contact-why-list li {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.contact-why-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 4px;
+  height: 4px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 4px var(--color-accent);
+}
+
+.contact-form-column {
+  padding: var(--spacing-2xl);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-level-2);
+  border: 1px solid var(--color-border);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  transition: border-color var(--animation-duration-fast) var(--animation-curve-primary),
+              box-shadow var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.form-input:focus {
+  outline: 2px solid var(--color-outline);
+  box-shadow: 0 0 12px var(--ui-glow);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-privacy {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+  padding: var(--spacing-sm);
+  background: var(--color-backplate);
+  border-radius: var(--border-radius-sm);
+}
+
+.contact-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.contact-info-item {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.contact-info-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-backplate);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.contact-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-info-label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface-secondary);
+}
+
+.contact-info-value {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface);
+}
+
+.contact-info-note {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+}
+
+.contact-quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content-panel {
+    padding: var(--spacing-2xl);
+  }
+
+  .hero-visual-plane {
+    margin-left: 0;
+    margin-top: var(--spacing-lg);
+    height: 400px;
+  }
+
+  .solutions-hero-card {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions-services-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .solutions-action-row {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .updates-container {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-lead-column {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-content-panel {
+    padding: var(--spacing-xl);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .hero-visual-plane {
+    height: 320px;
+  }
+
+  .solutions-services-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-cluster {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero-content-panel {
+    padding: var(--spacing-lg);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .solutions-hero-card,
+  .industry-featured-card {
+    padding: var(--spacing-lg);
+  }
+
+  .solution-card,
+  .industry-card {
+    padding: var(--spacing-md);
+  }
+
+  .vision-lead-panel {
+    padding: var(--spacing-lg);
+  }
+
+  .contact-container {
+    padding: var(--spacing-lg);
+  }
+
+  .contact-form-column {
+    padding: var(--spacing-lg);
+  }
+}
+
+/* Animation Effects */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 8px color-mix(in srgb, var(--color-accent) 20%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 16px color-mix(in srgb, var(--color-accent) 40%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .solution-icon-wrapper,
+  .industry-icon-wrapper {
+    animation: glow-pulse 3s var(--animation-curve-primary) infinite;
+  }
+
+  .hero-visual-plane {
+    animation: parallax-float var(--animation-duration-slow) var(--animation-curve-primary) infinite alternate;
+  }
+
+  @keyframes parallax-float {
+    from {
+      transform: translateZ(0) translateY(0);
+    }
+    to {
+      transform: translateZ(0) translateY(-8px);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+<script defer data-name="myutech-homepage">
+// Tab functionality for Updates Section
+const updateTabs = document.querySelectorAll('.update-tab');
+const updatePanels = document.querySelectorAll('.update-tab-panel');
+
+updateTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const targetPanelId = tab.getAttribute('aria-controls');
+    
+    // Update tabs
+    updateTabs.forEach(t => {
+      t.classList.remove('update-tab-active');
+      t.setAttribute('aria-selected', 'false');
+    });
+    tab.classList.add('update-tab-active');
+    tab.setAttribute('aria-selected', 'true');
+    
+    // Update panels
+    updatePanels.forEach(panel => {
+      panel.classList.remove('update-tab-panel-active');
+      panel.setAttribute('hidden', '');
+    });
+    
+    const targetPanel = document.getElementById(targetPanelId);
+    if (targetPanel) {
+      targetPanel.classList.add('update-tab-panel-active');
+      targetPanel.removeAttribute('hidden');
+    }
+  });
+});
+
+// Form submission handler
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Basic validation
+    const inputs = contactForm.querySelectorAll('.form-input[required]');
+    let isValid = true;
+    
+    inputs.forEach(input => {
+      if (!input.value.trim()) {
+        isValid = false;
+        input.setAttribute('aria-invalid', 'true');
+        input.style.borderColor = 'var(--color-accent)';
+      } else {
+        input.removeAttribute('aria-invalid');
+        input.style.borderColor = '';
+      }
+    });
+    
+    if (isValid) {
+      // Submit logic would go here
+      alert('表单已提交！我们将在24小时内与您联系。');
+      contactForm.reset();
+    }
+  });
+}
+
+// Intersection Observer for entrance animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const fadeInElements = document.querySelectorAll('.solution-card, .industry-card, .update-card, .vision-card');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }, index * 50);
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  fadeInElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(8px)';
+    el.style.transition = `opacity ${getComputedStyle(document.documentElement).getPropertyValue('--animation-duration-standard')} ${getComputedStyle(document.documentElement).getPropertyValue('--animation-curve-primary')}, transform ${getComputedStyle(document.documentElement).getPropertyValue('--animation-duration-standard')} ${getComputedStyle(document.documentElement).getPropertyValue('--animation-curve-primary')}`;
+    observer.observe(el);
+  });
+}
+
+// Parallax effect for hero video on scroll
+const heroVisualPlane = document.querySelector('.hero-visual-plane');
+if (heroVisualPlane && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const rate = scrolled * 0.05;
+    heroVisualPlane.style.transform = `translateZ(0) translateY(${rate}px)`;
+  });
+}
+
+// Add focus ring visibility
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Tab') {
+    document.body.classList.add('keyboard-navigation');
+  }
+});
+
+document.addEventListener('mousedown', () => {
+  document.body.classList.remove('keyboard-navigation');
+});
+</script><footer class="footer" id="footer">
+  <div class="footer-overlay"></div>
+  
+  <div class="footer-container">
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+      <!-- Brand Section -->
+      <div class="footer-brand">
+        <div class="footer-logo-wrapper">
+          <div class="footer-logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 20v2m0-20v2m5 16v2m0-20v2M2 12h2m-2 5h2M2 7h2m16 5h2m-2 5h2M20 7h2M7 20v2M7 2v2"/><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="8" height="8" x="8" y="8" rx="1"/></g></svg>
+          </div>
+          <span class="footer-logo-text">MyuTech</span>
+        </div>
+        <p class="footer-brand-tagline">引领未来智能世界的创新与发展</p>
+        <p class="footer-brand-description">专注于人工智能、扩展现实、物联网和云计算等前沿技术的融合，为客户提供高效、智能的解决方案。</p>
+        
+        <!-- Social Links -->
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></g></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></g></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="WeChat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16.5 10c3.038 0 5.5 2.015 5.5 4.5c0 1.397-.778 2.645-2 3.47V20l-1.964-1.178A6.7 6.7 0 0 1 16.5 19c-3.038 0-5.5-2.015-5.5-4.5s2.462-4.5 5.5-4.5"/><path d="M11.197 15.698c-.69.196-1.43.302-2.197.302a8 8 0 0 1-2.612-.432L4 17v-2.801C2.763 13.117 2 11.635 2 10c0-3.314 3.134-6 7-6c3.782 0 6.863 2.57 7 5.785v.233M10 8h.01M7 8h.01M15 14h.01M18 14h.01"/></g></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links-group">
+        <h3 class="footer-links-title">产品服务</h3>
+        <ul class="footer-links-list">
+          <li class="footer-links-item"><a href="#ai" class="footer-link">人工智能解决方案</a></li>
+          <li class="footer-links-item"><a href="#xr" class="footer-link">扩展现实技术</a></li>
+          <li class="footer-links-item"><a href="#iot" class="footer-link">物联网平台</a></li>
+          <li class="footer-links-item"><a href="#cloud" class="footer-link">云计算服务</a></li>
+          <li class="footer-links-item"><a href="#software" class="footer-link">定制化软件开发</a></li>
+          <li class="footer-links-item"><a href="#hardware" class="footer-link">智能硬件设计</a></li>
+        </ul>
+      </div>
+
+      <!-- Solutions -->
+      <div class="footer-links-group">
+        <h3 class="footer-links-title">解决方案</h3>
+        <ul class="footer-links-list">
+          <li class="footer-links-item"><a href="#enterprise" class="footer-link">企业数字化转型</a></li>
+          <li class="footer-links-item"><a href="#integration" class="footer-link">系统集成</a></li>
+          <li class="footer-links-item"><a href="#consulting" class="footer-link">技术咨询</a></li>
+          <li class="footer-links-item"><a href="#automation" class="footer-link">智能自动化</a></li>
+          <li class="footer-links-item"><a href="#analytics" class="footer-link">数据分析</a></li>
+          <li class="footer-links-item"><a href="#security" class="footer-link">信息安全</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-links-group">
+        <h3 class="footer-links-title">关于我们</h3>
+        <ul class="footer-links-list">
+          <li class="footer-links-item"><a href="#about" class="footer-link">公司介绍</a></li>
+          <li class="footer-links-item"><a href="#team" class="footer-link">团队成员</a></li>
+          <li class="footer-links-item"><a href="#careers" class="footer-link">加入我们</a></li>
+          <li class="footer-links-item"><a href="#news" class="footer-link">新闻动态</a></li>
+          <li class="footer-links-item"><a href="#partners" class="footer-link">合作伙伴</a></li>
+          <li class="footer-links-item"><a href="#sustainability" class="footer-link">可持续发展</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h3 class="footer-links-title">联系我们</h3>
+        <div class="footer-contact-items">
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect width="20" height="16" x="2" y="4" rx="2"/></g></svg>
+            </div>
+            <div class="footer-contact-info">
+              <span class="footer-contact-label">邮箱</span>
+              <a href="mailto:contact@myutech.com" class="footer-contact-value">contact@myutech.com</a>
+            </div>
+          </div>
+          
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"/></svg>
+            </div>
+            <div class="footer-contact-info">
+              <span class="footer-contact-label">电话</span>
+              <a href="tel:+8613800138000" class="footer-contact-value">+86 138 0013 8000</a>
+            </div>
+          </div>
+          
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17.97 9.304A8 8 0 0 0 2 10c0 4.69 4.887 9.562 7.022 11.468m12.356-4.842a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/><circle cx="10" cy="10" r="3"/></g></svg>
+            </div>
+            <div class="footer-contact-info">
+              <span class="footer-contact-label">地址</span>
+              <span class="footer-contact-value">中国 深圳 南山区 科技园</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <p class="footer-newsletter-text">订阅我们的新闻通讯，获取最新技术资讯</p>
+          <form class="footer-newsletter-form">
+            <input type="email" class="footer-newsletter-input" placeholder="输入您的邮箱地址" aria-label="Email address" required />
+            <button type="submit" class="footer-newsletter-button" aria-label="Subscribe">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12l7-7l7 7m-7 7V5"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <p class="footer-copyright">&copy; 2025 MyuTech 迈域科技. 保留所有权利</p>
+        <div class="footer-legal-links">
+          <a href="#privacy" class="footer-legal-link">隐私政策</a>
+          <span class="footer-legal-separator">|</span>
+          <a href="#terms" class="footer-legal-link">服务条款</a>
+          <span class="footer-legal-separator">|</span>
+          <a href="#cookies" class="footer-legal-link">Cookie政策</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom-right">
+        <button class="footer-back-to-top" id="footerBackToTop" aria-label="Back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12l7-7l7 7m-7 7V5"/></svg>
+          <span>返回顶部</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animated Background Elements -->
+  <div class="footer-bg-grid" aria-hidden="true"></div>
+  <div class="footer-bg-glow footer-bg-glow-1" aria-hidden="true"></div>
+  <div class="footer-bg-glow footer-bg-glow-2" aria-hidden="true"></div>
+  <div class="footer-scan-line" aria-hidden="true"></div>
+</footer>
+<style>
+.footer {
+  position: relative;
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  padding: clamp(4rem, 8vw, 8rem) 0 0 0;
+  overflow: hidden;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, 
+    color-mix(in srgb, var(--color-surface) 0%, transparent) 0%, 
+    color-mix(in srgb, var(--color-surface) 100%, transparent) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 2;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+/* Main Footer Grid */
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  margin-bottom: var(--spacing-3xl);
+}
+
+/* Brand Section */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.footer-logo-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--color-primary) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-primary) 30%, transparent);
+  border-radius: var(--border-radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-logo-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    color-mix(in srgb, var(--color-primary) 30%, transparent) 50%, 
+    transparent 100%);
+  animation: footer-logo-shine 3s ease-in-out infinite;
+}
+
+.footer-logo-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--color-primary);
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--color-primary) 40%, transparent));
+}
+
+@keyframes footer-logo-shine {
+  0%, 100% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+}
+
+.footer-logo-text {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-on-surface);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+}
+
+.footer-brand-tagline {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer-brand-description {
+  font-size: var(--font-size-base);
+  color: var(--color-on-surface-secondary);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+/* Social Links */
+.footer-social {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--color-surface-elevated) 100%, transparent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  color: var(--color-on-surface-secondary);
+  transition: all var(--animation-duration-standard) var(--animation-curve-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-social-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  opacity: 0;
+  transition: opacity var(--animation-duration-standard) var(--animation-curve-primary);
+  z-index: 1;
+}
+
+.footer-social-link svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 2;
+  transition: color var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.footer-social-link:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 40%, transparent);
+  transform: translateY(-2px);
+}
+
+.footer-social-link:hover::before {
+  opacity: 0.1;
+}
+
+.footer-social-link:hover svg {
+  color: var(--color-primary);
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--color-primary) 60%, transparent));
+}
+
+/* Links Group */
+.footer-links-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.footer-links-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-on-surface);
+  margin: 0;
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: var(--spacing-sm);
+}
+
+.footer-links-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, transparent 100%);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--color-primary) 60%, transparent);
+}
+
+.footer-links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer-links-item {
+  margin: 0;
+}
+
+.footer-link {
+  display: inline-block;
+  font-size: var(--font-size-base);
+  color: var(--color-on-surface-secondary);
+  text-decoration: none;
+  line-height: var(--line-height-relaxed);
+  position: relative;
+  padding-left: var(--spacing-md);
+  transition: all var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.footer-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: var(--border-radius-full);
+  opacity: 0;
+  transition: all var(--animation-duration-fast) var(--animation-curve-primary);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--color-primary) 80%, transparent);
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+  padding-left: calc(var(--spacing-md) + 4px);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--color-primary) 40%, transparent);
+}
+
+.footer-link:hover::before {
+  opacity: 1;
+}
+
+/* Contact Section */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.footer-contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer-contact-item {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+}
+
+.footer-contact-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-primary) 25%, transparent);
+  border-radius: var(--border-radius-md);
+  color: var(--color-primary);
+}
+
+.footer-contact-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-contact-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.footer-contact-value {
+  font-size: var(--font-size-base);
+  color: var(--color-on-surface);
+  text-decoration: none;
+  transition: color var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+a.footer-contact-value:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--color-primary) 40%, transparent);
+}
+
+/* Newsletter */
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: color-mix(in srgb, var(--color-surface-elevated) 100%, transparent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-newsletter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    color-mix(in srgb, var(--color-primary) 5%, transparent) 50%, 
+    transparent 100%);
+  animation: footer-newsletter-shine 4s ease-in-out infinite;
+}
+
+@keyframes footer-newsletter-shine {
+  0%, 100% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+}
+
+.footer-newsletter-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-newsletter-form {
+  display: flex;
+  gap: var(--spacing-sm);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-newsletter-input {
+  flex: 1;
+  height: 44px;
+  padding: 0 var(--spacing-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  color: var(--color-on-surface);
+  transition: all var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.footer-newsletter-input::placeholder {
+  color: var(--color-on-surface-secondary);
+}
+
+.footer-newsletter-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 15%, transparent),
+              0 0 20px color-mix(in srgb, var(--color-primary) 30%, transparent);
+}
+
+.footer-newsletter-button {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius-md);
+  color: var(--color-on-primary);
+  cursor: pointer;
+  transition: all var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.footer-newsletter-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-newsletter-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px color-mix(in srgb, var(--color-primary) 60%, transparent);
+}
+
+.footer-newsletter-button:active {
+  transform: translateY(0);
+}
+
+/* Divider */
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--color-border) 20%, 
+    var(--color-border) 80%, 
+    transparent 100%);
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+}
+
+.footer-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 2px;
+  background: var(--color-primary);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--color-primary) 60%, transparent);
+  opacity: 0.3;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xl) 0;
+  gap: var(--spacing-xl);
+}
+
+.footer-bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer-copyright {
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+  font-family: monospace;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.footer-legal-link {
+  font-size: var(--font-size-sm);
+  color: var(--color-on-surface-secondary);
+  text-decoration: none;
+  transition: color var(--animation-duration-fast) var(--animation-curve-primary);
+}
+
+.footer-legal-link:hover {
+  color: var(--color-primary);
+}
+
+.footer-legal-separator {
+  font-size: var(--font-size-sm);
+  color: var(--color-border);
+}
+
+.footer-bottom-right {
+  flex-shrink: 0;
+}
+
+.footer-back-to-top {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: color-mix(in srgb, var(--color-surface-elevated) 100%, transparent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-on-surface);
+  cursor: pointer;
+  transition: all var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.footer-back-to-top svg {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--animation-duration-standard) var(--animation-curve-primary);
+}
+
+.footer-back-to-top:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 40%, transparent);
+  transform: translateY(-2px);
+}
+
+.footer-back-to-top:hover svg {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--color-primary) 60%, transparent));
+}
+
+.footer-back-to-top:active {
+  transform: translateY(0);
+}
+
+/* Background Elements */
+.footer-bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(color-mix(in srgb, var(--color-primary) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--color-primary) 5%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.footer-bg-glow {
+  position: absolute;
+  border-radius: var(--border-radius-full);
+  filter: blur(80px);
+  opacity: 0.15;
+  z-index: 1;
+  pointer-events: none;
+  animation: footer-glow-pulse 6s ease-in-out infinite;
+}
+
+.footer-bg-glow-1 {
+  top: 10%;
+  left: 10%;
+  width: 400px;
+  height: 400px;
+  background: var(--color-primary);
+}
+
+.footer-bg-glow-2 {
+  bottom: 20%;
+  right: 15%;
+  width: 350px;
+  height: 350px;
+  background: var(--color-accent);
+  animation-delay: 3s;
+}
+
+@keyframes footer-glow-pulse {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.1);
+  }
+}
+
+.footer-scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--color-primary) 50%, 
+    transparent 100%);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--color-primary) 80%, transparent);
+  opacity: 0.4;
+  z-index: 1;
+  pointer-events: none;
+  animation: footer-scan-line 4s linear infinite;
+}
+
+@keyframes footer-scan-line {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .footer {
+    padding: clamp(3rem, 6vw, 6rem) 0 0 0;
+  }
+  
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 4vw, 3rem);
+  }
+  
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+  
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+  }
+  
+  .footer-bg-glow-1,
+  .footer-bg-glow-2 {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: clamp(2rem, 5vw, 4rem) 0 0 0;
+  }
+  
+  .footer-container {
+    padding: 0 var(--spacing-lg);
+  }
+  
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: clamp(2rem, 4vw, 2.5rem);
+  }
+  
+  .footer-brand {
+    grid-column: auto;
+  }
+  
+  .footer-contact {
+    grid-column: auto;
+  }
+  
+  .footer-logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-logo-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-logo-text {
+    font-size: var(--font-size-lg);
+  }
+  
+  .footer-social {
+    flex-wrap: wrap;
+  }
+  
+  .footer-newsletter-form {
+    flex-direction: column;
+  }
+  
+  .footer-newsletter-button {
+    width: 100%;
+  }
+  
+  .footer-legal-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+  
+  .footer-legal-separator {
+    display: none;
+  }
+  
+  .footer-back-to-top {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .footer-bg-glow-1,
+  .footer-bg-glow-2 {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer {
+    padding: var(--spacing-3xl) 0 0 0;
+  }
+  
+  .footer-container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .footer-main {
+    gap: var(--spacing-2xl);
+  }
+  
+  .footer-logo-wrapper {
+    gap: var(--spacing-sm);
+  }
+  
+  .footer-brand-description {
+    font-size: var(--font-size-sm);
+  }
+  
+  .footer-social-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-social-link svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .footer-contact-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .footer-contact-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .footer-newsletter {
+    padding: var(--spacing-md);
+  }
+  
+  .footer-bottom {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .footer-bg-grid {
+    background-size: 30px 30px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .footer-logo-icon::before,
+  .footer-newsletter::before,
+  .footer-bg-glow,
+  .footer-scan-line {
+    animation: none;
+  }
+  
+  .footer-social-link,
+  .footer-link,
+  .footer-back-to-top,
+  .footer-newsletter-button {
+    transition: none;
+  }
+}
+
+/* Focus States */
+.footer-social-link:focus-visible,
+.footer-link:focus-visible,
+.footer-legal-link:focus-visible,
+.footer-back-to-top:focus-visible,
+.footer-newsletter-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
+
+.footer-newsletter-input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 0;
+}
+</style>
+<script defer data-name="footer">
+const backToTopButton = document.getElementById('footerBackToTop');
+
+if (backToTopButton) {
+  backToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+// Newsletter form submission
+const newsletterForm = document.querySelector('.footer-newsletter-form');
+
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const emailInput = this.querySelector('.footer-newsletter-input');
+    const email = emailInput.value;
+    
+    if (email) {
+      // Simulate subscription (replace with actual API call)
+      const button = this.querySelector('.footer-newsletter-button');
+      const originalHTML = button.innerHTML;
+      
+      button.innerHTML = '<span style="font-size: 12px;">✓</span>';
+      button.style.background = 'var(--color-accent)';
+      
+      setTimeout(() => {
+        button.innerHTML = originalHTML;
+        button.style.background = 'var(--color-primary)';
+        emailInput.value = '';
+      }, 2000);
+    }
+  });
+}
+
+// Add glow effect to social links on hover
+const socialLinks = document.querySelectorAll('.footer-social-link');
+
+socialLinks.forEach(link => {
+  link.addEventListener('mouseenter', function() {
+    this.style.setProperty('--glow-intensity', '1');
+  });
+  
+  link.addEventListener('mouseleave', function() {
+    this.style.setProperty('--glow-intensity', '0');
+  });
+});
+
+// Parallax effect for background glows
+let ticking = false;
+
+function updateGlowPositions(scrollY) {
+  const glows = document.querySelectorAll('.footer-bg-glow');
+  const footer = document.querySelector('.footer');
+  
+  if (footer) {
+    const rect = footer.getBoundingClientRect();
+    const footerTop = rect.top + scrollY;
+    const footerHeight = rect.height;
+    const scrollPosition = scrollY - footerTop;
+    const scrollPercent = Math.max(0, Math.min(1, scrollPosition / footerHeight));
+    
+    glows.forEach((glow, index) => {
+      const speed = index % 2 === 0 ? 0.3 : -0.2;
+      const translateY = scrollPercent * 100 * speed;
+      glow.style.transform = `translateY(${translateY}px)`;
+    });
+  }
+  
+  ticking = false;
+}
+
+window.addEventListener('scroll', function() {
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      updateGlowPositions(window.scrollY);
+    });
+    ticking = true;
+  }
+});
+</script>
