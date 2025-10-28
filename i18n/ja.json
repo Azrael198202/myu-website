@@ -92,7 +92,7 @@
     "info": { "title": "会社情報", "name": "迈域科技株式会社（MyuTech Co., Ltd.）", "addr": "日本 福岡市 博多区 ○○ 1-2-3", "tel": "電話：+81-92-xxx-xxxx" },
     "form": { "title": "オンラインお問い合わせ", "name": "お名前 / Name", "email": "メール / Email", "message": "メッセージ / Message", "submit": "送信 Send" }
   },
-  "aboutPage": {
+  "about": {
     "meta": {
       "title": "会社概要 | MyuTech"
     },

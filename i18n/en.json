@@ -96,7 +96,7 @@
     "form": { "title": "Get in Touch", "name": "Name", "email": "Email", "message": "Message", "submit": "Send" }
   },
   
-  "aboutPage": {
+  "about": {
     "meta": {
       "title": "About | MyuTech"
     },

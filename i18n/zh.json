@@ -96,7 +96,7 @@
     "form": { "title": "在线咨询", "name": "姓名 / Name", "email": "邮箱 / Email", "message": "留言 / Message", "submit": "发送 Send" }
   },
 
-  "aboutPage": {
+  "about": {
     "meta": {
       "title": "公司介绍 | MyuTech"
     },
