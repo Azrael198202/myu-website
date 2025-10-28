@@ -1,42 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="nav.team">团队</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="assets/logo.jpg" alt="MyuTech Logo" />
-      <span id="site-name" data-i18n="site.name">迈域科技 MyuTech</span>
-    </div>
 
-    <div class="nav-right">
-      <nav>
-        <a href="#about" data-i18n="nav.about">公司介绍</a>
-        <a href="#scope" data-i18n="nav.scope">业务范围</a>
-        <a href="teams.html" data-i18n="nav.team">团队</a>
-        <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
-        <a href="#contact" data-i18n="nav.contact">联系我们</a>
-      </nav>
-
-      <!-- 下拉框：注意 id 必须是 langSelect -->
-      <div class="lang-select">
-        <select id="langSelect">
-          <option value="zh">中文</option>
-          <option value="ja">日本語</option>
-          <option value="en">English</option>
-        </select>
-      </div>
-    </div>
-  </header>
+  <div data-include="header"></div>
 
   <section class="sub-hero">
     <div class="sub-hero-content">
@@ -55,6 +28,7 @@
           <h3 class="member-name">Alex Chen</h3>
           <p class="member-role">CEO</p>
           <p class="member-bio">...</p>
+          <a class="member-link btn-secondary" href="mailto:contact@myutech.com?subject=To%20Alex%20Chen" target="_blank" rel="noopener">联系/档案</a>
         </div>
       </article>
 
@@ -64,6 +38,7 @@
           <h3 class="member-name">Mei Nakamura</h3>
           <p class="member-role">CTO</p>
           <p class="member-bio">...</p>
+          <a class="member-link btn-secondary" href="mailto:contact@myutech.com?subject=To%20Mei%20Nakamura" target="_blank" rel="noopener">联系/档案</a>
         </div>
       </article>
 
@@ -73,6 +48,7 @@
           <h3 class="member-name">Ryo Suzuki</h3>
           <p class="member-role">Head of Product</p>
           <p class="member-bio">...</p>
+          <a class="member-link btn-secondary" href="mailto:contact@myutech.com?subject=To%20Ryo%20Suzuki" target="_blank" rel="noopener">联系/档案</a>
         </div>
       </article>
 
@@ -82,21 +58,16 @@
           <h3 class="member-name">Lily Wang</h3>
           <p class="member-role">Solution Architect</p>
           <p class="member-bio">...</p>
+          <a class="member-link btn-secondary" href="mailto:contact@myutech.com?subject=To%20Lily%20Wang" target="_blank" rel="noopener">联系/档案</a>
         </div>
       </article>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <h3 id="site-motto" data-i18n="site.motto">智能 · 融合 · 创新 · 连接未来</h3>
-      <p id="footer-rights" data-i18n="footer.rights">© 2025 迈域科技有限公司 | All Rights Reserved</p>
-    </div>
-  </footer>
+  <div data-include="footer"></div>
 
-  <div class="background"></div>
-
-  <script src="lang.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/nav-active.js"></script>
+  <script src="js/include.js"></script>
 </body>
-
 </html>

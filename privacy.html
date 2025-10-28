@@ -1,42 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="nav.privacy">隐私政策</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="assets/logo.jpg" alt="MyuTech Logo" />
-      <span id="site-name" data-i18n="site.name">迈域科技 MyuTech</span>
-    </div>
 
-    <div class="nav-right">
-      <nav>
-        <a href="#about" data-i18n="nav.about">公司介绍</a>
-        <a href="#scope" data-i18n="nav.scope">业务范围</a>
-        <a href="teams.html" data-i18n="nav.team">团队</a>
-        <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
-        <a href="#contact" data-i18n="nav.contact">联系我们</a>
-      </nav>
-
-      <!-- 下拉框：注意 id 必须是 langSelect -->
-      <div class="lang-select">
-        <select id="langSelect">
-          <option value="zh">中文</option>
-          <option value="ja">日本語</option>
-          <option value="en">English</option>
-        </select>
-      </div>
-    </div>
-  </header>
+  <div data-include="header"></div>
 
   <section class="sub-hero">
     <div class="sub-hero-content">
@@ -46,74 +19,24 @@
   </section>
 
   <section class="policy">
-    <!-- 渲染标题/段落/列表：用简单 HTML 结构 + data-i18n 手动放置 -->
-    <h2 id="p-h-0">—</h2>
-    <p id="p-p-0">—</p>
-    <h2 id="p-h-1">—</h2>
-    <ul id="p-l-1" class="policy-list"></ul>
-    <h2 id="p-h-2">—</h2>
-    <ul id="p-l-2" class="policy-list"></ul>
-    <h2 id="p-h-3">—</h2>
-    <p id="p-p-3">—</p>
-    <h2 id="p-h-4">—</h2>
-    <p id="p-p-4">—</p>
-    <h2 id="p-h-5">—</h2>
-    <p id="p-p-5">—</p>
-    <h2 id="p-h-6">—</h2>
-    <p id="p-p-6">—</p>
-    <h2 id="p-h-7">—</h2>
-    <p id="p-p-7">—</p>
-    <h2 id="p-h-8">—</h2>
-    <ul id="p-l-8" class="policy-list"></ul>
-    <h2 id="p-h-9">—</h2>
-    <p id="p-p-9">—</p>
+    <h2 id="p-h-0">—</h2><p id="p-p-0">—</p>
+    <h2 id="p-h-1">—</h2><ul id="p-l-1" class="policy-list"></ul>
+    <h2 id="p-h-2">—</h2><ul id="p-l-2" class="policy-list"></ul>
+    <h2 id="p-h-3">—</h2><p id="p-p-3">—</p>
+    <h2 id="p-h-4">—</h2><p id="p-p-4">—</p>
+    <h2 id="p-h-5">—</h2><p id="p-p-5">—</p>
+    <h2 id="p-h-6">—</h2><p id="p-p-6">—</p>
+    <h2 id="p-h-7">—</h2><p id="p-p-7">—</p>
+    <h2 id="p-h-8">—</h2><ul id="p-l-8" class="policy-list"></ul>
+    <h2 id="p-h-9">—</h2><p id="p-p-9">—</p>
 
     <p id="privacy-updated" style="margin-top:20px">生效日期：2025-10-28</p>
   </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <h3 id="site-motto" data-i18n="site.motto">智能 · 融合 · 创新 · 连接未来</h3>
-      <p id="footer-rights" data-i18n="footer.rights">© 2025 迈域科技有限公司 | All Rights Reserved</p>
-    </div>
-  </footer>
+  <div data-include="footer"></div>
 
-  <div class="background"></div>
-
-  <script src="lang.js"></script>
-  <script>
-    function renderPrivacySections() {
-      const lang = document.documentElement.lang || "zh";
-      const S = (I18N[lang] || I18N.zh).privacy.sections;
-
-      S.forEach((sec, i) => {
-        const h = document.getElementById(`p-h-${i}`);
-        if (h) h.textContent = sec.h;
-        if (sec.p) {
-          const p = document.getElementById(`p-p-${i}`);
-          if (p) p.textContent = sec.p;
-        }
-        if (sec.list) {
-          const ul = document.getElementById(`p-l-${i}`);
-          if (ul) {
-            ul.innerHTML = "";
-            sec.list.forEach(item => {
-              const li = document.createElement("li");
-              li.textContent = item;
-              ul.appendChild(li);
-            });
-          }
-        }
-      });
-    }
-    document.addEventListener("DOMContentLoaded", renderPrivacySections);
-    // 语言切换后重新渲染
-    document.addEventListener("click", (e) => {
-      if (e.target.matches(".lang-switch button")) {
-        setTimeout(renderPrivacySections, 0);
-      }
-    });
-  </script>
+  <script src="js/lang.js"></script>
+  <script src="js/nav-active.js"></script>
+  <script src="js/include.js"></script>
 </body>
-
 </html>

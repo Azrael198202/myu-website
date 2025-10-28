@@ -1,42 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="site.name">迈域科技 MyuTech</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="assets/logo.jpg" alt="MyuTech Logo" />
-      <span id="site-name" data-i18n="site.name">迈域科技 MyuTech</span>
-    </div>
 
-    <div class="nav-right">
-      <nav>
-        <a href="#about" data-i18n="nav.about">公司介绍</a>
-        <a href="#scope" data-i18n="nav.scope">业务范围</a>
-        <a href="teams.html" data-i18n="nav.team">团队</a>
-        <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
-        <a href="#contact" data-i18n="nav.contact">联系我们</a>
-      </nav>
-
-      <!-- 下拉框：注意 id 必须是 langSelect -->
-      <div class="lang-select">
-        <select id="langSelect">
-          <option value="zh">中文</option>
-          <option value="ja">日本語</option>
-          <option value="en">English</option>
-        </select>
-      </div>
-    </div>
-  </header>
+  <div data-include="header"></div>
 
   <section class="hero">
     <div class="hero-content">
@@ -48,9 +21,7 @@
 
   <section id="about" class="about">
     <h2 id="index-about-title" data-i18n="index.about.title">公司简介</h2>
-    <p id="index-about-text" data-i18n="index.about.text">
-      迈域科技（MyuTech）是一家面向未来的高科技企业，专注于计算机软硬件、人工智能、VR/AR/MR、物联网及云计算等领域的创新研发。
-    </p>
+    <p id="index-about-text" data-i18n="index.about.text">……</p>
   </section>
 
   <section id="scope" class="scope">
@@ -58,15 +29,10 @@
     <ul data-i18n-list="index.scope.items"></ul>
   </section>
 
-  <footer id="contact" class="footer">
-    <div class="footer-content">
-      <h3 id="site-motto" data-i18n="site.motto">智能 · 融合 · 创新 · 连接未来</h3>
-      <p id="footer-rights" data-i18n="footer.rights">© 2025 迈域科技有限公司 | All Rights Reserved</p>
-    </div>
-  </footer>
+  <div class="footer-inject" data-include="footer"></div>
 
-  <div class="background"></div>
-  <script src="lang.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/nav-active.js"></script>
+  <script src="js/include.js"></script>
 </body>
-
 </html>
