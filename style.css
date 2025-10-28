@@ -15,15 +15,22 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 200px;
+  justify-content: space-between;
+  padding: 0 24px;
   background: rgba(10, 15, 28, 0.85);
   backdrop-filter: blur(10px);
   z-index: 100;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo {
@@ -276,13 +283,16 @@ nav a.active {
 /* --- 团队布局：每人一整行 --- */
 .team-grid {
   display: grid;
-  grid-template-columns: 1fr; /* 每行一个 */
+  grid-template-columns: 1fr;
+  /* 每行一个 */
   gap: 24px;
   justify-items: stretch;
   align-items: start;
   width: 100%;
-  max-width: 900px;  /* 可根据页面宽度调整 */
-  margin: 0 auto;    /* 居中 */
+  max-width: 900px;
+  /* 可根据页面宽度调整 */
+  margin: 0 auto;
+  /* 居中 */
 }
 
 .member-card {
@@ -335,6 +345,7 @@ nav a.active {
     flex-direction: column;
     text-align: center;
   }
+
   .member-card img {
     margin-bottom: 12px;
   }
@@ -369,31 +380,29 @@ nav a.active {
   margin-top: 10px;
   padding: 8px 12px;
   border-radius: 10px;
-  border: 1px solid rgba(0,224,255,0.45);
-  background: rgba(0,224,255,0.08);
+  border: 1px solid rgba(0, 224, 255, 0.45);
+  background: rgba(0, 224, 255, 0.08);
   color: #b9f3ff;
   text-decoration: none;
   font-size: 13px;
   transition: transform .2s, box-shadow .2s, background .2s;
 }
+
 .btn-secondary:hover {
   transform: translateY(-1px);
-  background: rgba(0,224,255,0.16);
-  box-shadow: 0 6px 14px rgba(0,224,255,0.18);
+  background: rgba(0, 224, 255, 0.16);
+  box-shadow: 0 6px 14px rgba(0, 224, 255, 0.18);
 }
 
 
 /* --- 语言下拉框（透明科技风） --- */
 .lang-select {
-  position: absolute;
-  top: 18px;
-  right: 40px;
-  z-index: 999;
+  position: static;
 }
 
 .lang-select select {
-  background: rgba(0, 0, 0, 0.2); /* 半透明背景 */
-  backdrop-filter: blur(8px);     /* 毛玻璃效果 */
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(0, 224, 255, 0.6);
   color: #00e0ff;
   font-size: 13px;
@@ -401,7 +410,7 @@ nav a.active {
   border-radius: 8px;
   appearance: none;
   cursor: pointer;
-  transition: all .25s ease;
+  transition: all .25s;
   outline: none;
 }
 
@@ -411,21 +420,14 @@ nav a.active {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.lang-select::after {
-  content: "▼";
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%) scale(0.7);
-  color: #00e0ff;
-  pointer-events: none;
+.lang-select::after{
+  content:"▼"; position: relative; left:-26px;
+  color:#00e0ff; pointer-events:none;
 }
 
-/* 打开下拉时的选项背景 */
-.lang-select select option {
-  background: rgba(15, 20, 30, 0.85);
-  color: #00e0ff;
-  border: none;
+.lang-select select option{
+  background: rgba(15,20,30,0.85);
+  color:#00e0ff;
 }
 
 /* 选中项高亮但仍然透明 */
