@@ -1,6 +1,6 @@
 {
   "site": { "name": "MyuTech", "motto": "Intelligence · Integration · Innovation · Connected Future" },
-  "nav": { "about": "About", "scope": "Services", "team": "Team", "privacy": "Privacy", "contact": "Contact" },
+  "nav": { "homepage":"Home", "about": "About", "scope": "Services", "team": "Team", "privacy": "Privacy", "contact": "Contact" },
   "footer": { "rights": "© 2025 MyuTech Co., Ltd. | All Rights Reserved" },
   "ui": { "viewProfile": "Contact / Profile" },
 

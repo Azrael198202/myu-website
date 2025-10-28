@@ -1,6 +1,6 @@
 {
   "site": { "name": "迈域科技 MyuTech", "motto": "智能 · 融合 · 创新 · 连接未来" },
-  "nav": { "about": "公司介绍", "scope": "业务范围", "team": "团队", "privacy": "隐私政策", "contact": "联系我们" },
+  "nav": { "homepage":"首页", "about": "公司介绍", "scope": "业务范围", "team": "团队", "privacy": "隐私政策", "contact": "联系我们" },
   "footer": { "rights": "© 2025 迈域科技有限公司 | All Rights Reserved" },
   "ui": { "viewProfile": "联系/档案" },
 
