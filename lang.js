@@ -331,6 +331,10 @@ function setLang(lang) {
             renderPrivacySections();
         });
     }
+
+    // 让下拉显示当前语言
+    const sel = document.getElementById("langSelect");
+    if (sel && sel.value !== lang) sel.value = lang;
 }
 
 function renderPrivacySections() {
@@ -363,16 +367,16 @@ function initI18n() {
     setLang(lang);
     renderPrivacySections();
 
-    qsa(".lang-switch button").forEach(b => {
-        b.addEventListener("click", () => {
-            const l = b.dataset.lang;
+    const langSelect = document.getElementById("langSelect");
+    if (langSelect) {
+        langSelect.addEventListener("change", e => {
+            const l = e.target.value;                // zh / ja / en
             const u = new URL(location.href);
             u.searchParams.set("lang", l);
             history.replaceState({}, "", u);
             setLang(l);
             renderPrivacySections();
         });
-    });
+    }
 }
-
 document.addEventListener("DOMContentLoaded", initI18n);
