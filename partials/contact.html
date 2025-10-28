@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="nav.contact">联系我们</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div data-include="header"></div>
+
+  <section class="sub-hero">
+    <div class="sub-hero-content">
+      <h1 data-i18n="contact.hero.title">联系我们</h1>
+      <p data-i18n="contact.hero.sub">迈域科技，连接未来</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2 data-i18n="contact.info.title">公司信息</h2>
+        <p><strong data-i18n="contact.info.name">迈域科技有限公司（MyuTech Co., Ltd.）</strong></p>
+        <p data-i18n="contact.info.addr">日本福冈市博多区○○ 1-2-3</p>
+        <p data-i18n="contact.info.tel">电话：+81-92-xxx-xxxx</p>
+        <p>Email：<a href="mailto:contact@myutech.com">contact@myutech.com</a></p>
+      </div>
+
+      <div class="contact-form">
+        <h2 data-i18n="contact.form.title">在线咨询</h2>
+        <form action="https://formspree.io/f/mnqepvdl" method="POST">
+          <label for="name" data-i18n="contact.form.name">姓名 / Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email" data-i18n="contact.form.email">邮箱 / Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message" data-i18n="contact.form.message">留言 / Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn-primary" data-i18n="contact.form.submit">发送 Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div data-include="footer"></div>
+
+  <script src="js/lang.js"></script>
+  <script src="js/nav-active.js"></script>
+  <script src="js/include.js"></script>
+</body>
+</html>

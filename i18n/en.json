@@ -1,0 +1,98 @@
+{
+  "site": { "name": "MyuTech", "motto": "Intelligence · Integration · Innovation · Connected Future" },
+  "nav": { "about": "About", "scope": "Services", "team": "Team", "privacy": "Privacy", "contact": "Contact" },
+  "footer": { "rights": "© 2025 MyuTech Co., Ltd. | All Rights Reserved" },
+  "ui": { "viewProfile": "Contact / Profile" },
+
+  "index": {
+    "hero": { "title": "Towards an Intelligent Future", "sub": "Fusing AI · XR · IoT · Cloud into real-world innovation" },
+    "about": {
+      "title": "About Us",
+      "text": "MyuTech focuses on R&D across computer software/hardware, AI, VR/AR/MR, IoT and Cloud. We deliver leading digital-transformation solutions and intelligent services for global enterprises."
+    },
+    "scope": {
+      "title": "Core Service Scope",
+      "items": [
+        "💡 R&D, design, manufacturing, sales & technical services for software and hardware",
+        "🤖 R&D and applications of AI, VR/AR/MR technologies",
+        "☁️ IoT, Cloud, Big Data, Blockchain, Mobile Internet development & consulting",
+        "🛰️ Network & information system integration; data processing & storage services",
+        "🧩 Software outsourcing, ITO, and BPO services",
+        "🏢 Enterprise IT consulting and DX solution design & implementation",
+        "📱 Sales & maintenance of electronics, smart/wearable devices, computers & accessories",
+        "🌐 Technology and goods import/export",
+        "👩‍💻 Dispatch & management services for IT professionals and software engineers"
+      ]
+    },
+    "cta": "Learn More"
+  },
+
+  "teams": {
+    "hero": { "title": "Our Team", "sub": "Interdisciplinary · Integrated · Future-Oriented" },
+    "title": "Core Members",
+    "members": [
+      { "name": "Alex Chen", "role": "Chief Executive Officer · CEO", "bio": "Serial entrepreneur focused on AI and digital transformation; expert in strategy and product growth.", "link": "mailto:contact@myutech.com?subject=To%20Alex%20Chen" },
+      { "name": "Mei Nakamura", "role": "Chief Technology Officer · CTO", "bio": "Leads AI/XR/IoT integration; focuses on cloud-native HA and edge intelligence.", "link": "mailto:contact@myutech.com?subject=To%20Mei%20Nakamura" },
+      { "name": "Ryo Suzuki", "role": "Head of Product", "bio": "Translates complex tech into usable experiences; passionate about data-driven design systems.", "link": "mailto:contact@myutech.com?subject=To%20Ryo%20Suzuki" },
+      { "name": "Lily Wang", "role": "Solution Architect", "bio": "Specialized in enterprise digital transformation and solution architecture.", "link": "mailto:contact@myutech.com?subject=To%20Lily%20Wang" }
+    ]
+  },
+
+  "privacy": {
+    "hero": { "title": "Privacy Policy", "sub": "We value and protect your personal data and security" },
+    "updated": "Effective: 2025-10-28",
+    "sections": [
+      { "h": "General", "p": "We process personal data lawfully, fairly and transparently. This policy applies to our sites, products and services." },
+      {
+        "h": "Information We Collect",
+        "list": [
+          "Account data: name, contact, company, etc.",
+          "Technical data: device, browser, IP, cookies/local storage",
+          "Usage data: access logs, actions, errors, performance metrics",
+          "Business data: data necessary to provide ITO/BPO/integration services"
+        ]
+      },
+      {
+        "h": "How We Use Data",
+        "list": [
+          "Provide, maintain and improve products and services",
+          "Support, troubleshooting, security audits and risk control",
+          "Contract performance and legal compliance",
+          "Other purposes with your consent (subscriptions, event notices)"
+        ]
+      },
+      { "h": "Cookies & Similar Tech", "p": "Used for sessions, preferences, analytics and security. You can manage/disable cookies in your browser; some features may be limited." },
+      { "h": "Sharing with Third Parties", "p": "Shared only for legal compliance, contract performance, or with trusted vendors under proper safeguards." },
+      { "h": "Cross-border Transfer & Storage", "p": "We adopt safeguards for cross-border transfers and retain data under minimization and retention principles." },
+      { "h": "Security Measures", "p": "Encryption, access control, least privilege, auditing and backups to reduce risk." },
+      { "h": "Children’s Privacy", "p": "We do not target minors or knowingly collect their data; we delete it if discovered." },
+      {
+        "h": "Your Rights",
+        "list": [
+          "Access, rectify, delete your data",
+          "Withdraw consent, restrict processing or object",
+          "Data portability (where permitted by law)"
+        ]
+      },
+      { "h": "Contact Us", "p": "Questions: contact@myutech.com" }
+    ]
+  },
+
+  "services": {
+    "hero": { "title": "Services", "sub": "Outcome-driven, end-to-end technology & delivery" },
+    "groups": [
+      { "title": "AI / XR Innovation", "items": [ "Generative AI (chat, search, RAG, multimodal) solutions & on-prem deployment", "VR / AR / MR content production and interaction systems", "Computer vision, speech recognition and NLP applications" ] },
+      { "title": "Cloud & Data", "items": [ "Cloud-native design & migration (Kubernetes, DevOps, Observability)", "Big-data platforms (stream/batch, data lake/warehouse)", "Data governance, privacy compliance and security hardening" ] },
+      { "title": "Integration & Platforms", "items": [ "Network & information system integration, API gateways and middle-platforms", "IoT platforms & edge computing, device onboarding & remote O&M", "Blockchain & distributed ledger business implementations" ] },
+      { "title": "Outsourcing & Delivery", "items": [ "Software outsourcing, ITO and BPO services", "Test automation and continuous delivery pipelines", "Hybrid onsite/remote delivery with agile PM" ] },
+      { "title": "Products & Trade", "items": [ "Sales & maintenance of electronics, smart/wearables, computers & accessories", "Technology & goods import/export", "Enterprise IT consulting and digital-transformation implementation" ] }
+    ],
+    "cta": "Contact Us"
+  },
+
+  "contact": {
+    "hero": { "title": "Contact Us", "sub": "MyuTech – Connecting the Future" },
+    "info": { "title": "Company Info", "name": "MyuTech Co., Ltd.", "addr": "1-2-3 Hakata, Fukuoka, Japan", "tel": "Tel: +81-92-xxx-xxxx" },
+    "form": { "title": "Get in Touch", "name": "Name", "email": "Email", "message": "Message", "submit": "Send" }
+  }
+}
