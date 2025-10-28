@@ -94,5 +94,46 @@
     "hero": { "title": "Contact Us", "sub": "MyuTech – Connecting the Future" },
     "info": { "title": "Company Info", "name": "MyuTech Co., Ltd.", "addr": "1-2-3 Hakata, Fukuoka, Japan", "tel": "Tel: +81-92-xxx-xxxx" },
     "form": { "title": "Get in Touch", "name": "Name", "email": "Email", "message": "Message", "submit": "Send" }
+  },
+  
+  "aboutPage": {
+    "meta": {
+      "title": "About | MyuTech"
+    },
+    "hero": {
+      "title": "Company Profile",
+      "sub": "MyuTech — Connecting the Future with Intelligence"
+    },
+    "company": {
+      "title": "Corporate Information"
+    },
+    "labels": {
+      "companyName": "Company Name",
+      "established": "Established",
+      "hqAddress": "Head Office Address",
+      "postal": "Postal Code",
+      "phone": "Phone",
+      "directors": "Representatives / Directors",
+      "ceo": "Representative Executive / President & CEO",
+      "capital": "Capital",
+      "locations": "Locations",
+      "group": "Affiliated Group",
+      "parent": "Parent Group Company",
+      "peers": "Peer Companies"
+    },
+    "values": {
+      "companyName": "MyuTech Co., Ltd.",
+      "established": "—",
+      "hqAddress": "—",
+      "postal": "—",
+      "phone": "—",
+      "directors": "—",
+      "ceo": "—",
+      "capital": "—",
+      "locations": "—",
+      "group": "—",
+      "parent": "—",
+      "peers": "—"
+    }
   }
 }

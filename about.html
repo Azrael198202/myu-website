@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="aboutPage.meta.title">会社概要 | MyuTech</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    .company-profile {max-width: 1100px; margin: 0 auto;}
+    .kv {display:grid; grid-template-columns: 220px 1fr; gap: 12px 18px; margin-top: 20px;}
+    .kv dt {color:#9fb3c8; text-align:right;}
+    .kv dd {margin:0; color:#e5eef6; word-break:break-word;}
+    @media (max-width: 720px){
+      .kv {grid-template-columns: 1fr; }
+      .kv dt {text-align:left;}
+    }
+  </style>
+</head>
+<body>
+  <div data-include="header"></div>
+
+  <section class="sub-hero">
+    <div class="sub-hero-content">
+      <h1 data-i18n="aboutPage.hero.title">会社概要</h1>
+      <p data-i18n="aboutPage.hero.sub">MyuTech – インテリジェンスで未来とつながる</p>
+    </div>
+  </section>
+
+  <section class="about company-profile">
+    <h2 data-i18n="aboutPage.company.title">会社情報</h2>
+    <dl class="kv">
+      <dt data-i18n="aboutPage.labels.companyName">社名</dt>
+      <dd data-i18n="aboutPage.values.companyName">—</dd>
+
+      <dt data-i18n="aboutPage.labels.established">設立年月日</dt>
+      <dd data-i18n="aboutPage.values.established">—</dd>
+
+      <dt data-i18n="aboutPage.labels.hqAddress">本店の所在地</dt>
+      <dd data-i18n="aboutPage.values.hqAddress">—</dd>
+
+      <dt data-i18n="aboutPage.labels.postal">郵便番号</dt>
+      <dd data-i18n="aboutPage.values.postal">—</dd>
+
+      <dt data-i18n="aboutPage.labels.phone">電話</dt>
+      <dd data-i18n="aboutPage.values.phone">—</dd>
+
+      <dt data-i18n="aboutPage.labels.directors">代表者 / 取締役</dt>
+      <dd data-i18n="aboutPage.values.directors">—</dd>
+
+      <dt data-i18n="aboutPage.labels.ceo">代表執行役 / 執行役社長兼CEO</dt>
+      <dd data-i18n="aboutPage.values.ceo">—</dd>
+
+      <dt data-i18n="aboutPage.labels.capital">資本金</dt>
+      <dd data-i18n="aboutPage.values.capital">—</dd>
+
+      <dt data-i18n="aboutPage.labels.locations">所在地</dt>
+      <dd data-i18n="aboutPage.values.locations">—</dd>
+
+      <dt data-i18n="aboutPage.labels.group">所属グループ</dt>
+      <dd data-i18n="aboutPage.values.group">—</dd>
+
+      <dt data-i18n="aboutPage.labels.parent">親グループ会社</dt>
+      <dd data-i18n="aboutPage.values.parent">—</dd>
+
+      <dt data-i18n="aboutPage.labels.peers">同級会社</dt>
+      <dd data-i18n="aboutPage.values.peers">—</dd>
+    </dl>
+  </section>
+
+  <div data-include="footer"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/nav-active.js"></script>
+  <script src="js/include.js"></script>
+</body>
+</html>
