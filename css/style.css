@@ -225,6 +225,141 @@ nav a.active {
   color: var(--primary)
 }
 
+/* ====== 顶部导航骨架（沿用你现有 navbar 的风格） ====== */
+.yt-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(10, 15, 28, .78);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+
+.yt-nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 24px;
+}
+
+.yt-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.yt-nav-item {
+  color: #e9f3ff;
+  opacity: .85;
+  position: relative;
+  padding: 10px 6px;
+  transition: opacity .2s ease, color .2s ease;
+}
+
+.yt-nav-item:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.yt-nav-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  width: 0;
+  height: 2px;
+  background: #00e0ff;
+  transform: translateX(-50%);
+  transition: width .25s ease;
+}
+
+.yt-nav-item:hover::after {
+  width: 26px;
+}
+
+.yt-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.yt-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .15);
+  color: #eaf7ff;
+  cursor: pointer;
+}
+
+/* ====== 子菜单横栏（默认收起）====== */
+.yt-subbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 70px;
+  z-index: 999;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  /* background: rgba(255, 255, 255, .9); */
+  background:rgba(10,15,28,.88); 
+  color:#eaf7ff;
+  /* 亮色横栏，可按需调暗 */
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, .06);
+  transition: height .22s ease, opacity .22s ease;
+}
+
+.yt-subbar.show {
+  height: 56px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.yt-subbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  padding: 0 24px;
+}
+
+.yt-subbar-inner a {
+  /* color: #0b101b; */
+  opacity: .85;
+  font-weight: 500;
+  white-space: nowrap;
+  color:#eaf7ff;
+}
+
+.yt-subbar-inner a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* 小屏隐藏横栏，改用抽屉/下拉（可延后实现） */
+@media (max-width: 900px) {
+  .yt-nav {
+    display: none;
+  }
+
+  .yt-subbar {
+    display: none;
+  }
+}
+
 /* ---------- Hero / Sub-hero ---------- */
 .hero,
 .sub-hero {
@@ -413,6 +548,7 @@ nav a.active {
   margin: 0 auto;
   padding: 80px 5%;
 }
+
 .contact-grid {
   display: grid;
   grid-template-columns: 280px minmax(420px, 700px) 280px;

@@ -1,34 +1,82 @@
-<header class="navbar">
-  <div class="logo">
-    <img src="assets/logo.png" alt="MyuTech Logo" />
-    <span id="site-name" data-i18n="site.name">迈域科技 MyuTech</span>
-  </div>
+<header class="navbar yt-navbar">
+  <div class="yt-nav-inner">
+    <div class="logo">
+      <img src="assets/logo.png" alt="MyuTech Logo" />
+      <span id="site-name" data-i18n="site.name">迈域科技 MyuTech</span>
+    </div>
 
-  <div class="nav-right">
-    <nav>
-      <a href="index.html" data-i18n="nav.homepage">首页</a>
-      <a href="about.html" data-i18n="nav.about">公司介绍</a>
-      <a href="services.html" data-i18n="nav.scope">业务范围</a>
-      <a href="teams.html" data-i18n="nav.team">团队</a>
-      <a href="privacy.html" data-i18n="nav.privacy">隐私政策</a>
-      <a href="contact.html" data-i18n="nav.contact">联系我们</a>
-    </nav>
-    <div class="mobile-menu">
-      <select onchange="if(this.value) window.location.href=this.value">
-        <option value="" data-i18n="nav.menu">菜单</option>
-        <option value="index.html" data-i18n="nav.homepage">首页</option>
-        <option value="about.html" data-i18n="nav.about">公司介绍</option>
-        <option value="services.html" data-i18n="nav.scope">业务范围</option>
-        <option value="teams.html" data-i18n="nav.team">团队</option>
-        <option value="contact.html" data-i18n="nav.contact">联系我们</option>
-      </select>
+    <div class="nav-right">
+      <nav>
+        <a class="yt-nav-item" href="index.html" data-i18n="nav.homepage" data-sub="sub-home">首页</a>
+        <a class="yt-nav-item" href="services.html" data-i18n="nav.scope" data-sub="sub-home">产品服务</a>
+        <a class="yt-nav-item" href="teams.html" data-i18n="nav.team" data-sub="sub-home">解决方案</a>
+        <a class="yt-nav-item" href="about.html" data-i18n="nav.about" data-sub="sub-home">关于我们</a>
+        <a class="yt-nav-item" href="contact.html" data-i18n="nav.contact" data-sub="sub-home">联系我们</a>
+      </nav>
+      <div class="mobile-menu">
+        <select onchange="if(this.value) window.location.href=this.value">
+          <option value="" data-i18n="nav.menu">菜单</option>
+          <option value="index.html" data-i18n="nav.homepage">首页</option>
+          <option value="about.html" data-i18n="nav.about">公司介绍</option>
+          <option value="services.html" data-i18n="nav.scope">业务范围</option>
+          <option value="teams.html" data-i18n="nav.team">团队</option>
+          <option value="contact.html" data-i18n="nav.contact">联系我们</option>
+        </select>
+      </div>
+      <div class="yt-actions">
+        <button class="yt-icon-btn" aria-label="Search">🔍</button>
+        <button class="yt-icon-btn" aria-label="Menu">☰</button>
+        <div class="lang-select">
+          <select id="langSelect">
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
     </div>
-    <div class="lang-select">
-      <select id="langSelect">
-        <option value="zh">中文</option>
-        <option value="ja">日本語</option>
-        <option value="en">English</option>
-      </select>
+
+    <div class="yt-subbar" id="subBar" aria-hidden="true">
+      <div class="yt-subbar-inner" id="subBarInner"><!-- JS 填充 --></div>
     </div>
+
+    <!-- 子菜单模板：可按需增删 -->
+    <template id="sub-home">
+      <a href="index.html#hero">集团介绍</a>
+      <a href="index.html#culture">人文迈域</a>
+      <a href="index.html#tech">科技迈域</a>
+      <a href="index.html#strength">实力迈域</a>
+      <a href="index.html#csr">社会责任</a>
+    </template>
+
+    <template id="sub-about">
+      <a href="about.html#profile">公司概况</a>
+      <a href="about.html#history">发展历程</a>
+      <a href="about.html#honor">资质荣誉</a>
+      <a href="teams.html">核心团队</a>
+      <a href="about.html#culture">企业文化</a>
+    </template>
+
+    <template id="sub-services">
+      <a href="services.html#ai">AI 人工智能</a>
+      <a href="services.html#xr">XR 扩展现实</a>
+      <a href="services.html#iot">物联网平台</a>
+      <a href="services.html#cloud">云与架构</a>
+      <a href="services.html#integration">系统集成</a>
+    </template>
+
+    <template id="sub-news">
+      <a href="news.html#company">公司新闻</a>
+      <a href="news.html#media">媒体报道</a>
+      <a href="news.html#events">展会活动</a>
+      <a href="news.html#insights">技术洞察</a>
+    </template>
+
+    <template id="sub-contact">
+      <a href="contact.html#hotline">商务热线</a>
+      <a href="contact.html#partner">合作伙伴</a>
+      <a href="contact.html#map">地图与路线</a>
+      <a href="contact.html#jobs">加入我们</a>
+    </template>
   </div>
 </header>
