@@ -311,8 +311,8 @@ nav a.active {
   opacity: 0;
   pointer-events: none;
   /* background: rgba(255, 255, 255, .9); */
-  background:rgba(10,15,28,.88); 
-  color:#eaf7ff;
+  background: rgba(10, 15, 28, .88);
+  color: #eaf7ff;
   /* 亮色横栏，可按需调暗 */
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(0, 0, 0, .06);
@@ -341,7 +341,7 @@ nav a.active {
   opacity: .85;
   font-weight: 500;
   white-space: nowrap;
-  color:#eaf7ff;
+  color: #eaf7ff;
 }
 
 .yt-subbar-inner a:hover {
@@ -960,4 +960,205 @@ footer.footer {
   .contact-form {
     width: 100%;
   }
+}
+
+@media (min-width: 901px) {
+  .yt-actions .yt-lang {
+    display: none;
+  }
+
+  .m-drawer {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .yt-nav {
+    display: none;
+  }
+
+  /* 隐藏桌面导航 */
+}
+
+/* 语言下拉：替代搜索图标 */
+.yt-lang select {
+  appearance: none;
+  border: 1px solid rgba(0, 224, 255, .5);
+  background: rgba(0, 0, 0, .25);
+  color: #b9f3ff;
+  border-radius: 10px;
+  padding: 8px 28px 8px 10px;
+  outline: none;
+}
+
+.yt-lang {
+  position: relative;
+}
+
+.yt-lang::after {
+  content: "▾";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00e0ff;
+  pointer-events: none;
+  font-size: 12px;
+}
+
+/* 汉堡按钮 */
+.yt-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .18);
+  color: #eaf7ff;
+  cursor: pointer;
+}
+
+/* 抽屉 */
+.m-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  pointer-events: none;
+}
+
+.m-drawer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .35);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.m-drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(86vw, 360px);
+  background: #fff;
+  color: #0b101b;
+  transform: translateX(100%);
+  transition: transform .25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.m-drawer[aria-hidden="false"] {
+  pointer-events: auto;
+}
+
+.m-drawer[aria-hidden="false"] .m-drawer-overlay {
+  opacity: 1;
+}
+
+.m-drawer[aria-hidden="false"] .m-drawer-panel {
+  transform: none;
+}
+
+/* 抽屉头 */
+.m-drawer-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  border-bottom: 1px solid #e9edf3;
+}
+
+.m-drawer-title {
+  font-weight: 600;
+}
+
+.m-close {
+  background: transparent;
+  border: 1px solid #e1e6ee;
+  color: #333;
+  border-radius: 8px;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* 语言行（可选） */
+.m-lang-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+}
+
+.m-lang-row label {
+  min-width: 42px;
+  color: #555;
+}
+
+.m-lang-row select {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #cfd9e6;
+  border-radius: 8px;
+}
+
+/* 手风琴 */
+.m-acc {
+  list-style: none;
+  padding: 8px 18px 28px;
+  margin: 0;
+}
+
+.m-acc-item {
+  border-bottom: 1px solid #e9edf3;
+}
+
+.m-acc-head {
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: none;
+  padding: 14px 6px;
+  font-size: 16px;
+  color: #1a2230;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.m-acc-head::after {
+  content: "+";
+  color: #1a2230;
+  font-weight: 700;
+}
+
+.m-acc-head[aria-expanded="true"]::after {
+  content: "–";
+}
+
+/* 展开后显示减号 */
+.m-acc-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows .22s ease;
+}
+
+.m-acc-head[aria-expanded="true"]+.m-acc-body {
+  grid-template-rows: 1fr;
+}
+
+.m-acc-body>* {
+  min-height: 0;
+}
+
+.m-acc-body li a {
+  display: block;
+  padding: 12px 6px;
+  color: #32455d;
+}
+
+.m-acc-body li a:hover {
+  color: #008ad6;
 }
