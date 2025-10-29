@@ -1197,3 +1197,326 @@ footer.footer {
 .m-acc-body li a:hover {
   color: #008ad6;
 }
+
+/* ====== MyuTech 顶部导航（桌面/手机） ====== */
+:root {
+  --yt-bg: rgba(10, 15, 28, .85);
+  --yt-border: rgba(255, 255, 255, .06);
+  --yt-primary: #00e0ff;
+  --yt-text: #dce3ec;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0
+}
+
+/* 顶部条 */
+.yt-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: var(--yt-bg);
+  border-bottom: 1px solid var(--yt-border);
+}
+
+/* 三段布局：左Logo、中菜单、右语言/按钮 */
+.yt-nav-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  /* 左右各占一列，中间菜单自适应 */
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo（左对齐） */
+.yt-nav-inner .logo {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.yt-nav-inner .logo img {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px
+}
+
+.yt-nav-inner .logo span {
+  font-family: Orbitron, Roboto, sans-serif;
+  color: var(--yt-primary);
+  font-weight: 700
+}
+
+/* 主菜单（居中） */
+.yt-nav {
+  justify-self: center;
+  display: flex;
+  gap: 28px;
+}
+
+.yt-nav a {
+  color: #c8d0da;
+  text-decoration: none;
+  opacity: .9;
+  position: relative;
+  padding: 8px 2px;
+}
+
+.yt-nav a:hover {
+  opacity: 1;
+  color: #fff
+}
+
+.yt-nav a.active {
+  color: var(--yt-primary)
+}
+
+.yt-nav a.active::after,
+.yt-nav a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: var(--yt-primary);
+}
+
+/* 右侧语言 + 菜单按钮（手机才显示按钮） */
+.yt-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.yt-lang select {
+  background: rgba(0, 0, 0, .2);
+  border: 1px solid rgba(0, 224, 255, .6);
+  color: var(--yt-primary);
+  padding: 6px 28px 6px 10px;
+  border-radius: 8px;
+}
+
+.yt-icon-btn {
+  display: none;
+  /* 电脑隐藏按钮 */
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid var(--yt-border);
+  color: var(--yt-text);
+  width: 40px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 悬停子菜单横栏 */
+.yt-subbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: rgba(15, 20, 30, .95);
+  border-bottom: 1px solid var(--yt-border);
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: .18s ease;
+}
+
+.yt-subbar.show {
+  transform: none;
+  opacity: 1;
+  pointer-events: auto
+}
+
+.yt-subbar-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.yt-subbar-inner a {
+  color: #bfefff;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .03)
+}
+
+.yt-subbar-inner a:hover {
+  background: rgba(0, 224, 255, .12);
+  color: #fff
+}
+
+/* 手机抽屉 */
+.m-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  pointer-events: none;
+  opacity: 0;
+  transition: .18s
+}
+
+.m-drawer[aria-hidden="false"] {
+  pointer-events: auto;
+  opacity: 1
+}
+
+.m-drawer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .4);
+  backdrop-filter: blur(2px)
+}
+
+.m-drawer-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(340px, 90vw);
+  background: #101623;
+  border-left: 1px solid var(--yt-border);
+  transform: translateX(100%);
+  transition: transform .18s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.m-drawer[aria-hidden="false"] .m-drawer-panel {
+  transform: none
+}
+
+.m-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--yt-border)
+}
+
+.m-drawer-head .logo.mini img {
+  width: 22px;
+  height: 22px
+}
+
+.m-drawer-head .logo.mini span {
+  color: var(--yt-primary);
+  font-family: Orbitron, Roboto, sans-serif
+}
+
+.m-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+.m-head-actions select {
+  background: #0b1320;
+  border: 1px solid rgba(0, 224, 255, .5);
+  color: var(--yt-primary);
+  padding: 6px 10px;
+  border-radius: 8px
+}
+
+.m-close {
+  width: 36px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--yt-border);
+  background: rgba(255, 255, 255, .04);
+  color: #eaf7ff
+}
+
+/* 手风琴 */
+.m-acc {
+  list-style: none;
+  margin: 0;
+  padding: 8px 10px 18px
+}
+
+.m-acc-item {
+  border-bottom: 1px solid var(--yt-border)
+}
+
+.m-acc-head {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  color: #eaf7ff;
+  padding: 14px 6px;
+  position: relative
+}
+
+.m-acc-head::after {
+  content: "+";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.m-acc-head[aria-expanded="true"]::after {
+  content: "-"
+}
+
+.m-acc-body {
+  display: none;
+  padding: 0 0 10px 10px
+}
+
+.m-acc-head[aria-expanded="true"]+.m-acc-body {
+  display: block
+}
+
+.m-acc-body a {
+  display: block;
+  color: #cfeeff;
+  text-decoration: none;
+  padding: 8px 4px;
+  border-radius: 6px
+}
+
+.m-acc-body a:hover {
+  background: rgba(0, 224, 255, .1);
+  color: #fff
+}
+
+/* 响应式：手机显示按钮、隐藏桌面菜单 */
+@media (max-width: 900px) {
+  .yt-nav {
+    display: none
+  }
+
+  .yt-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  .yt-nav-inner {
+    grid-template-columns: auto 1fr auto
+  }
+}

@@ -1,17 +1,24 @@
 <header class="navbar yt-navbar">
   <div class="yt-nav-inner">
-    <a class="logo" href="index.html"><img src="assets/logo.svg" alt=""><span>MyuTech</span></a>
+    <!-- 左：Logo -->
+    <a class="logo" href="index.html" aria-label="MyuTech">
+      <img src="assets/logo.png" alt="" />
+      <span>MyuTech</span>
+    </a>
 
-    <nav class="yt-nav" id="topNav">
-      <a class="yt-nav-item" href="index.html" data-sub="sub-home">Home</a>
+    <!-- 中：主导航（桌面显示/手机隐藏） -->
+    <nav class="yt-nav" id="topNav" aria-label="Primary">
+      <a class="yt-nav-item" href="index.html"   data-sub="sub-home">Home</a>
       <a class="yt-nav-item" href="services.html" data-sub="sub-services">Services</a>
-      <a class="yt-nav-item" href="teams.html" data-sub="sub-team">Team</a>
-      <a class="yt-nav-item" href="about.html" data-sub="sub-about">About</a>
-      <a class="yt-nav-item" href="contact.html" data-sub="sub-contact">Contact</a>
+      <a class="yt-nav-item" href="teams.html"    data-sub="sub-team">Team</a>
+      <a class="yt-nav-item" href="about.html"    data-sub="sub-about">About</a>
+      <a class="yt-nav-item" href="contact.html"  data-sub="sub-contact">Contact</a>
     </nav>
 
+    <!-- 右：语言下拉 + 菜单按钮（手机下显示按钮，桌面隐藏按钮） -->
     <div class="yt-actions">
       <div class="yt-lang">
+        <label class="sr-only" for="langSelect">Language</label>
         <select id="langSelect">
           <option value="zh">中文</option>
           <option value="ja">日本語</option>
@@ -22,12 +29,12 @@
     </div>
   </div>
 
-  <!-- 子菜单横栏（如果不需要可删；删了也不会报错） -->
+  <!-- 悬停子菜单横栏（桌面） -->
   <div class="yt-subbar" id="subBar" aria-hidden="true">
     <div class="yt-subbar-inner" id="subBarInner"></div>
   </div>
 
-  <!-- 子菜单模板：可按需增删 -->
+  <!-- 子菜单模板 -->
   <template id="sub-home">
     <a href="index.html#hero">集团介绍</a>
     <a href="index.html#culture">人文迈域</a>
@@ -52,11 +59,10 @@
     <a href="services.html#integration">系统集成</a>
   </template>
 
-  <template id="sub-news">
-    <a href="news.html#company">公司新闻</a>
-    <a href="news.html#media">媒体报道</a>
-    <a href="news.html#events">展会活动</a>
-    <a href="news.html#insights">技术洞察</a>
+  <template id="sub-team">
+    <a href="teams.html#leaders">核心管理层</a>
+    <a href="teams.html#rd">研发团队</a>
+    <a href="teams.html#consulting">咨询顾问</a>
   </template>
 
   <template id="sub-contact">
@@ -65,29 +71,28 @@
     <a href="contact.html#map">地图与路线</a>
     <a href="contact.html#jobs">加入我们</a>
   </template>
-  </div>
 
   <!-- 手机抽屉 -->
   <aside class="m-drawer" id="mDrawer" aria-hidden="true">
     <div class="m-drawer-overlay" id="mDrawerMask"></div>
     <div class="m-drawer-panel">
-      <!-- 顶部：logo + 关闭 -->
       <div class="m-drawer-head">
-        <span class="m-drawer-title">菜单</span>
-        <button class="m-close" id="mCloseBtn" aria-label="关闭">✕</button>
+        <a class="logo mini" href="index.html" aria-label="MyuTech">
+          <img src="assets/logo.png" alt="" />
+          <span>MyuTech</span>
+        </a>
+        <div class="m-head-actions">
+          <label class="sr-only" for="langSelectMobile2">Language</label>
+          <select id="langSelectMobile2">
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+          </select>
+          <button class="m-close" id="mCloseBtn" aria-label="关闭">✕</button>
+        </div>
       </div>
 
-      <!-- 手機语言（可选：若想保留右上，下方可删） -->
-      <div class="m-lang-row">
-        <label for="langSelectMobile2">语言</label>
-        <select id="langSelectMobile2">
-          <option value="zh">中文</option>
-          <option value="ja">日本語</option>
-          <option value="en">English</option>
-        </select>
-      </div>
-
-      <!-- 手機父/子菜单（手风琴） -->
+      <!-- 手风琴菜单 -->
       <ul class="m-acc">
         <li class="m-acc-item">
           <button class="m-acc-head" aria-expanded="false">关于我们</button>
@@ -99,7 +104,6 @@
             <li><a href="teams.html">核心团队</a></li>
           </ul>
         </li>
-
         <li class="m-acc-item">
           <button class="m-acc-head" aria-expanded="false">业务板块</button>
           <ul class="m-acc-body">
@@ -110,17 +114,15 @@
             <li><a href="services.html#integration">系统集成</a></li>
           </ul>
         </li>
-
         <li class="m-acc-item">
           <button class="m-acc-head" aria-expanded="false">新闻资讯</button>
           <ul class="m-acc-body">
-            <li><a href="news.html#company">公司新闻</a></li>
-            <li><a href="news.html#media">媒体报道</a></li>
-            <li><a href="news.html#events">展会活动</a></li>
-            <li><a href="news.html#insights">技术洞察</a></li>
+            <li><a href="#">公司新闻</a></li>
+            <li><a href="#">媒体报道</a></li>
+            <li><a href="#">展会活动</a></li>
+            <li><a href="#">技术洞察</a></li>
           </ul>
         </li>
-
         <li class="m-acc-item">
           <button class="m-acc-head" aria-expanded="false">联系我们</button>
           <ul class="m-acc-body">
