@@ -41,18 +41,19 @@ ul {
   --r-sm: 6px;
   --r-md: 10px;
   --r-lg: 14px;
+  --nav-height: 70px;
 }
 
 /* =========================================
    顶部导航：桌面 + 手机
 ========================================= */
 .yt-navbar {
-  position: sticky;
   top: 0;
   z-index: 1000;
   background: var(--yt-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--yt-border);
+  position: relative;
 }
 
 /* 三列布局：左 Logo / 中 Menu / 右 Lang + Btn */
@@ -378,6 +379,12 @@ ul {
    通用区块布局
 ========================================= */
 .hero,
+.sub-hero,
+main {
+  margin-top: var(--nav-height);
+}
+
+.hero,
 .sub-hero {
   margin-top: 70px;
 }
@@ -581,4 +588,61 @@ ul {
   .contact {
     padding: 40px 4%;
   }
+}
+
+/* 子菜单栏：做成悬浮层，不占文档流空间 */
+#subBar {
+  position: fixed;
+  /* ✅ 悬浮在视口，不挤占下面内容 */
+  left: 0;
+  right: 0;
+  top: var(--nav-height);
+  /* 紧贴导航底部 */
+  background: rgba(8, 12, 20, .92);
+  /* 你现有的深色风格 */
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+  z-index: 1200;
+
+  /* 初始隐藏且不接收事件，避免遮挡 */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  /* 小动效 */
+  transform: translateY(-6px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+}
+
+#subBar.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  /* 显示时可交互 */
+  transform: translateY(0);
+}
+
+#subBarInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  /* 子菜单高度 */
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+#subBarInner a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: #bfeeff;
+  text-decoration: none;
+  border: 1px solid rgba(0, 224, 255, .25);
+  background: rgba(0, 224, 255, .06);
+}
+
+#subBarInner a:hover {
+  background: rgba(0, 224, 255, .14);
 }
