@@ -17,45 +17,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- 顶部悬停子菜单（桌面） ---------- */
   (function () {
-    const nav = qs('#topNav');
-    const bar = qs('#subBar');
-    const inner = qs('#subBarInner');
+    const nav = document.getElementById('topNav');
+    const bar = document.getElementById('subBar');
+    const inner = document.getElementById('subBarInner');
+
+    // 任何一个不存在就直接返回，避免报错
     if (!nav || !bar || !inner) return;
+
+    const isFinePointer = window.matchMedia('(pointer:fine)').matches;
+    const isDesktop = () => window.innerWidth > 900;
 
     let hideTimer = null;
 
-    const showBy = (id) => {
-      const tpl = qs('#' + id);
+    function showBy(id) {
+      const tpl = document.getElementById(id);
       if (!tpl) return;
       inner.innerHTML = tpl.innerHTML;
       bar.classList.add('show');
       bar.setAttribute('aria-hidden', 'false');
       clearTimeout(hideTimer);
-    };
-    const scheduleHide = () => {
+    }
+    function scheduleHide() {
       clearTimeout(hideTimer);
       hideTimer = setTimeout(() => {
         bar.classList.remove('show');
         bar.setAttribute('aria-hidden', 'true');
         inner.innerHTML = '';
       }, 120);
-    };
+    }
 
-    // 仅在桌面+精细指针时启用 hover
     if (isFinePointer) {
-      qsa('.yt-nav-item', nav).forEach(a => {
+      nav.querySelectorAll('.yt-nav-item').forEach(a => {
         a.addEventListener('mouseenter', () => { if (isDesktop()) showBy(a.dataset.sub); });
-        a.addEventListener('focus', () => showBy(a.dataset.sub)); // 键盘可达
+        a.addEventListener('focus', () => showBy(a.dataset.sub));
       });
       nav.addEventListener('mouseleave', scheduleHide);
       bar.addEventListener('mouseleave', scheduleHide);
       bar.addEventListener('mouseenter', () => clearTimeout(hideTimer));
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') scheduleHide(); });
-      // 滚动时收起
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') scheduleHide(); });
       window.addEventListener('scroll', scheduleHide, { passive: true });
       window.addEventListener('resize', scheduleHide);
     }
   })();
+
 
   /* ---------- 手机抽屉 + 手风琴 ---------- */
   (function () {
