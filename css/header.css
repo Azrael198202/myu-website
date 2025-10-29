@@ -1,0 +1,245 @@
+.yt-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* ✅ 所有内容靠右对齐 */
+  gap: 20px;
+  /* 菜单与语言栏、按钮间距 */
+  max-width: 1240px;
+  margin-left: auto;
+  /* ✅ 靠右布局 */
+  margin-right: 20px;
+  padding: 0
+}
+
+/* Language select — transparent, no blue menu */
+.lang-select {
+  position: static
+}
+
+.yt-lang select {
+  background: rgba(0, 0, 0, .2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 224, 255, .6);
+  color: var(--primary);
+  font-size: 13px;
+  padding: 6px 28px 6px 10px;
+  border-radius: var(--r-sm);
+  appearance: none;
+  cursor: pointer;
+  transition: all var(--dur) var(--ease);
+  outline: none;
+}
+
+.yt-lang::after {
+  content: "▾";
+  position: relative;
+  left: -26px;
+  color: var(--primary);
+  pointer-events: none
+}
+
+.yt-lang select option {
+  background: rgba(15, 20, 30, .85);
+  color: var(--primary)
+}
+
+/* 桌面隐藏汉堡 */
+.yt-icon-btn {
+  display: none;
+  width: 40px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--yt-border);
+  background: rgba(255, 255, 255, .05);
+  color: var(--yt-text);
+  cursor: pointer;
+}
+
+/* 悬停子菜单横栏 */
+.yt-subbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  height: 200px;
+  /* background: rgba(15, 20, 30, .95); */
+  background: rgb(243, 243, 243);
+  border-bottom: 1px solid var(--yt-border);
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: .2s ease;
+}
+
+.yt-subbar.show {
+  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.yt-subbar-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.yt-subbar-inner a {
+  /* color: #bfefff; */
+  color: #111111;
+  /* border: 1px solid rgba(255, 255, 255, .08); */
+  background: rgba(255, 255, 255, .01);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.yt-subbar-inner a:hover {
+  /* background: rgba(0, 224, 255, .12);
+  color: #fff; */
+  background: rgba(1, 48, 54, 0.12);
+  color: #1a1919;
+}
+
+/* 主菜单（桌面端） */
+.yt-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.yt-nav a {
+  color: #eaf7ff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 6px 0;
+}
+
+.yt-nav a:hover,
+.yt-nav a.active {
+  color: var(--primary, #00e0ff);
+}
+
+/* 语言选择 + 按钮 */
+.yt-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  left: 0px;
+}
+
+.yt-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  background: rgba(0, 224, 255, .3);
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* ✅ 手机模式：隐藏主菜单，仅显示语言与按钮 */
+@media (max-width: 900px) {
+  .yt-nav {
+    display: none;
+  }
+
+  .yt-actions {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    left: 0px;
+    width: 140px;
+  }
+
+  .yt-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;      /* ✅ 不换行 */
+    flex: 1 1 auto;           /* 左侧可伸缩 */
+    min-width: 0;             /* 避免把右侧挤掉 */
+  }
+  /* 如果站点名有单独类名，比如 .site-name，可以再加一层保险 */
+  header.navbar .logo .site-name { white-space: nowrap; }
+}
+
+  /* ===== 手机端 Header 布局修复 ===== */
+@media (max-width: 900px) {
+  /* 整体：左右两栏，保持同一行 */
+  header.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* 左侧 Logo/站点名：禁止换行，占据可伸缩空间 */
+  header.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;      /* ✅ 不换行 */
+    flex: 1 1 auto;           /* 左侧可伸缩 */
+    min-width: 0;             /* 避免把右侧挤掉 */
+  }
+  /* 如果站点名有单独类名，比如 .site-name，可以再加一层保险 */
+  header.navbar .logo .site-name { white-space: nowrap; }
+
+  /* 右侧容器：语言下拉 + 菜单按钮 */
+  .yt-nav-inner {
+    display: flex !important; /* ✅ 强制一行 */
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex: 0 0 auto;           /* 右侧不被压缩 */
+    flex-wrap: nowrap;        /* ✅ 不换行 */
+    margin-left: 260px;
+  }
+  /* 右侧每个子项都不缩小，不换行 */
+  .yt-nav-inner > * {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  /* 隐藏横向导航链接，给右侧控件腾位置 */
+  #topNav,
+  .yt-nav {
+    display: none !important;
+  }
+
+  /* 下拉的宽度别太宽，避免挤掉按钮 */
+  .yt-nav-inner select {
+    max-width: 120px;
+  }
+
+  /* 菜单按钮与选择器对齐 */
+  .yt-nav-inner button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

@@ -129,3 +129,36 @@ footer.footer {
   padding: 8px 12px;
   border-radius: 10px
 }
+
+/* ---------- 手机端树形结构 (仅作用于 footer) ---------- */
+@media (max-width: 768px) {
+  footer.footer .footer-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  footer.footer .footer-brand {
+    text-align: left;
+  }
+
+  footer.footer .footer-links-title {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    color: #bcecff;
+  }
+
+  footer.footer .footer-links-list {
+    padding-left: 15px;
+    border-left: 1px dashed rgba(0, 224, 255, 0.2);
+  }
+
+  footer.footer .footer-link {
+    font-size: 14px;
+  }
+
+  footer.footer .footer-contact-items {
+    padding-left: 15px;
+  }
+}

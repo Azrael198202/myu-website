@@ -1,0 +1,180 @@
+/* ======= 抽屉容器：全屏纯白、盖满所有元素 ======= */
+.m-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 2200;
+  /* 提高到所有顶层之上 */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+
+.m-drawer[aria-hidden="false"] {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* 白色覆盖层：整屏白，消除任何深色“缝隙” */
+.m-drawer-overlay {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  /* ✅ 全屏白色 */
+}
+
+/* 抽屉面板：全屏白，从右滑入 */
+.m-drawer-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* ✅ 占满整屏 */
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  border: none;
+  transform: translateX(100%);
+  transition: transform .18s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.m-drawer[aria-hidden="false"] .m-drawer-panel {
+  transform: translateX(0);
+}
+
+/* ======= 头部：左标题 + 右关闭，去掉多余空隙 ======= */
+.m-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* ✅ 左右分布 */
+  padding: 12px 12px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+}
+
+/* 左侧标题（logo/文字） */
+.m-drawer-head .logo.mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.m-drawer-head .logo.mini img {
+  width: 22px;
+  height: 22px;
+}
+
+.m-drawer-head .logo.mini span {
+  font-weight: 700;
+  color: #0aa;
+  /* 可换你的品牌色 */
+  font-family: Orbitron, Roboto, sans-serif;
+  white-space: nowrap;
+}
+
+/* 右侧操作（语言下拉 + 关闭） */
+.m-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.m-head-actions select {
+  background: #fff;
+  border: 1px solid #0ab;
+  color: #0ab;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.m-close {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+}
+
+/* ======= 菜单区：去掉 UL 默认缩进/间隔，统一对齐 ======= */
+.m-acc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* ✅ 去掉默认内边距 */
+  background: #fff;
+}
+
+/* 一级项：去掉多余间隔，只保留下边线 */
+.m-acc-item {
+  margin: 0;
+  /* ✅ 取消外边距 */
+  border-bottom: 1px solid #eee;
+}
+
+/* 一级标题：左对齐、大字号、预留右侧空位给 +/− 符号 */
+.m-acc-head {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #111;
+  text-align: left;
+  /* ✅ 文字靠左 */
+  padding: 18px 56px 18px 23px;
+  /* ✅ 右侧留 56px，避免与 +/− 重叠 */
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.3;
+}
+
+/* +/− 符号固定在右侧，不压文字 */
+.m-acc-head::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+}
+
+.m-acc-head[aria-expanded="true"]::after {
+  content: "-";
+}
+
+/* 二级列表：左对齐、较大字号 */
+.m-acc-body {
+  display: none;
+  padding: 0 16px 12px 16px;
+  /* ✅ 与一级保持同边距 */
+}
+
+.m-acc-head[aria-expanded="true"]+.m-acc-body {
+  display: block;
+}
+
+.m-acc-body a {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  padding: 10px 0 10px 20px;
+  font-size: 16px;
+  text-align: left;
+  /* ✅ 左对齐 */
+  border-radius: 6px;
+}
+
+.m-acc-body a:hover {
+  background: rgba(0, 170, 187, .08);
+  color: #111;
+}
