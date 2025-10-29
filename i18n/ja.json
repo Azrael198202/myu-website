@@ -1,6 +1,6 @@
 {
   "site": { "name": "迈域科技 MyuTech", "motto": "インテリジェンス・融合・イノベーション・未来へ接続" },
-  "nav": { "homepage":"ホームページ", "about": "会社紹介", "scope": "事業範囲", "team": "チーム", "privacy": "プライバシー", "contact": "お問い合わせ" },
+  "nav": { "menu":"メニュー","homepage":"ホームページ", "about": "会社紹介", "scope": "事業範囲", "team": "チーム", "privacy": "プライバシー", "contact": "お問い合わせ" },
   "footer": { "rights": "© 2025 MyuTech Co., Ltd. | All Rights Reserved" },
   "ui": { "viewProfile": "連絡/プロフィール" },
 
