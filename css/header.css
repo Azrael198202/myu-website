@@ -216,7 +216,7 @@
     gap: 10px;
     flex: 0 0 auto;           /* 右侧不被压缩 */
     flex-wrap: nowrap;        /* ✅ 不换行 */
-    margin-left: 260px;
+    margin-left: 220px;
   }
   /* 右侧每个子项都不缩小，不换行 */
   .yt-nav-inner > * {
