@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="nav.contact">联系我们</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
   <div data-include="header"></div>
@@ -23,144 +19,162 @@
   </section>
 
   <section class="contact">
-    <main id="contact-page">
-      <!-- 与截图一致的三列布局：左侧说明/中间表单/右侧直联卡片 -->
-      <section class="contact-section" role="region" aria-labelledby="contact-headline">
-        <div class="contact-container">
-          <div class="contact-featured-card">
-            <h2 id="contact-headline" class="section-title">立即对接迈域科技团队</h2>
-            <p class="section-subtitle">开启智能化转型之旅</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2 data-i18n="contact.info.title">公司信息</h2>
+        <p><strong data-i18n="contact.info.name">迈域科技有限公司（MyuTech Co., Ltd.）</strong></p>
+        <p data-i18n="contact.info.addr">日本福冈市博多区○○ 1-2-3</p>
+        <p data-i18n="contact.info.tel">电话：+81-92-xxx-xxxx</p>
+        <p>Email：<a href="mailto:contact@myutech.com">contact@myutech.com</a></p>
+      </div>
+
+      <div class="contact-form">
+        <h2 data-i18n="contact.form.title">在线咨询</h2>
+        <form action="https://formspree.io/f/mnqepvdl" method="POST">
+          <label for="name" data-i18n="contact.form.name">姓名 / Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email" data-i18n="contact.form.email">邮箱 / Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message" data-i18n="contact.form.message">留言 / Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn-primary" data-i18n="contact.form.submit">发送 Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <main id="contact-page">
+    <!-- 与截图一致的三列布局：左侧说明/中间表单/右侧直联卡片 -->
+    <section class="contact-section" role="region" aria-labelledby="contact-headline">
+      <div class="contact-container">
+        <div class="contact-featured-card">
+          <h2 id="contact-headline" class="section-title">立即对接迈域科技团队</h2>
+          <p class="section-subtitle">开启智能化转型之旅</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- 左列：快速咨询说明 -->
+          <div class="contact-lead-column">
+            <h3 class="contact-column-title">快速咨询</h3>
+            <p class="contact-description">
+              填写需求，我们将在24小时内与您联系，为您量身匹配最优技术方案。无论是 AI 模型定制、XR 体验、IoT 部署还是云端架构，我们提供端到端技术与落地支持。
+            </p>
+            <div class="contact-why">
+              <h4 class="contact-why-title">为什么选择我们</h4>
+              <ul class="contact-why-list">
+                <li>行业级交付能力</li>
+                <li>快速原型验证</li>
+                <li>可扩展架构</li>
+                <li>可量化 ROI</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="contact-grid">
-            <!-- 左列：快速咨询说明 -->
-            <div class="contact-lead-column">
-              <h3 class="contact-column-title">快速咨询</h3>
-              <p class="contact-description">
-                填写需求，我们将在24小时内与您联系，为您量身匹配最优技术方案。无论是 AI 模型定制、XR 体验、IoT 部署还是云端架构，我们提供端到端技术与落地支持。
-              </p>
-              <div class="contact-why">
-                <h4 class="contact-why-title">为什么选择我们</h4>
-                <ul class="contact-why-list">
-                  <li>行业级交付能力</li>
-                  <li>快速原型验证</li>
-                  <li>可扩展架构</li>
-                  <li>可量化 ROI</li>
-                </ul>
+          <!-- 中列：表单 -->
+          <div class="contact-form-column">
+            <form class="contact-form" aria-label="企业合作咨询表">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="company-name" class="form-label">公司名称</label>
+                  <input type="text" id="company-name" name="company-name" class="form-input" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">联系人姓名</label>
+                  <input type="text" id="contact-name" name="contact-name" class="form-input" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="position" class="form-label">职位/部门</label>
+                  <input type="text" id="position" name="position" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">联系电话</label>
+                  <input type="tel" id="phone" name="phone" class="form-input" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">邮箱地址</label>
+                <input type="email" id="email" name="email" class="form-input" required />
+              </div>
+
+              <div class="form-group">
+                <label for="project-type" class="form-label">项目类型</label>
+                <select id="project-type" name="project-type" class="form-input">
+                  <option value="">请选择</option>
+                  <option value="ai">AI 人工智能</option>
+                  <option value="xr">XR 扩展现实</option>
+                  <option value="iot">IoT 物联网</option>
+                  <option value="cloud">云与架构</option>
+                  <option value="integration">系统集成</option>
+                  <option value="other">其他</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="project-description" class="form-label">项目简介（200字以内）</label>
+                <textarea id="project-description" name="project-description" class="form-input form-textarea" rows="4"></textarea>
+              </div>
+
+              <p class="form-privacy">隐私与保密承诺：我们对所有商业信息严守保密协议，支持签署 NDA。</p>
+
+              <button type="submit" class="btn btn-primary btn-lg">立即提交并预约专属顾问</button>
+            </form>
+          </div>
+
+          <!-- 右列：直接联系 -->
+          <div class="contact-info-column">
+            <h3 class="contact-column-title">直接联系</h3>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><!-- 邮件图标 --></div>
+              <div class="contact-info-content">
+                <span class="contact-info-label">商务邮箱</span>
+                <span class="contact-info-value">partner@myutech.com</span>
               </div>
             </div>
 
-            <!-- 中列：表单 -->
-            <div class="contact-form-column">
-              <form class="contact-form" aria-label="企业合作咨询表">
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="company-name" class="form-label">公司名称</label>
-                    <input type="text" id="company-name" name="company-name" class="form-input" required />
-                  </div>
-                  <div class="form-group">
-                    <label for="contact-name" class="form-label">联系人姓名</label>
-                    <input type="text" id="contact-name" name="contact-name" class="form-input" required />
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="position" class="form-label">职位/部门</label>
-                    <input type="text" id="position" name="position" class="form-input" />
-                  </div>
-                  <div class="form-group">
-                    <label for="phone" class="form-label">联系电话</label>
-                    <input type="tel" id="phone" name="phone" class="form-input" required />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="email" class="form-label">邮箱地址</label>
-                  <input type="email" id="email" name="email" class="form-input" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="project-type" class="form-label">项目类型</label>
-                  <select id="project-type" name="project-type" class="form-input">
-                    <option value="">请选择</option>
-                    <option value="ai">AI 人工智能</option>
-                    <option value="xr">XR 扩展现实</option>
-                    <option value="iot">IoT 物联网</option>
-                    <option value="cloud">云与架构</option>
-                    <option value="integration">系统集成</option>
-                    <option value="other">其他</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="project-description" class="form-label">项目简介（200字以内）</label>
-                  <textarea id="project-description" name="project-description" class="form-input form-textarea"
-                    rows="4"></textarea>
-                </div>
-
-                <p class="form-privacy">隐私与保密承诺：我们对所有商业信息严守保密协议，支持签署 NDA。</p>
-
-                <button type="submit" class="btn btn-primary btn-lg">立即提交并预约专属顾问</button>
-              </form>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><!-- 电话图标 --></div>
+              <div class="contact-info-content">
+                <span class="contact-info-label">销售与咨询</span>
+                <span class="contact-info-value">+86 400-800-****</span>
+                <span class="contact-info-note">工作日 9:00–18:00</span>
+              </div>
             </div>
 
-            <!-- 右列：直接联系 -->
-            <div class="contact-info-column">
-              <h3 class="contact-column-title">直接联系</h3>
-
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <img src="assets/contact/mail.svg" alt="MyuTech mail" width="40px"  height="40px"/>
-                </div>
-                <div class="contact-info-content">
-                  <span class="contact-info-label">商务邮箱</span>
-                  <span class="contact-info-value">partner@myutech.com</span>
-                </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><!-- 邮件图标 --></div>
+              <div class="contact-info-content">
+                <span class="contact-info-label">技术支持</span>
+                <span class="contact-info-value">support@myutech.com</span>
               </div>
+            </div>
 
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <img src="assets/contact/tel.svg" alt="MyuTech Tel" width="40px"  height="40px"/>
-                </div>
-                <div class="contact-info-content">
-                  <span class="contact-info-label">销售与咨询</span>
-                  <span class="contact-info-value">+86 400-800-****</span>
-                  <span class="contact-info-note">工作日 9:00–18:00</span>
-                </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><!-- 地图图标 --></div>
+              <div class="contact-info-content">
+                <span class="contact-info-label">公司总部</span>
+                <span class="contact-info-value">上海市浦东新区创新大道88号</span>
               </div>
+            </div>
 
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <img src="assets/contact/mail.svg" alt="MyuTech mail" width="40px"  height="40px"/>
-                </div>
-                <div class="contact-info-content">
-                  <span class="contact-info-label">技术支持</span>
-                  <span class="contact-info-value">support@myutech.com</span>
-                </div>
-              </div>
-
-              <div class="contact-info-item">
-                <div class="contact-info-icon">
-                  <img src="assets/contact/map.svg" alt="MyuTech map" width="40px"  height="40px"/>
-                </div>
-                <div class="contact-info-content">
-                  <span class="contact-info-label">公司总部</span>
-                  <span class="contact-info-value">上海市浦东新区创新大道88号</span>
-                </div>
-              </div>
-
-              <div class="contact-quick-links">
-                <button class="btn btn-outline btn-sm">预约参观</button>
-                <button class="btn btn-outline btn-sm">下载白皮书</button>
-              </div>
+            <div class="contact-quick-links">
+              <button class="btn btn-outline btn-sm">预约参观</button>
+              <button class="btn btn-outline btn-sm">下载白皮书</button>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </section>
-
+      </div>
+    </section>
+  </main>
 
   <!-- 简单前端校验（沿用现有表单逻辑） -->
   <script>
@@ -192,5 +206,5 @@
   <script src="js/nav-active.js"></script>
   <script src="js/include.js"></script>
 </body>
-
 </html>
+
