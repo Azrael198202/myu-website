@@ -1,22 +1,199 @@
 {
-  "site": { "name": "MicroMyu", "motto": "Intelligence · Integration · Innovation · Connected Future" },
-  "nav": { 
-    "menu":"Menu", 
-    "homepage":"Home", 
-    "about": "About us", 
-    "scope": "Services", 
-    "team": "Team", 
-    "solutions": "Solutions", 
-    "privacy": "Privacy", 
-    "contact": "Contact" },
-  "footer": { "rights": "© 2025 MicroMyu Co., Ltd. | All Rights Reserved" },
-  "ui": { "viewProfile": "Contact / Profile" },
-
-  "index": {
-    "hero": { "title": "Towards an Intelligent Future", "sub": "Fusing AI · XR · IoT · Cloud into real-world innovation" },
+  "site": {
+    "name": "MicroMyu",
+    "motto": "Intelligence · Integration · Innovation · Connected Future"
+  },
+  "nav": {
+    "menu": "Menu",
+    "homepage": "Home",
+    "about": "About us",
+    "scope": "Services",
+    "team": "Team",
+    "solutions": "Solutions",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "© 2025 MicroMyu Technology Co., Ltd. | All Rights Reserved",
+    "brand": {
+      "tagline": "Leading Innovation and Development in the Intelligent World of the Future",
+      "description": "Focused on integrating cutting-edge technologies such as Artificial Intelligence, Extended Reality, IoT, and Cloud Computing to deliver efficient and intelligent solutions for our clients."
+    },
+    "services": {
+      "title": "Products & Services",
+      "item1": "AI Solutions",
+      "item2": "Extended Reality (XR) Technology",
+      "item3": "IoT Platforms",
+      "item4": "Cloud Computing Services",
+      "item5": "Customized Software Development",
+      "item6": "Smart Hardware Design"
+    },
+    "solution": {
+      "title": "Solutions",
+      "item1": "Enterprise Digital Transformation",
+      "item2": "System Integration",
+      "item3": "Technology Consulting",
+      "item4": "Intelligent Automation",
+      "item5": "Data Analytics",
+      "item6": "Information Security"
+    },
     "about": {
       "title": "About Us",
-      "text": "MicroMyu focuses on R&D across computer software/hardware, AI, VR/AR/MR, IoT and Cloud. We deliver leading digital-transformation solutions and intelligent services for global enterprises."
+      "item1": "Company Overview",
+      "item2": "Our Team",
+      "item3": "Join Us",
+      "item4": "News & Updates",
+      "item5": "Partners",
+      "item6": "Sustainability"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "mail": {
+        "label": "Email",
+        "value": "contact@micro-myu.com"
+      },
+      "tel": {
+        "label": "Phone",
+        "value": "+86 138 0013 8000"
+      },
+      "address": {
+        "label": "Address",
+        "value": "Technology Park, Hangzhou, China"
+      },
+      "item4": "News & Updates",
+      "item5": "Partners",
+      "item6": "Sustainability"
+    },
+    "newsletter": {
+      "text": "Subscribe to our newsletter to receive the latest technology insights.",
+      "placeholder":"Enter your email address",
+      "success":"Subscription successful! Thank you for following us."
+    },
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "top": "▲ Back to Top",
+    "cookies": "Cookie Policy"
+  },
+  "ui": {
+    "viewProfile": "Contact / Profile"
+  },
+  "index": {
+    "hero": {
+      "title": "MicroMyu — Leading the Future with Intelligence",
+      "sub": "Integrating AI, XR, IoT, and cloud-native architecture to build scalable, enterprise-level intelligent platforms that drive transformative growth in the digital era.",
+      "button": "Explore Core Solutions Now"
+    },
+    "about": {
+      "title": "About Us",
+      "text": "MicroMyu is a forward-looking high-tech enterprise specializing in computer software and hardware, artificial intelligence, virtual reality (VR), augmented reality (AR), mixed reality (MR), the Internet of Things (IoT), and cloud computing. We are committed to providing global enterprises with cutting-edge digital solutions and intelligent services."
+    },
+    "solutions": {
+      "title": "Core Solutions — Driving Business Transformation Through Technology",
+      "subtitle": "MicroMyu deeply integrates AI, XR, and IoT with cloud computing to create scalable, customizable intelligent platforms and products. We help enterprises achieve operational intelligence, immersive experiences, and data-driven decision-making. We focus on results — reducing costs, improving efficiency, and creating new business models.",
+      "label1": "AI Platform",
+      "title1": "Intelligent Engine",
+      "description1": "End-to-end enterprise-grade AI capabilities: customized model training, real-time inference, automated data labeling, and model governance. Applicable to various scenarios such as supply chain forecasting, intelligent customer service, and visual quality inspection. Supports both on-premise and hybrid cloud deployments, balancing performance and compliance.",
+      "lable2": "XR",
+      "title2": "Immersive Experience",
+      "description2": "Immersive interaction and digital twin: AR guidance, VR training, mixed-reality maintenance, and visualized digital twin platforms. Designed for product design, remote collaboration, and realistic simulation through scalable XR modules.",
+      "lable3": "IoT",
+      "title3": "Smart Connectivity",
+      "description3": "A complete chain from sensors to edge computing: customized sensor integration, edge gateway development, low-power connectivity, and cloud-based device management. Enables real-time data collection, intelligent edge alerts, and remote maintenance.",
+      "title4": "Cloud-Native Architecture",
+      "description4": "Building secure, elastic, and scalable cloud-native platforms: microservices, containerization, CI/CD, and multi-cloud orchestration. We provide fast delivery pipelines, data lakes, and governance strategies to help enterprises achieve flexibility and cost optimization without added complexity.",
+      "title5": "End-to-End Deployment Path",
+      "description5": "Rapid customization: requirement evaluation → prototype → co-iteration → deployment and operations. MicroMyu delivers seamless integration across software customization, smart hardware design, and system implementation, ensuring every step from PoC to mass production is controllable and measurable.",
+      "action": "Take Action Now"
+    },
+    "industry": {
+      "title": "Industry Applications",
+      "subtitle": "MicroMyu brings cutting-edge technologies into key industries, driving efficiency, user experience, and sustainable growth. Each deployment is scenario-oriented, integrating AI, XR, IoT, and cloud computing to deliver measurable business results.",
+      "title1": "Smart Manufacturing",
+      "subtitle1": "Predictive Maintenance and Flexible Production",
+      "description1": "Through Industrial IoT and edge AI, we build real-time digital twins and predictive maintenance platforms for manufacturers, reducing unplanned downtime by over 40% and improving production efficiency by 30%.",
+      "kpi1": {
+        "value": "-40%",
+        "label": "Downtime"
+      },
+      "title2": "Smart City",
+      "subtitle2": "Data-Driven Urban Operations",
+      "description2": "In smart transportation, energy management, and public safety, MicroMyu deploys cloud-based sensing networks and multimodal data fusion engines to achieve traffic congestion prediction, energy optimization, and rapid incident response.",
+      "btn2": "View Case Studies",
+      "title3": "Healthcare",
+      "subtitle3": "AI-Assisted Diagnosis and Remote Collaboration",
+      "description3": "We integrate AI medical imaging, wearable IoT, and XR-based remote collaboration to enable rapid screening, teleconsultation, and rehabilitation training. This improves diagnostic efficiency and reduces healthcare costs.",
+      "btn3": "Learn More",
+      "title4": "Retail & Experience Economy",
+      "subtitle4": "Omnichannel Experience Powered by Intelligent Perception",
+      "description4": "Combining computer vision and personalized recommendation engines, MicroMyu helps retailers achieve in-store behavior analytics, intelligent restocking, and immersive XR displays—boosting average order value and conversion rates.",
+      "btn4": "Consult Us",
+      "title5": "Energy & Sustainability",
+      "subtitle5": "Intelligent Scheduling and Carbon Reduction in Practice",
+      "description5": "For energy enterprises, we offer distributed energy management and load forecasting solutions. By combining IoT sensing with cloud optimization algorithms, we enable precise scheduling and visualized carbon reduction reporting.",
+      "kpi5": {
+        "value": "ESG",
+        "label": "Quantified Progress"
+      },
+      "title6": "Why Choose Us",
+      "description6": "Scenario-Driven: Solutions designed from real business challenges. Scalability: Modular architecture adaptable to organizations of all sizes and complexity. Measurable Results: KPI-aligned delivery that is transparent and data-driven.",
+      "btn6": "View Industry Whitepaper"
+    },
+    "updates": {
+      "title": "Latest Updates",
+      "subtitle": "Myu Express: Stay Ahead of the Future — We regularly share product progress, research achievements, and industry insights to help you stay ahead in the era of intelligence.",
+      "label1": "Milestone",
+      "title1": "MyuCore 2.0 Officially Released",
+      "description1": "Achieves edge–cloud synergy with 60% lower response latency, supporting over 20 industry scenarios.",
+      "metric1": "-60%",
+      "date1": "January 2025",
+      "label2": "Strategic Partnership",
+      "title2": "Collaboration with a Global Manufacturing Leader",
+      "description2": "Launched an XR + IoT smart factory pilot project, covering predictive maintenance and digital twin applications.",
+      "date2": "December 2024",
+      "label3": "Honor",
+      "title3": "Nominated as Innovative Tech Enterprise of the Year",
+      "description3": "Our research team published three top-tier conference papers and received industry recognition in edge inference and explainable AI.",
+      "date3": "November 2024"
+    },
+    "insights": {
+      "panel": "Tech Insights",
+      "media": "Media & Opinions"
+    },
+    "spotlight": {
+      "label1": "Report",
+      "title1": "Five Key Applications of Edge Inference in Real-Time Supply Chain Decisions",
+      "excerpt1": "From demand forecasting to inventory optimization — exploring how edge AI enables millisecond-level intelligent decision-making.",
+      "btn1": "Read Report",
+      "label2": "Column",
+      "title2": "Balancing Usability and Sustainability in Metaverse Interaction Design",
+      "excerpt2": "How to achieve both energy efficiency and immersive user experience in virtual environments.",
+      "btn2": "Read More",
+      "label3": "Commentary",
+      "title3": "Three Core Challenges in Deploying Generative AI for Enterprise Services",
+      "excerpt3": "From data compliance and cost control to explainability — key considerations for enterprise AI implementation.",
+      "btn3": "View Opinion",
+      "label4": "Media Coverage",
+      "title4": "Finance Weekly: MicroMyu Drives Smart Transformation in Manufacturing",
+      "excerpt4": "An in-depth report on how MicroMyu empowers traditional manufacturing through industrial IoT and edge AI.",
+      "btn4": "Read Full Article",
+      "label5": "Industry Roundtable",
+      "title5": "Chief Scientists Discuss 'Explainable AI and Enterprise Trust'",
+      "excerpt5": "How to build transparent and auditable decision systems in enterprise AI applications.",
+      "btn5": "Watch Video",
+      "cta": {
+        "text": "Subscribe to our tech brief to receive monthly highlights, whitepapers, and exclusive event invitations.",
+        "btn": "Subscribe Now"
+      }
+    },
+    "vision": {
+      "title": "Our Vision",
+      "mission": "Our vision is to reshape the boundaries of future production and life through intelligent technology. MicroMyu is dedicated to seamlessly integrating AI, XR, IoT, and cloud capabilities to build scalable, low-energy, and auditable intelligent systems that enable enterprises to make efficient decisions and achieve sustainable growth.",
+      "title1": "Human-Centered · Sustainable",
+      "description1": "We prioritize energy efficiency, data privacy, and social impact in our product design and deployment, promoting green computing and responsible AI practices.",
+      "title2": "Open Ecosystem",
+      "description2": "Through standardized interfaces, transparent algorithms, and industry collaboration, we empower partners and developers to accelerate digital transformation across vertical industries.",
+      "title3": "Measurable Business & Environmental Impact",
+      "description3": "We translate technological value into long-term social benefits, creating quantifiable outcomes in both business growth and environmental sustainability."
     },
     "scope": {
       "title": "Core Service Scope",
@@ -34,27 +211,50 @@
     },
     "cta": "Learn More"
   },
-
   "teams": {
-    "hero": { "title": "Our Team", "sub": "Interdisciplinary · Integrated · Future-Oriented" },
+    "hero": {
+      "title": "Our Team",
+      "sub": "Interdisciplinary · Integrated · Future-Oriented"
+    },
     "title": "Core Members",
     "members": [
-      { "name": "Alex Chen", "role": "Chief Executive Officer · CEO", "bio": "Serial entrepreneur focused on AI and digital transformation; expert in strategy and product growth.", 
-      "link": "mailto:contact@micro-myu.com?subject=To%20Alex%20Chen" },
-      { "name": "Mei Nakamura", "role": "Chief Technology Officer · CTO", "bio": "Leads AI/XR/IoT integration; focuses on cloud-native HA and edge intelligence.", 
-      "link": "mailto:contact@micro-myu.com?subject=To%20Mei%20Nakamura" },
-      { "name": "Ryo Suzuki", "role": "Head of Product", "bio": "Translates complex tech into usable experiences; passionate about data-driven design systems.", 
-      "link": "mailto:contact@micro-myu.com?subject=To%20Ryo%20Suzuki" },
-      { "name": "Lily Wang", "role": "Solution Architect", "bio": "Specialized in enterprise digital transformation and solution architecture.", 
-      "link": "mailto:contact@micro-myu.com?subject=To%20Lily%20Wang" }
+      {
+        "name": "Alex Chen",
+        "role": "Chief Executive Officer · CEO",
+        "bio": "Serial entrepreneur focused on AI and digital transformation; expert in strategy and product growth.",
+        "link": "mailto:contact@micro-myu.com?subject=To%20Alex%20Chen"
+      },
+      {
+        "name": "Mei Nakamura",
+        "role": "Chief Technology Officer · CTO",
+        "bio": "Leads AI/XR/IoT integration; focuses on cloud-native HA and edge intelligence.",
+        "link": "mailto:contact@micro-myu.com?subject=To%20Mei%20Nakamura"
+      },
+      {
+        "name": "Ryo Suzuki",
+        "role": "Head of Product",
+        "bio": "Translates complex tech into usable experiences; passionate about data-driven design systems.",
+        "link": "mailto:contact@micro-myu.com?subject=To%20Ryo%20Suzuki"
+      },
+      {
+        "name": "Lily Wang",
+        "role": "Solution Architect",
+        "bio": "Specialized in enterprise digital transformation and solution architecture.",
+        "link": "mailto:contact@micro-myu.com?subject=To%20Lily%20Wang"
+      }
     ]
   },
-
   "privacy": {
-    "hero": { "title": "Privacy Policy", "sub": "We value and protect your personal data and security" },
+    "hero": {
+      "title": "Privacy Policy",
+      "sub": "We value and protect your personal data and security"
+    },
     "updated": "Effective: 2025-10-28",
     "sections": [
-      { "h": "General", "p": "We process personal data lawfully, fairly and transparently. This policy applies to our sites, products and services." },
+      {
+        "h": "General",
+        "p": "We process personal data lawfully, fairly and transparently. This policy applies to our sites, products and services."
+      },
       {
         "h": "Information We Collect",
         "list": [
@@ -73,11 +273,26 @@
           "Other purposes with your consent (subscriptions, event notices)"
         ]
       },
-      { "h": "Cookies & Similar Tech", "p": "Used for sessions, preferences, analytics and security. You can manage/disable cookies in your browser; some features may be limited." },
-      { "h": "Sharing with Third Parties", "p": "Shared only for legal compliance, contract performance, or with trusted vendors under proper safeguards." },
-      { "h": "Cross-border Transfer & Storage", "p": "We adopt safeguards for cross-border transfers and retain data under minimization and retention principles." },
-      { "h": "Security Measures", "p": "Encryption, access control, least privilege, auditing and backups to reduce risk." },
-      { "h": "Children’s Privacy", "p": "We do not target minors or knowingly collect their data; we delete it if discovered." },
+      {
+        "h": "Cookies & Similar Tech",
+        "p": "Used for sessions, preferences, analytics and security. You can manage/disable cookies in your browser; some features may be limited."
+      },
+      {
+        "h": "Sharing with Third Parties",
+        "p": "Shared only for legal compliance, contract performance, or with trusted vendors under proper safeguards."
+      },
+      {
+        "h": "Cross-border Transfer & Storage",
+        "p": "We adopt safeguards for cross-border transfers and retain data under minimization and retention principles."
+      },
+      {
+        "h": "Security Measures",
+        "p": "Encryption, access control, least privilege, auditing and backups to reduce risk."
+      },
+      {
+        "h": "Children’s Privacy",
+        "p": "We do not target minors or knowingly collect their data; we delete it if discovered."
+      },
       {
         "h": "Your Rights",
         "list": [
@@ -86,28 +301,80 @@
           "Data portability (where permitted by law)"
         ]
       },
-      { "h": "Contact Us", "p": "Questions: contact@micro-myu.com" }
+      {
+        "h": "Contact Us",
+        "p": "Questions: contact@micro-myu.com"
+      }
     ]
   },
-
   "services": {
-    "hero": { "title": "Services", "sub": "Outcome-driven, end-to-end technology & delivery" },
+    "hero": {
+      "title": "Services",
+      "sub": "Outcome-driven, end-to-end technology & delivery"
+    },
     "groups": [
-      { "title": "AI / XR Innovation", "items": [ "Generative AI (chat, search, RAG, multimodal) solutions & on-prem deployment", "VR / AR / MR content production and interaction systems", "Computer vision, speech recognition and NLP applications" ] },
-      { "title": "Cloud & Data", "items": [ "Cloud-native design & migration (Kubernetes, DevOps, Observability)", "Big-data platforms (stream/batch, data lake/warehouse)", "Data governance, privacy compliance and security hardening" ] },
-      { "title": "Integration & Platforms", "items": [ "Network & information system integration, API gateways and middle-platforms", "IoT platforms & edge computing, device onboarding & remote O&M", "Blockchain & distributed ledger business implementations" ] },
-      { "title": "Outsourcing & Delivery", "items": [ "Software outsourcing, ITO and BPO services", "Test automation and continuous delivery pipelines", "Hybrid onsite/remote delivery with agile PM" ] },
-      { "title": "Products & Trade", "items": [ "Sales & maintenance of electronics, smart/wearables, computers & accessories", "Technology & goods import/export", "Enterprise IT consulting and digital-transformation implementation" ] }
+      {
+        "title": "AI / XR Innovation",
+        "items": [
+          "Generative AI (chat, search, RAG, multimodal) solutions & on-prem deployment",
+          "VR / AR / MR content production and interaction systems",
+          "Computer vision, speech recognition and NLP applications"
+        ]
+      },
+      {
+        "title": "Cloud & Data",
+        "items": [
+          "Cloud-native design & migration (Kubernetes, DevOps, Observability)",
+          "Big-data platforms (stream/batch, data lake/warehouse)",
+          "Data governance, privacy compliance and security hardening"
+        ]
+      },
+      {
+        "title": "Integration & Platforms",
+        "items": [
+          "Network & information system integration, API gateways and middle-platforms",
+          "IoT platforms & edge computing, device onboarding & remote O&M",
+          "Blockchain & distributed ledger business implementations"
+        ]
+      },
+      {
+        "title": "Outsourcing & Delivery",
+        "items": [
+          "Software outsourcing, ITO and BPO services",
+          "Test automation and continuous delivery pipelines",
+          "Hybrid onsite/remote delivery with agile PM"
+        ]
+      },
+      {
+        "title": "Products & Trade",
+        "items": [
+          "Sales & maintenance of electronics, smart/wearables, computers & accessories",
+          "Technology & goods import/export",
+          "Enterprise IT consulting and digital-transformation implementation"
+        ]
+      }
     ],
     "cta": "Contact Us"
   },
-
   "contact": {
-    "hero": { "title": "Contact Us", "sub": "MicroMyu – Connecting the Future" },
-    "info": { "title": "Company Info", "name": "MicroMyu Co., Ltd.", "addr": "1-2-3 Hakata, Fukuoka, Japan", "tel": "Tel: +81-92-xxx-xxxx" },
-    "form": { "title": "Get in Touch", "name": "Name", "email": "Email", "message": "Message", "submit": "Send" }
+    "hero": {
+      "title": "Contact Us",
+      "sub": "MicroMyu – Connecting the Future"
+    },
+    "info": {
+      "title": "Company Info",
+      "name": "MicroMyu Co., Ltd.",
+      "addr": "1-2-3 Hakata, Fukuoka, Japan",
+      "tel": "Tel: +81-92-xxx-xxxx"
+    },
+    "form": {
+      "title": "Get in Touch",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
   },
-  
   "about": {
     "meta": {
       "title": "About | MicroMyu"

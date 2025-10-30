@@ -148,6 +148,18 @@
   margin-top: 5px;
   outline: 2px solid rgba(0, 224, 255, .25);
 }
+
+.spotlight-card2 {
+  display: grid;
+  /* grid-template-columns: .9fr 1.2fr;  图文并排 */
+  gap: 14px;
+  border: 2px solid rgba(0,0,0,.08);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-top: 5px;
+  outline: 2px solid rgba(0, 224, 255, .25);
+}
+
 .spotlight-image img {
   width: 100%; height: 100%;
   max-height: 160px; object-fit: cover;
@@ -159,6 +171,7 @@
   background: linear-gradient(180deg, rgba(0,255,200,.12), transparent 60%);
   border: 2px solid var(--panel-border);
   border-radius: var(--radius);
+  text-align: center;
 }
 
 /* -------- 愿景：左大面板 + 右 2x2 卡 -------- */
