@@ -1,0 +1,15 @@
+/* Scope list */
+.scope ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-3)
+}
+
+.scope li {
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid var(--border-2);
+  padding: 14px 16px;
+  border-radius: var(--r-md)
+}

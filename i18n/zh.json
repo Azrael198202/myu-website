@@ -1,5 +1,5 @@
 {
-  "site": { "name": "迈域科技 MyuTech", "motto": "智能 · 融合 · 创新 · 连接未来" },
+  "site": { "name": "迈域科技 MicroMyu", "motto": "智能 · 融合 · 创新 · 连接未来" },
   "nav": { "menu":"菜单", "homepage":"首页", "about": "公司介绍", "scope": "业务范围", "team": "团队", "privacy": "隐私政策", "contact": "联系我们" },
   "footer": { "rights": "© 2025 迈域科技有限公司 | All Rights Reserved" },
   "ui": { "viewProfile": "联系/档案" },
@@ -8,7 +8,7 @@
     "hero": { "title": "迈向未来的智能世界", "sub": "专注 AI · XR · IoT · 云计算 等前沿技术的融合与创新" },
     "about": {
       "title": "公司简介",
-      "text": "迈域科技（MyuTech）是一家面向未来的高科技企业，专注于计算机软硬件、人工智能、虚拟现实（VR）、增强现实（AR）、混合现实（MR）、物联网及云计算等领域的创新研发。我们致力于为全球企业提供领先的数字化解决方案与智能化服务。"
+      "text": "迈域科技（MicroMyu）是一家面向未来的高科技企业，专注于计算机软硬件、人工智能、虚拟现实（VR）、增强现实（AR）、混合现实（MR）、物联网及云计算等领域的创新研发。我们致力于为全球企业提供领先的数字化解决方案与智能化服务。"
     },
     "scope": {
       "title": "主要业务范围",
@@ -31,10 +31,14 @@
     "hero": { "title": "我们的团队", "sub": "跨学科 · 融合创新 · 面向未来" },
     "title": "核心成员",
     "members": [
-      { "name": "Alex Chen", "role": "首席执行官 · CEO", "bio": "连续创业者，专注 AI 与产业数字化落地，擅长战略规划与产品增长。", "link": "mailto:contact@myutech.com?subject=To%20Alex%20Chen" },
-      { "name": "Mei Nakamura", "role": "首席技术官 · CTO", "bio": "主导 AI、XR、IoT 融合架构，关注高可用云原生与边缘智能。", "link": "mailto:contact@myutech.com?subject=To%20Mei%20Nakamura" },
-      { "name": "Ryo Suzuki", "role": "产品总监 · Head of Product", "bio": "将复杂技术转译为可用产品体验，热衷数据驱动与设计系统。", "link": "mailto:contact@myutech.com?subject=To%20Ryo%20Suzuki" },
-      { "name": "Lily Wang", "role": "解决方案架构师", "bio": "专注企业信息化与数字化转型方案设计与实施。", "link": "mailto:contact@myutech.com?subject=To%20Lily%20Wang" }
+      { "name": "Alex Chen", "role": "首席执行官 · CEO", "bio": "连续创业者，专注 AI 与产业数字化落地，擅长战略规划与产品增长。", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Alex%20Chen" },
+      { "name": "Mei Nakamura", "role": "首席技术官 · CTO", "bio": "主导 AI、XR、IoT 融合架构，关注高可用云原生与边缘智能。", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Mei%20Nakamura" },
+      { "name": "Ryo Suzuki", "role": "产品总监 · Head of Product", "bio": "将复杂技术转译为可用产品体验，热衷数据驱动与设计系统。", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Ryo%20Suzuki" },
+      { "name": "Lily Wang", "role": "解决方案架构师", "bio": "专注企业信息化与数字化转型方案设计与实施。", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Lily%20Wang" }
     ]
   },
 
@@ -74,7 +78,7 @@
           "数据可携权（在法律允许范围内）。"
         ]
       },
-      { "h": "联系我们", "p": "如有疑问，请联系：contact@myutech.com" }
+      { "h": "联系我们", "p": "如有疑问，请联系：contact@micro-myu.com" }
     ]
   },
 
@@ -92,13 +96,13 @@
 
   "contact": {
     "hero": { "title": "联系我们", "sub": "迈域科技，连接未来" },
-    "info": { "title": "公司信息", "name": "迈域科技有限公司（MyuTech Co., Ltd.）", "addr": "日本福冈市博多区○○ 1-2-3", "tel": "电话：+81-92-xxx-xxxx" },
+    "info": { "title": "公司信息", "name": "迈域科技有限公司（MicroMyuCo., Ltd.）", "addr": "日本福冈市○○区○○ 1-2-3", "tel": "电话：+81-92-xxx-xxxx" },
     "form": { "title": "在线咨询", "name": "姓名 / Name", "email": "邮箱 / Email", "message": "留言 / Message", "submit": "发送 Send" }
   },
 
   "about": {
     "meta": {
-      "title": "公司介绍 | MyuTech"
+      "title": "公司介绍 | MicroMyu"
     },
     "hero": {
       "title": "公司介绍",
@@ -121,7 +125,7 @@
       "peers": " 兄弟公司"
     },
     "values": {
-      "companyName": "迈域科技有限公司（MyuTech Co., Ltd.）",
+      "companyName": "迈域科技有限公司（MicroMyu Co., Ltd.）",
       "established": "—",
       "hqAddress": "—",
       "postal": "—",

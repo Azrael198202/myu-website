@@ -1,0 +1,62 @@
+/* ---------- Team (one person per row) ---------- */
+.team {
+  max-width: 1000px;
+  margin: 0 auto
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px
+}
+
+.member-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  border-radius: var(--r-lg);
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid var(--border-2);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--glow)
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, .1)
+}
+
+.member-info {
+  flex: 1
+}
+
+.member-info h3 {
+  margin: 0 0 6px
+}
+
+.member-role {
+  color: var(--muted);
+  margin: 0 0 8px
+}
+
+.member-bio {
+  color: var(--text);
+  line-height: 1.7
+}
+
+.btn-secondary {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 224, 255, .45);
+  background: var(--primary-08);
+  color: #b9f3ff
+}

@@ -1,12 +1,12 @@
 {
-  "site": { "name": "迈域科技 MyuTech", "motto": "インテリジェンス・融合・イノベーション・未来へ接続" },
+  "site": { "name": "迈域科技 MicroMyu", "motto": "インテリジェンス・融合・イノベーション・未来へ接続" },
   "nav": { "menu":"メニュー","homepage":"ホームページ", "about": "会社紹介", "scope": "事業範囲", "team": "チーム", "privacy": "プライバシー", "contact": "お問い合わせ" },
-  "footer": { "rights": "© 2025 MyuTech Co., Ltd. | All Rights Reserved" },
+  "footer": { "rights": "© 2025 MicroMyu Co., Ltd. | All Rights Reserved" },
   "ui": { "viewProfile": "連絡/プロフィール" },
 
   "index": {
     "hero": { "title": "未来のインテリジェント世界へ", "sub": "AI・XR・IoT・クラウドの先端融合に注力" },
-    "about": { "title": "会社概要", "text": "MyuTech は、コンピュータのソフト・ハード、AI、VR/AR/MR、IoT、クラウド分野の研究開発に注力し、企業のデジタル変革を支援します。" },
+    "about": { "title": "会社概要", "text": "MicroMyu は、コンピュータのソフト・ハード、AI、VR/AR/MR、IoT、クラウド分野の研究開発に注力し、企業のデジタル変革を支援します。" },
     "scope": {
       "title": "主な事業範囲",
       "items": [
@@ -28,10 +28,14 @@
     "hero": { "title": "私たちのチーム", "sub": "学際的・融合型・未来志向" },
     "title": "コアメンバー",
     "members": [
-      { "name": "Alex Chen", "role": "最高経営責任者 · CEO", "bio": "連続起業家。AI と産業 DX の実装に注力し、戦略設計と製品成長に精通。", "link": "mailto:contact@myutech.com?subject=To%20Alex%20Chen" },
-      { "name": "Mei Nakamura", "role": "最高技術責任者 · CTO", "bio": "AI・XR・IoT の統合アーキテクチャを主導。クラウドネイティブ/エッジに注力。", "link": "mailto:contact@myutech.com?subject=To%20Mei%20Nakamura" },
-      { "name": "Ryo Suzuki", "role": "プロダクト責任者 · Head of Product", "bio": "複雑な技術を体験へ転換。データドリブンとデザインシステムを重視。", "link": "mailto:contact@myutech.com?subject=To%20Ryo%20Suzuki" },
-      { "name": "Lily Wang", "role": "ソリューションアーキテクト", "bio": "企業情報化と DX ソリューションの設計・実装を担当。", "link": "mailto:contact@myutech.com?subject=To%20Lily%20Wang" }
+      { "name": "Alex Chen", "role": "最高経営責任者 · CEO", "bio": "連続起業家。AI と産業 DX の実装に注力し、戦略設計と製品成長に精通。", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Alex%20Chen" },
+      { "name": "Mei Nakamura", "role": "最高技術責任者 · CTO", "bio": "AI・XR・IoT の統合アーキテクチャを主導。クラウドネイティブ/エッジに注力。", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Mei%20Nakamura" },
+      { "name": "Ryo Suzuki", "role": "プロダクト責任者 · Head of Product", "bio": "複雑な技術を体験へ転換。データドリブンとデザインシステムを重視。", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Ryo%20Suzuki" },
+      { "name": "Lily Wang", "role": "ソリューションアーキテクト", "bio": "企業情報化と DX ソリューションの設計・実装を担当。", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Lily%20Wang" }
     ]
   },
 
@@ -71,7 +75,7 @@
           "データポータビリティ（法の範囲内）"
         ]
       },
-      { "h": "お問い合わせ", "p": "ご質問は：contact@myutech.com まで" }
+      { "h": "お問い合わせ", "p": "ご質問は：contact@micro-myu.com まで" }
     ]
   },
 
@@ -88,17 +92,17 @@
   },
 
   "contact": {
-    "hero": { "title": "お問い合わせ", "sub": "MyuTech – 未来へのつながり" },
-    "info": { "title": "会社情報", "name": "迈域科技株式会社（MyuTech Co., Ltd.）", "addr": "日本 福岡市 博多区 ○○ 1-2-3", "tel": "電話：+81-92-xxx-xxxx" },
+    "hero": { "title": "お問い合わせ", "sub": "MicroMyu – 未来へのつながり" },
+    "info": { "title": "会社情報", "name": "迈域科技株式会社（MicroMyuCo., Ltd.）", "addr": "日本 福岡市 博多区 ○○ 1-2-3", "tel": "電話：+81-92-xxx-xxxx" },
     "form": { "title": "オンラインお問い合わせ", "name": "お名前 / Name", "email": "メール / Email", "message": "メッセージ / Message", "submit": "送信 Send" }
   },
   "about": {
     "meta": {
-      "title": "会社概要 | MyuTech"
+      "title": "会社概要 | MicroMyu"
     },
     "hero": {
       "title": "会社概要",
-      "sub": "MyuTech – インテリジェンスで未来とつながる"
+      "sub": "MicroMyu – インテリジェンスで未来とつながる"
     },
     "company": {
       "title": "会社情報"
@@ -118,7 +122,7 @@
       "peers": "同級会社"
     },
     "values": {
-      "companyName": "迈域科技株式会社（MyuTech Co., Ltd.）",
+      "companyName": "迈域科技株式会社（MicroMyu Co., Ltd.）",
       "established": "—",
       "hqAddress": "—",
       "postal": "—",

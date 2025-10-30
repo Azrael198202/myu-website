@@ -120,7 +120,7 @@ function renderPrivacySections() {
 async function initI18n() {
   const urlLang = new URLSearchParams(location.search).get("lang");
   let saved = "en";
-  try { saved = localStorage.getItem("myutech_lang") || "en"; } catch(e){}
+  try { saved = localStorage.getItem("Mmcromyu_lang") || "en"; } catch(e){}
   const lang = urlLang || saved || "en";
 
   document.documentElement.lang = lang;
@@ -136,7 +136,7 @@ async function initI18n() {
       const u = new URL(location.href);
       u.searchParams.set("lang", l);
       history.replaceState({}, "", u);
-      try { localStorage.setItem("myutech_lang", l); } catch(e){}
+      try { localStorage.setItem("micromyulang", l); } catch(e){}
       document.documentElement.lang = l;
       await loadPack(l);
       applyI18n();

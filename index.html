@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="site.name">迈域科技 MyuTech</title>
+  <title data-i18n="site.name">迈域科技 MicroMyu</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
     rel="stylesheet">
@@ -15,68 +16,16 @@
 
   <div data-include="header"></div>
 
-  <!-- <script defer data-name="navigation">
-    const navigationToggle = document.getElementById('navigation-toggle');
-    const navigationMobile = document.getElementById('navigation-mobile-menu');
-    const mobileLinks = navigationMobile.querySelectorAll('.navigation-mobile-link');
-    const mobileOverlay = navigationMobile.querySelector('.navigation-mobile-overlay');
+  <main id="micromyu-homepage">
 
-    function toggleMobileMenu() {
-      const isExpanded = navigationToggle.getAttribute('aria-expanded') === 'true';
+    <section class="hero">
+      <div class="hero-content">
+        <h1 id="index-hero-title" data-i18n="index.hero.title">迈向未来的智能世界</h1>
+        <p id="index-hero-sub" data-i18n="index.hero.sub">专注 AI · XR · IoT · 云计算 等前沿技术的融合与创新</p>
+        <a href="#about" id="index-cta" class="btn-primary" data-i18n="index.cta">了解更多</a>
+      </div>
+    </section>
 
-      navigationToggle.setAttribute('aria-expanded', !isExpanded);
-      navigationMobile.setAttribute('aria-hidden', isExpanded);
-
-      // Prevent body scroll when menu is open
-      if (!isExpanded) {
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = '';
-      }
-    }
-
-    function closeMobileMenu() {
-      navigationToggle.setAttribute('aria-expanded', 'false');
-      navigationMobile.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-
-    // Toggle button click
-    navigationToggle.addEventListener('click', toggleMobileMenu);
-
-    // Close on overlay click
-    mobileOverlay.addEventListener('click', closeMobileMenu);
-
-    // Close on link click
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', closeMobileMenu);
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && navigationMobile.getAttribute('aria-hidden') === 'false') {
-        closeMobileMenu();
-      }
-    });
-
-    // Add active state on scroll
-    let lastScroll = 0;
-    const navigationContainer = document.getElementById('navigation-main');
-
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-
-      if (currentScroll > 50) {
-        navigationContainer.style.boxShadow = '0 8px 32px color-mix(in srgb, var(--color-primary) 15%, transparent)';
-      } else {
-        navigationContainer.style.boxShadow = '0 4px 24px color-mix(in srgb, var(--color-primary) 10%, transparent)';
-      }
-
-      lastScroll = currentScroll;
-    });
-  </script> -->
-
-  <main id="myutech-homepage">
     <!-- Hero Section -->
     <section class="hero-section" role="region" aria-labelledby="hero-headline">
       <div class="hero-container">
@@ -500,10 +449,7 @@
         </div>
       </div>
     </section>
-
   </main>
-
-
   <section class="hero">
     <div class="hero-content">
       <h1 id="index-hero-title" data-i18n="index.hero.title">迈向未来的智能世界</h1>

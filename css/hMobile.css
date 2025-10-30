@@ -178,3 +178,68 @@
   background: rgba(0, 170, 187, .08);
   color: #111;
 }
+
+/* ---------- Mobile adjustments ---------- */
+@media (max-width: 768px) {
+
+  /* header nav 改为隐藏，下拉出现 */
+  nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* 页面左右留空，避免贴边 */
+  body {
+    padding: 0 12px;
+  }
+
+  .contact {
+    padding: 40px 4%;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    /* 变成一列 */
+    gap: 24px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1100px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 34px
+  }
+
+  .sub-hero h1 {
+    font-size: 28px
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--sp-3)
+  }
+}
+
+
+
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion:reduce) {
+  * {
+    animation: none !important;
+    transition: none !important
+  }
+}

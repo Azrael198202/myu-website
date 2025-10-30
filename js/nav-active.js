@@ -29,7 +29,7 @@
     const timer = setInterval(() => { if (allPresent()) { mo.disconnect(); clearInterval(timer); clearTimeout(kill); cb(); } }, interval);
 
     // 3) 超时兜底
-    const kill = setTimeout(() => { mo.disconnect(); clearInterval(timer); console.warn('[MyuTech] 等待导航元素超时：', selectors); }, timeout);
+    const kill = setTimeout(() => { mo.disconnect(); clearInterval(timer); console.warn('[MicroMyu] 等待导航元素超时：', selectors); }, timeout);
   }
 
   // -------- 高亮当前页 --------
@@ -48,7 +48,7 @@
     const inner = qs('#subBarInner');
 
     if (!nav || !bar || !inner) {
-      console.warn('[MyuTech] 子菜单元素缺失，跳过 hover 子菜单。', { nav, bar, inner });
+      console.warn('[MicroMyu] 子菜单元素缺失，跳过 hover 子菜单。', { nav, bar, inner });
       return;
     }
 
@@ -83,7 +83,7 @@
       document.addEventListener('keydown', e => { if (e.key === 'Escape') scheduleHide(); });
     }
 
-    console.log('[MyuTech] 桌面 hover 子菜单就绪');
+    console.log('[MicroMyu] 桌面 hover 子菜单就绪');
   }
 
   // -------- 初始化「手机抽屉 + 手风琴」--------
@@ -94,7 +94,7 @@
     const closeBtn = qs('#mCloseBtn');
 
     if (!drawer || !mask || !closeBtn) {
-      console.warn('[MyuTech] 手机菜单元素缺失，跳过抽屉。', { drawer, btn, mask, closeBtn });
+      console.warn('[MicroMyu] 手机菜单元素缺失，跳过抽屉。', { drawer, btn, mask, closeBtn });
       return;
     }
 
@@ -127,7 +127,7 @@
       });
     });
 
-    console.log('[MyuTech] 手机抽屉就绪');
+    console.log('[MicroMyu] 手机抽屉就绪');
   }
 
   // -------- 一次性总初始化 --------
@@ -139,13 +139,13 @@
 
   // 1) DOM 就绪后，等待 header 异步注入完成再 init
   document.addEventListener('DOMContentLoaded', () => {
-    console.log('[MyuTech] 等待导航元素注入…');
+    console.log('[MicroMyu] 等待导航元素注入…');
     whenElementsReady('#topNav,#subBar,#subBarInner,#mDrawer,#mMenuBtn,#mDrawerMask,#mCloseBtn', initAll);
   });
 
   // 2) 如果你的 include.js 在完成后会触发事件，可同时监听（可选）
   window.addEventListener('includes:ready', () => {
-    console.log('[MyuTech] 收到 includes:ready 事件，尝试初始化导航…');
+    console.log('[MicroMyu] 收到 includes:ready 事件，尝试初始化导航…');
     whenElementsReady('#topNav,#subBar,#subBarInner,#mDrawer,#mMenuBtn,#mDrawerMask,#mCloseBtn', initAll);
   });
 })();

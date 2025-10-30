@@ -1,5 +1,5 @@
 {
-  "site": { "name": "MyuTech", "motto": "Intelligence · Integration · Innovation · Connected Future" },
+  "site": { "name": "MicroMyu", "motto": "Intelligence · Integration · Innovation · Connected Future" },
   "nav": { 
     "menu":"Menu", 
     "homepage":"Home", 
@@ -9,14 +9,14 @@
     "solutions": "Solutions", 
     "privacy": "Privacy", 
     "contact": "Contact" },
-  "footer": { "rights": "© 2025 MyuTech Co., Ltd. | All Rights Reserved" },
+  "footer": { "rights": "© 2025 MicroMyu Co., Ltd. | All Rights Reserved" },
   "ui": { "viewProfile": "Contact / Profile" },
 
   "index": {
     "hero": { "title": "Towards an Intelligent Future", "sub": "Fusing AI · XR · IoT · Cloud into real-world innovation" },
     "about": {
       "title": "About Us",
-      "text": "MyuTech focuses on R&D across computer software/hardware, AI, VR/AR/MR, IoT and Cloud. We deliver leading digital-transformation solutions and intelligent services for global enterprises."
+      "text": "MicroMyu focuses on R&D across computer software/hardware, AI, VR/AR/MR, IoT and Cloud. We deliver leading digital-transformation solutions and intelligent services for global enterprises."
     },
     "scope": {
       "title": "Core Service Scope",
@@ -39,10 +39,14 @@
     "hero": { "title": "Our Team", "sub": "Interdisciplinary · Integrated · Future-Oriented" },
     "title": "Core Members",
     "members": [
-      { "name": "Alex Chen", "role": "Chief Executive Officer · CEO", "bio": "Serial entrepreneur focused on AI and digital transformation; expert in strategy and product growth.", "link": "mailto:contact@myutech.com?subject=To%20Alex%20Chen" },
-      { "name": "Mei Nakamura", "role": "Chief Technology Officer · CTO", "bio": "Leads AI/XR/IoT integration; focuses on cloud-native HA and edge intelligence.", "link": "mailto:contact@myutech.com?subject=To%20Mei%20Nakamura" },
-      { "name": "Ryo Suzuki", "role": "Head of Product", "bio": "Translates complex tech into usable experiences; passionate about data-driven design systems.", "link": "mailto:contact@myutech.com?subject=To%20Ryo%20Suzuki" },
-      { "name": "Lily Wang", "role": "Solution Architect", "bio": "Specialized in enterprise digital transformation and solution architecture.", "link": "mailto:contact@myutech.com?subject=To%20Lily%20Wang" }
+      { "name": "Alex Chen", "role": "Chief Executive Officer · CEO", "bio": "Serial entrepreneur focused on AI and digital transformation; expert in strategy and product growth.", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Alex%20Chen" },
+      { "name": "Mei Nakamura", "role": "Chief Technology Officer · CTO", "bio": "Leads AI/XR/IoT integration; focuses on cloud-native HA and edge intelligence.", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Mei%20Nakamura" },
+      { "name": "Ryo Suzuki", "role": "Head of Product", "bio": "Translates complex tech into usable experiences; passionate about data-driven design systems.", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Ryo%20Suzuki" },
+      { "name": "Lily Wang", "role": "Solution Architect", "bio": "Specialized in enterprise digital transformation and solution architecture.", 
+      "link": "mailto:contact@micro-myu.com?subject=To%20Lily%20Wang" }
     ]
   },
 
@@ -82,7 +86,7 @@
           "Data portability (where permitted by law)"
         ]
       },
-      { "h": "Contact Us", "p": "Questions: contact@myutech.com" }
+      { "h": "Contact Us", "p": "Questions: contact@micro-myu.com" }
     ]
   },
 
@@ -99,18 +103,18 @@
   },
 
   "contact": {
-    "hero": { "title": "Contact Us", "sub": "MyuTech – Connecting the Future" },
-    "info": { "title": "Company Info", "name": "MyuTech Co., Ltd.", "addr": "1-2-3 Hakata, Fukuoka, Japan", "tel": "Tel: +81-92-xxx-xxxx" },
+    "hero": { "title": "Contact Us", "sub": "MicroMyu – Connecting the Future" },
+    "info": { "title": "Company Info", "name": "MicroMyu Co., Ltd.", "addr": "1-2-3 Hakata, Fukuoka, Japan", "tel": "Tel: +81-92-xxx-xxxx" },
     "form": { "title": "Get in Touch", "name": "Name", "email": "Email", "message": "Message", "submit": "Send" }
   },
   
   "about": {
     "meta": {
-      "title": "About | MyuTech"
+      "title": "About | MicroMyu"
     },
     "hero": {
       "title": "Company Profile",
-      "sub": "MyuTech — Connecting the Future with Intelligence"
+      "sub": "MicroMyu — Connecting the Future with Intelligence"
     },
     "company": {
       "title": "Corporate Information"
@@ -130,7 +134,7 @@
       "peers": "Peer Companies"
     },
     "values": {
-      "companyName": "MyuTech Co., Ltd.",
+      "companyName": "MicroMyu Co., Ltd.",
       "established": "—",
       "hqAddress": "—",
       "postal": "—",
