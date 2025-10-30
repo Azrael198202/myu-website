@@ -38,6 +38,9 @@
   /* Motion */
   --ease: cubic-bezier(.2, .7, .2, 1);
   --dur: 220ms;
+
+  --panel-border:rgba(0, 224, 255, .25);
+  --radius:#00e0ff;
 }
 
 /* ---------- Reset ---------- */
@@ -191,7 +194,6 @@ img {
   color: var(--glass);
   font-weight: 700;
   letter-spacing: .5px
-  
 }
 
 nav a {
@@ -219,11 +221,14 @@ nav a.active {
 
 .hero {
   min-height: 48vh;
+  max-height:60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background: radial-gradient(1200px 600px at 20% 30%, rgba(0, 224, 255, .2), transparent), #0a0f1c;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -257,6 +262,64 @@ nav a.active {
   color: var(--muted-2)
 }
 
+/* .hero-visual-plane,
+.hero-video,
+.hero-video-overlay { position: absolute; inset: 0; z-index: 1; }
+
+.hero-content { position: relative; z-index: 2; }
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(800px 400px at 20% 30%, rgba(0, 224, 255, .18), transparent);
+} */
+
+@media (max-width: 1680px) {
+  .hero {
+    grid-template-columns: 1fr;
+    /* 改为单列 */
+    min-height: 70vh;
+  }
+
+  /* 让视频层变成“背景”，铺满整个 .hero */
+  .hero-visual-plane {
+    position: absolute;
+    /* 关键：脱离文流，充当背景层 */
+    inset: 0;
+    z-index: 1;
+    /* 低于文字 */
+    min-height: unset;
+  }
+
+  .hero-content {
+    z-index: 3;
+    /* 高于视频 */
+    text-align: center;
+    padding: 32px 20px;
+  }
+
+  /* 视频铺满容器并随宽高自适应裁切 */
+  .hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    /* 关键：按容器裁切，保持比例 */
+  }
+
+  /* 叠加一层渐变，提升文字可读性 */
+  .hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(to top, rgba(10, 15, 28, .75), rgba(10, 15, 28, .25) 40%, rgba(10, 15, 28, .0) 80%),
+      radial-gradient(600px 300px at 20% 30%, rgba(0, 224, 255, .22), transparent);
+  }
+}
+
 /* ---------- Generic Sections ---------- */
 .about,
 .scope,
@@ -281,5 +344,3 @@ nav a.active {
   padding: 14px 16px;
   border-radius: var(--r-md)
 }
-
-
