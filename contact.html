@@ -30,17 +30,17 @@
           <div class="contact-grid">
             <!-- 左列：快速咨询说明 -->
             <div class="contact-lead-column">
-              <h3 class="contact-column-title">快速咨询</h3>
-              <p class="contact-description">
+              <h3 class="contact-column-title" data-i18n="contact.contact.title">快速咨询</h3>
+              <p class="contact-description" data-i18n="contact.contact.description">
                 填写需求，我们将在24小时内与您联系，为您量身匹配最优技术方案。无论是 AI 模型定制、XR 体验、IoT 部署还是云端架构，我们提供端到端技术与落地支持。
               </p>
               <div class="contact-why">
-                <h4 class="contact-why-title">为什么选择我们</h4>
+                <h4 class="contact-why-title" data-i18n="contact.contact.why">为什么选择我们</h4>
                 <ul class="contact-why-list">
-                  <li>行业级交付能力</li>
-                  <li>快速原型验证</li>
-                  <li>可扩展架构</li>
-                  <li>可量化 ROI</li>
+                  <li data-i18n="contact.contact.why1">行业级交付能力</li>
+                  <li data-i18n="contact.contact.why2">快速原型验证</li>
+                  <li data-i18n="contact.contact.why3">可扩展架构</li>
+                  <li data-i18n="contact.contact.why4">可量化 ROI</li>
                 </ul>
               </div>
             </div>
@@ -50,67 +50,67 @@
               <form class="contact-form" aria-label="企业合作咨询表">
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="company-name" class="form-label">公司名称</label>
+                    <label for="company-name" class="form-label" data-i18n="contact.form.company">公司名称</label>
                     <input type="text" id="company-name" name="company-name" class="form-input" required />
                   </div>
                   <div class="form-group">
-                    <label for="contact-name" class="form-label">联系人姓名</label>
+                    <label for="contact-name" class="form-label" data-i18n="contact.form.contact">联系人姓名</label>
                     <input type="text" id="contact-name" name="contact-name" class="form-input" required />
                   </div>
                 </div>
 
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="position" class="form-label">职位/部门</label>
+                    <label for="position" class="form-label" data-i18n="contact.form.position">职位/部门</label>
                     <input type="text" id="position" name="position" class="form-input" />
                   </div>
                   <div class="form-group">
-                    <label for="phone" class="form-label">联系电话</label>
+                    <label for="phone" class="form-label" data-i18n="contact.form.phone">联系电话</label>
                     <input type="tel" id="phone" name="phone" class="form-input" required />
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="email" class="form-label">邮箱地址</label>
+                  <label for="email" class="form-label" data-i18n="contact.form.email">邮箱地址</label>
                   <input type="email" id="email" name="email" class="form-input" required />
                 </div>
 
                 <div class="form-group">
-                  <label for="project-type" class="form-label">项目类型</label>
+                  <label for="project-type" class="form-label"  data-i18n="contact.form.type">项目类型</label>
                   <select id="project-type" name="project-type" class="form-input">
-                    <option value="">请选择</option>
-                    <option value="ai">AI 人工智能</option>
-                    <option value="xr">XR 扩展现实</option>
-                    <option value="iot">IoT 物联网</option>
-                    <option value="cloud">云与架构</option>
-                    <option value="integration">系统集成</option>
-                    <option value="other">其他</option>
+                    <option value="" data-i18n="contact.form.value">请选择</option>
+                    <option value="ai" data-i18n="contact.form.value1">AI 人工智能</option>
+                    <option value="xr" data-i18n="contact.form.value2">XR 扩展现实</option>
+                    <option value="iot" data-i18n="contact.form.value3">IoT 物联网</option>
+                    <option value="cloud" data-i18n="contact.form.value4">云与架构</option>
+                    <option value="integration" data-i18n="contact.form.value5">系统集成</option>
+                    <option value="other" data-i18n="contact.form.value6">其他</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="project-description" class="form-label">项目简介（200字以内）</label>
+                  <label for="project-description" class="form-label" data-i18n="contact.form.description">项目简介（200字以内）</label>
                   <textarea id="project-description" name="project-description" class="form-input form-textarea"
                     rows="4"></textarea>
                 </div>
 
-                <p class="form-privacy">隐私与保密承诺：我们对所有商业信息严守保密协议，支持签署 NDA。</p>
+                <p class="form-privacy" data-i18n="contact.form.privacy">隐私与保密承诺：我们对所有商业信息严守保密协议，支持签署 NDA。</p>
 
-                <button type="submit" class="btn btn-primary btn-lg">立即提交并预约专属顾问</button>
+                <button type="submit" class="btn btn-primary btn-lg" data-i18n="contact.form.submit">立即提交并预约专属顾问</button>
               </form>
             </div>
 
             <!-- 右列：直接联系 -->
             <div class="contact-info-column">
-              <h3 class="contact-column-title">直接联系</h3>
+              <h3 class="contact-column-title" data-i18n="contact.info.title">直接联系</h3>
 
               <div class="contact-info-item">
                 <div class="contact-info-icon">
                   <img src="assets/contact/mail.svg" alt="MicroMyu mail" width="60px"  height="60px"/>
                 </div>
                 <div class="contact-info-content">
-                  <span class="contact-info-label">商务邮箱</span>
-                  <span class="contact-info-value">partner@micro-myu.com</span>
+                  <span class="contact-info-label" data-i18n="contact.info.label1">商务邮箱</span>
+                  <span class="contact-info-value" data-i18n="contact.info.value1">partner@micro-myu.com</span>
                 </div>
               </div>
 
@@ -119,9 +119,9 @@
                   <img src="assets/contact/tel.svg" alt="MicroMyu Tel" width="60px"  height="60px"/>
                 </div>
                 <div class="contact-info-content">
-                  <span class="contact-info-label">销售与咨询</span>
-                  <span class="contact-info-value">+86 400-800-****</span>
-                  <span class="contact-info-note">工作日 9:00–18:00</span>
+                  <span class="contact-info-label" data-i18n="contact.info.label2">销售与咨询</span>
+                  <span class="contact-info-value" data-i18n="contact.info.value2">+86 400-800-****</span>
+                  <span class="contact-info-note" data-i18n="contact.info.note2">工作日 9:00–18:00</span>
                 </div>
               </div>
 
@@ -130,8 +130,8 @@
                   <img src="assets/contact/mail.svg" alt="MicroMyu mail" width="60px"  height="60px"/>
                 </div>
                 <div class="contact-info-content">
-                  <span class="contact-info-label">技术支持</span>
-                  <span class="contact-info-value">support@micro-myu.com</span>
+                  <span class="contact-info-label" data-i18n="contact.info.label3">技术支持</span>
+                  <span class="contact-info-value" data-i18n="contact.info.value3">support@micro-myu.com</span>
                 </div>
               </div>
 
@@ -140,14 +140,14 @@
                   <img src="assets/contact/map.svg" alt="MicroMyu map" width="60px"  height="60px"/>
                 </div>
                 <div class="contact-info-content">
-                  <span class="contact-info-label">公司总部</span>
-                  <span class="contact-info-value">中国杭州市○○区○○88号</span>
+                  <span class="contact-info-label" data-i18n="contact.info.label4">公司总部</span>
+                  <span class="contact-info-value" data-i18n="contact.info.value4">中国杭州市○○区○○88号</span>
                 </div>
               </div>
 
               <div class="contact-quick-links">
-                <button class="btn btn-outline btn-sm">预约参观</button>
-                <button class="btn btn-outline btn-sm">下载白皮书</button>
+                <button class="btn btn-outline btn-sm" data-i18n="contact.quick.btn1">预约参观</button>
+                <button class="btn btn-outline btn-sm" data-i18n="contact.quick.btn2">下载白皮书</button>
               </div>
             </div>
           </div>

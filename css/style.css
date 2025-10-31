@@ -169,7 +169,7 @@ img {
   object-fit: cover
 }
 
-.logo span {
+.logo a {
   font-family: Orbitron, Roboto, sans-serif;
   color: var(--primary);
   font-weight: 700;

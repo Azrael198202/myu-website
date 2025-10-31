@@ -148,6 +148,167 @@
   display: none;
 }
 
+/* === Mega Panel === */
+.yt-mega {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 70px;
+  ;
+  /* 紧贴导航下方 */
+  background: #fff;
+  border-top: 1px solid #eee;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.yt-mega.open {
+  display: block;
+}
+
+.yt-mega-inner {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(240px, 32%) 1fr;
+  min-height: 420px;
+}
+
+/* 左侧灰栏 */
+.yt-mega-left {
+  position: relative;
+  background: #f7f7f7;
+  border-right: 1px solid #eee;
+  color: #111111;
+  padding: 28px 24px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: right;
+}
+
+.yt-mega-left h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #111;
+}
+
+.yt-mega-left .bar {
+  --bar-w: 80px;
+  /* ✅ 定义红线宽度变量，方便调整 */
+  position: absolute;
+  right: calc(-1 * var(--bar-w) / 2);
+  /* ✅ 让红线跨在左右分区交界线上 */
+  width: var(--bar-w);
+  height: 3px;
+  background: #c00;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.yt-mega-left .bar2 {
+  --bar-w: 80px;
+  /* ✅ 定义红线宽度变量，方便调整 */
+  position: absolute;
+  right: calc(-1 * var(--bar-w) / 2);
+  /* ✅ 让红线跨在左右分区交界线上 */
+  top:15px;
+  width: var(--bar-w);
+  height: 3px;
+  background: #111;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.yt-mega-left span {
+  font-size: 20px;
+}
+
+/* 右侧内容区：多列网格 */
+.yt-mega-right {
+  padding: 28px 28px 40px;
+}
+
+.yt-mega-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 16px 24px;
+}
+
+/* 链接样式 */
+.yt-mega-right a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: #111;
+  text-decoration: none;
+}
+
+.yt-mega-right a:hover {
+  background: #f5f7fa;
+}
+
+.yt-mega-right a::after {
+  content: "›";
+  margin-left: auto;
+  opacity: .5;
+  transition: transform .15s ease;
+}
+
+.yt-mega-right a:hover::after {
+  transform: translateX(2px);
+  opacity: .9;
+}
+
+/* 外链小图标（如需） */
+.yt-mega-right a[target="_blank"]::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+  opacity: .5;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3z"></path><path d="M5 5h6V3H3v8h2V5zm0 14v-6H3v8h8v-2H5z"/></svg>') center / contain no-repeat;
+}
+
+/* 适配深色文字/行高 */
+.yt-mega-right a span {
+  line-height: 1.2;
+}
+
+/* === 响应式（移动端） === */
+@media (max-width: 960px) {
+  .yt-nav {
+    gap: 12px;
+  }
+
+  .yt-mega-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .yt-mega-left {
+    display: none;
+  }
+
+  /* 移动端隐藏左栏 */
+  .yt-mega-right {
+    padding: 16px;
+  }
+
+  .yt-mega-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 可选：当鼠标离开面板/导航时隐藏的容器区域，提升交互容错 */
+.yt-mega-wrap {
+  position: relative;
+}
+
 /* ✅ 手机模式：隐藏主菜单，仅显示语言与按钮 */
 @media (max-width: 900px) {
   .yt-nav {
@@ -201,8 +362,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    right:-170px;
-    padding-right:clamp(0px, 2.5vw, 16px);
+    right: -170px;
+    padding-right: clamp(0px, 2.5vw, 16px);
   }
 
   /* 左侧 Logo/站点名：禁止换行，占据可伸缩空间 */
@@ -266,6 +427,38 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-left: -15px;
   }
 
+}
+
+/* 取消所有链接默认下划线（防止继承影响） */
+#topNav .yt-nav-item {
+  position: relative;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  outline: none;
+}
+
+#topNav .yt-nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;               /* 与文字同宽 */
+  bottom: -3px;                     /* 与你的视觉对齐，可微调 */
+  height: 2px;
+  background: var(--nav-accent, #14d9ff);
+  border-radius: 2px;
+
+  /* 初始隐藏 */
+  transform: scaleX(0);
+  transform-origin: left;
+  opacity: 0;
+  transition: transform .18s ease, opacity .18s ease;
+}
+
+#topNav .yt-nav-item:hover::after,
+#topNav .yt-nav-item:focus-visible::after,
+#topNav .yt-nav-item[aria-expanded="true"]::after {
+  transform: scaleX(1);
+  opacity: 0.7;
 }

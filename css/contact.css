@@ -68,6 +68,10 @@
     margin-bottom: 10px;
 }
 
+.contact-info-content {
+    display: block;
+}
+
 .contact-info-label {
     color: #9fb3c8;
     font-size: 13px;
@@ -75,6 +79,17 @@
 
 .contact-info-value {
     color: #eaf7ff;
+    font-size: 14px;
+}
+
+.contact-info-note {
+    font-size: 14px;
+}
+
+.contact-info-label,
+.contact-info-value,
+.contact-info-note {
+    display: block;
 }
 
 @media (max-width: 1024px) {
@@ -95,12 +110,12 @@
 }
 
 @media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: var(--sp-5)
-  }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--sp-5)
+    }
 
-  .form-row {
-    grid-template-columns: 1fr
-  }
+    .form-row {
+        grid-template-columns: 1fr
+    }
 }

@@ -3,30 +3,41 @@
 <header class="navbar">
   <div class="logo">
     <img src="assets/logo.png" alt="MicroMyu Logo" />
-    <span id="site-name" data-i18n="site.name">迈域科技 MicroMyu</span>
+    <a id="site-name" data-i18n="site.name" href="index.html">迈域科技 MicroMyu</a>
   </div>
 
   <div class="nav-right yt-nav-inner">
     <nav class="yt-nav" id="topNav">
-      <a class="yt-nav-item" href="index.html" data-i18n="nav.homepage" data-sub="sub-home">首页</a>
+      <!-- <a class="yt-nav-item" href="index.html" data-i18n="nav.homepage" data-sub="sub-home">首页</a>
       <a class="yt-nav-item" href="services.html" data-i18n="nav.scope" data-sub="sub-services">业务范围</a>
       <a class="yt-nav-item" href="solution.html" data-i18n="nav.solutions" data-sub="sub-solutions">解决方案</a>
       <a class="yt-nav-item" href="about.html" data-i18n="nav.about" data-sub="sub-about">公司介绍</a>
       <a class="yt-nav-item" href="teams.html" data-i18n="nav.team" data-sub="sub-team">团队</a>
-      <a class="yt-nav-item" href="contact.html" data-i18n="nav.contact" data-sub="sub-contact">联系我们</a>
+      <a class="yt-nav-item" href="contact.html" data-i18n="nav.contact" data-sub="sub-contact">联系我们</a> -->
+      <a class="yt-nav-item" data-i18n="nav.homepage" href="index.html">首页</a>
+      <a class="yt-nav-item" data-i18n="nav.scope" data-sub="sub-services">业务范围</a>
+      <a class="yt-nav-item" data-i18n="nav.solutions" data-sub="sub-solutions">解决方案</a>
+      <a class="yt-nav-item" data-i18n="nav.news" data-sub="sub-news">新闻资讯</a>
+      <a class="yt-nav-item" data-i18n="nav.about" data-sub="sub-about">关于我们</a>
+      <a class="yt-nav-item" data-i18n="nav.team" data-sub="sub-team">团队</a>
+      <a class="yt-nav-item" data-i18n="nav.contact" data-sub="sub-contact">联系我们</a>
     </nav>
-
-    <div class="yt-lang">
-      <select id="langSelect">
-        <option value="zh">中文</option>
-        <option value="ja">日本語</option>
-        <option value="en">English</option>
-      </select>
+    <div class="yt-subbar" id="subBar" aria-hidden="true">
+      <div class="yt-subbar-inner" id="subBarInner"></div>
     </div>
-    <button class="yt-icon-btn" id="mMenuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
 
-    <div class="yt-actions">
-      <!-- <div class="yt-lang">
+  <div class="yt-lang">
+    <select id="langSelect">
+      <option value="zh">中文</option>
+      <option value="ja">日本語</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+  <button class="yt-icon-btn" id="mMenuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+
+  <div class="yt-actions">
+    <!-- <div class="yt-lang">
         <select id="langSelect">
           <option value="zh">中文</option>
           <option value="ja">日本語</option>
@@ -35,49 +46,155 @@
       </div>
       <button class="yt-icon-btn" id="mMenuBtn" aria-label="Menu" aria-expanded="false">☰</button> -->
 
-      <div class="yt-subbar" id="subBar" aria-hidden="true">
-        <div class="yt-subbar-inner" id="subBarInner"></div>
-      </div>
-    </div>
+
   </div>
 
-
   <!-- 子菜单模板 -->
-  <template id="sub-home">
-    <a href="index.html#hero">集团介绍</a>
-    <a href="index.html#culture">人文迈域</a>
-    <a href="index.html#tech">科技迈域</a>
-    <a href="index.html#strength">实力迈域</a>
-    <a href="index.html#csr">社会责任</a>
-  </template>
-
   <template id="sub-about">
-    <a href="about.html#profile">公司概况</a>
-    <a href="about.html#history">发展历程</a>
-    <a href="about.html#honor">资质荣誉</a>
-    <a href="teams.html">核心团队</a>
-    <a href="about.html#culture">企业文化</a>
+    <div class="yt-mega-wrap">
+      <div id="ytMega" class="yt-mega" role="region" aria-label="submenu">
+        <div class="yt-mega-inner">
+          <aside class="yt-mega-left">
+            <div class="bar"></div>
+            <div class="bar2"></div>
+            <h3 id="ytMegaTitle"> </h3>
+            <span data-i18n="nav.about">关于我们</span>
+          </aside>
+          <section class="yt-mega-right">
+            <div id="ytMegaGrid" class="yt-mega-grid">
+              <a href="about.html#hero" data-i18n="header.sub-about.hero">集团介绍</a>
+              <a href="about.html#profile" data-i18n="header.sub-about.profile">公司概况</a>
+              <a href="about.html#history" data-i18n="header.sub-about.history">发展历程</a>
+              <a href="about.html#honor" data-i18n="header.sub-about.honor">资质荣誉</a>
+              <a href="about.html#culture" data-i18n="header.sub-about.culture">企业文化</a>
+              <a href="about.html#csr" data-i18n="header.sub-about.csr">社会责任</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   </template>
 
   <template id="sub-services">
-    <a href="services.html#ai">AI 人工智能</a>
-    <a href="services.html#xr">XR 扩展现实</a>
-    <a href="services.html#iot">物联网平台</a>
-    <a href="services.html#cloud">云与架构</a>
-    <a href="services.html#integration">系统集成</a>
+    <div class="yt-mega-wrap">
+      <div id="ytMega" class="yt-mega" role="region" aria-label="submenu">
+        <div class="yt-mega-inner">
+          <aside class="yt-mega-left">
+            <div class="bar"></div>
+            <div class="bar2"></div>
+            <h3 id="ytMegaTitle"> </h3>
+            <span data-i18n="nav.about">业务范围</span>
+          </aside>
+          <section class="yt-mega-right">
+            <div id="ytMegaGrid" class="yt-mega-grid">
+              <a href="services.html#ai" data-i18n="header.sub-services.ai">AI 人工智能</a>
+              <a href="services.html#xr" data-i18n="header.sub-services.xr">XR 扩展现实</a>
+              <a href="services.html#iot" data-i18n="header.sub-services.iot">物联网平台</a>
+              <a href="services.html#cloud" data-i18n="header.sub-services.cloud">云与架构</a>
+              <a href="services.html#software" data-i18n="header.sub-services.software">软件定制开发</a>
+              <a href="services.html#bpo" data-i18n="header.sub-services.bpo">BPO / ITO 服务</a>
+              <a href="services.html#bi" data-i18n="header.sub-services.bi">数据分析与可视化</a>
+              <a href="services.html#tech" data-i18n="header.sub-services.tech">技术咨询与培训</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="sub-solutions">
+    <div class="yt-mega-wrap">
+      <div id="ytMega" class="yt-mega" role="region" aria-label="submenu">
+        <div class="yt-mega-inner">
+          <aside class="yt-mega-left">
+            <div class="bar"></div>
+            <div class="bar2"></div>
+            <h3 id="ytMegaTitle"> </h3>
+            <span data-i18n="nav.about">解决方案</span>
+          </aside>
+          <section class="yt-mega-right">
+            <div id="ytMegaGrid" class="yt-mega-grid">
+              <a href="solutions.html#travel" data-i18n="header.sub-solutions.travel">智慧旅游</a>
+              <a href="solutions.html#city" data-i18n="header.sub-solutions.city">智慧城市</a>
+              <a href="solutions.html#industy" data-i18n="header.sub-solutions.industy">智能制造</a>
+              <a href="solutions.html#education" data-i18n="header.sub-solutions.education">教育与培训</a>
+              <a href="solutions.html#health" data-i18n="header.sub-solutions.health">医疗健康</a>
+              <a href="solutions.html#energy" data-i18n="header.sub-solutions.energy">能源与碳管理</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="sub-news">
+    <div class="yt-mega-wrap">
+      <div id="ytMega" class="yt-mega" role="region" aria-label="submenu">
+        <div class="yt-mega-inner">
+          <aside class="yt-mega-left">
+            <div class="bar"></div>
+            <div class="bar2"></div>
+            <h3 id="ytMegaTitle"> </h3>
+            <span data-i18n="nav.about">新闻资讯</span>
+          </aside>
+          <section class="yt-mega-right">
+            <div id="ytMegaGrid" class="yt-mega-grid">
+              <a href="news.html#news" data-i18n="header.sub-news.news">公司新闻</a>
+              <a href="news.html#media" data-i18n="header.sub-news.media">媒体报道</a>
+              <a href="news.html#exhibition" data-i18n="header.sub-news.exhibition">展会活动</a>
+              <a href="news.html#tech" data-i18n="header.sub-news.tech">技术洞察</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   </template>
 
   <template id="sub-team">
-    <a href="teams.html#leaders">核心管理层</a>
-    <a href="teams.html#rd">研发团队</a>
-    <a href="teams.html#consulting">咨询顾问</a>
+    <div class="yt-mega-wrap">
+      <div id="ytMega" class="yt-mega" role="region" aria-label="submenu">
+        <div class="yt-mega-inner">
+          <aside class="yt-mega-left">
+            <div class="bar"></div>
+            <div class="bar2"></div>
+            <h3 id="ytMegaTitle"> </h3>
+            <span data-i18n="nav.about">团队</span>
+          </aside>
+          <section class="yt-mega-right">
+            <div id="ytMegaGrid" class="yt-mega-grid">
+              <a href="teams.html#leaders" data-i18n="header.sub-team.leaders">核心管理层</a>
+              <a href="teams.html#rd" data-i18n="header.sub-team.rd">研发团队</a>
+              <a href="teams.html#consulting" data-i18n="header.sub-team.consulting">咨询顾问</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
   </template>
 
   <template id="sub-contact">
-    <a href="contact.html#hotline">商务热线</a>
-    <a href="contact.html#partner">合作伙伴</a>
-    <a href="contact.html#map">地图与路线</a>
-    <a href="contact.html#jobs">加入我们</a>
+    <div class="yt-mega-wrap">
+      <div id="ytMega" class="yt-mega" role="region" aria-label="submenu">
+        <div class="yt-mega-inner">
+          <aside class="yt-mega-left">
+            <div class="bar"></div>
+            <div class="bar2"></div>
+            <h3 id="ytMegaTitle"> </h3>
+            <span data-i18n="nav.about">联系我们</span>
+          </aside>
+          <section class="yt-mega-right">
+            <div id="ytMegaGrid" class="yt-mega-grid">
+              <a href="contact.html#hotline" data-i18n="header.sub-contact.hotline">商务热线</a>
+              <a href="contact.html#partner" data-i18n="header.sub-contact.partner">合作伙伴</a>
+              <a href="contact.html#map" data-i18n="header.sub-contact.map">地图与路线</a>
+              <a href="contact.html#jobs" data-i18n="header.sub-contact.jobs">加入我们</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
   </template>
 
   <!-- Mobile　Menu -->
@@ -96,41 +213,64 @@
       </div>
       <ul class="m-acc">
         <li class="m-acc-item">
-          <button class="m-acc-head" aria-expanded="false">关于我们</button>
+          <button class="m-acc-head" aria-expanded="false" data-i18n="nav.about">关于我们</button>
           <ul class="m-acc-body">
-            <li><a href="about.html#profile">集团介绍</a></li>
-            <li><a href="about.html#culture">人文迈域</a></li>
-            <li><a href="about.html#tech">科技迈域</a></li>
-            <li><a href="about.html#strength">实力迈域</a></li>
-            <li><a href="teams.html">核心团队</a></li>
+            <li><a href="about.html#hero" data-i18n="header.sub-about.hero">集团介绍</a></li>
+            <li><a href="about.html#profile" data-i18n="header.sub-about.profile">公司概况</a></li>
+            <li><a href="about.html#history" data-i18n="header.sub-about.history">发展历程</a></li>
+            <li><a href="about.html#honor" data-i18n="header.sub-about.honor">资质荣誉</a></li>
+            <li><a href="about.html#culture" data-i18n="header.sub-about.culture">企业文化</a></li>
+            <li><a href="about.html#csr" data-i18n="header.sub-about.csr">社会责任</a></li>
           </ul>
         </li>
         <li class="m-acc-item">
-          <button class="m-acc-head" aria-expanded="false">业务板块</button>
+          <button class="m-acc-head" aria-expanded="false" data-i18n="nav.scope">业务范围</button>
           <ul class="m-acc-body">
-            <li><a href="services.html#ai">AI 人工智能</a></li>
-            <li><a href="services.html#xr">XR 扩展现实</a></li>
-            <li><a href="services.html#iot">物联网平台</a></li>
-            <li><a href="services.html#cloud">云与架构</a></li>
-            <li><a href="services.html#integration">系统集成</a></li>
+            <li><a href="services.html#ai" data-i18n="header.sub-services.ai">AI 人工智能</a></li>
+            <li><a href="services.html#xr" data-i18n="header.sub-services.xr">XR 扩展现实</a></li>
+            <li><a href="services.html#iot" data-i18n="header.sub-services.iot">物联网平台</a></li>
+            <li><a href="services.html#cloud" data-i18n="header.sub-services.cloud">云与架构</a></li>
+            <li><a href="services.html#software" data-i18n="header.sub-services.software">软件定制开发</a></li>
+            <li><a href="services.html#bpo" data-i18n="header.sub-services.bpo">BPO / ITO 服务</a></li>
+            <li><a href="services.html#bi" data-i18n="header.sub-services.bi">数据分析与可视化</a></li>
+            <li><a href="services.html#tech" data-i18n="header.sub-services.tech">技术咨询与培训</a></li>
           </ul>
         </li>
         <li class="m-acc-item">
-          <button class="m-acc-head" aria-expanded="false">新闻资讯</button>
+          <button class="m-acc-head" aria-expanded="false" data-i18n="nav.solutions">解决方案</button>
           <ul class="m-acc-body">
-            <li><a href="#">公司新闻</a></li>
-            <li><a href="#">媒体报道</a></li>
-            <li><a href="#">展会活动</a></li>
-            <li><a href="#">技术洞察</a></li>
+            <li><a href="solutions.html#travel" data-i18n="header.sub-solutions.travel">智慧旅游</a></li>
+            <li><a href="solutions.html#city" data-i18n="header.sub-solutions.city">智慧城市</a></li>
+            <li><a href="solutions.html#industy" data-i18n="header.sub-solutions.industy">智能制造</a></li>
+            <li><a href="solutions.html#education" data-i18n="header.sub-solutions.education">教育与培训</a></li>
+            <li><a href="solutions.html#health" data-i18n="header.sub-solutions.health">医疗健康</a></li>
+            <li><a href="solutions.html#energy" data-i18n="header.sub-solutions.energy">能源与碳管理</a></li>
           </ul>
         </li>
         <li class="m-acc-item">
-          <button class="m-acc-head" aria-expanded="false">联系我们</button>
+          <button class="m-acc-head" aria-expanded="false" data-i18n="nav.news">新闻资讯</button>
           <ul class="m-acc-body">
-            <li><a href="contact.html#hotline">商务热线</a></li>
-            <li><a href="contact.html#partner">合作伙伴</a></li>
-            <li><a href="contact.html#map">地图与路线</a></li>
-            <li><a href="contact.html#jobs">加入我们</a></li>
+            <li><a href="#" data-i18n="header.sub-news.news">公司新闻</a></li>
+            <li><a href="#" data-i18n="header.sub-solutions.media">媒体报道</a></li>
+            <li><a href="#" data-i18n="header.sub-solutions.exhibition">展会活动</a></li>
+            <li><a href="#" data-i18n="header.sub-solutions.tech">技术洞察</a></li>
+          </ul>
+        </li>
+        <li class="m-acc-item">
+          <button class="m-acc-head" aria-expanded="false" data-i18n="nav.team">团队</button>
+          <ul class="m-acc-body">
+            <li><a href="#" data-i18n="header.sub-team.leaders">核心管理层</a></li>
+            <li><a href="#" data-i18n="header.sub-team.rd">研发团队</a></li>
+            <li><a href="#" data-i18n="header.sub-team.consulting">咨询顾问</a></li>
+          </ul>
+        </li>
+        <li class="m-acc-item">
+          <button class="m-acc-head" aria-expanded="false" data-i18n="nav.contact">联系我们</button>
+          <ul class="m-acc-body">
+            <li><a href="contact.html#hotline" data-i18n="header.sub-contact.hotline">商务热线</a></li>
+            <li><a href="contact.html#partner" data-i18n="header.sub-contact.partner">合作伙伴</a></li>
+            <li><a href="contact.html#map" data-i18n="header.sub-contact.map">地图与路线</a></li>
+            <li><a href="contact.html#jobs" data-i18n="header.sub-contact.jobs">加入我们</a></li>
           </ul>
         </li>
       </ul>

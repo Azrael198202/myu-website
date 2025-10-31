@@ -11,7 +11,54 @@
     "team": "Team",
     "solutions": "Solutions",
     "privacy": "Privacy",
+    "news": "News & Information",
     "contact": "Contact"
+  },
+  "header": {
+    "sub-services": {
+      "ai": "AI & Artificial Intelligence",
+      "xr": "XR (Extended Reality)",
+      "iot": "IoT Platform",
+      "cloud": "Cloud & Architecture",
+      "software": "Custom Software Development",
+      "bpo": "BPO / ITO Services",
+      "bi": "Data Analytics & Visualization",
+      "tech": "Technical Consulting & Training"
+    },
+    "sub-solutions": {
+      "travel": "Smart Tourism",
+      "city": "Smart City",
+      "industy": "Smart Manufacturing",
+      "education": "Education & Training",
+      "health": "Healthcare & Medical",
+      "energy": "Energy & Carbon Management"
+    },
+    "sub-news": {
+      "news": "Company News",
+      "media": "Media Coverage",
+      "exhibition": "Exhibitions & Events",
+      "tech": "Technology Insights"
+    },
+    "sub-team": {
+      "leaders": "Core Management Team",
+      "rd": "R&D Team",
+      "consulting": "Consulting Advisors"
+    },
+    "sub-contact": {
+      "hotline": "Business Hotline",
+      "partner": "Partners",
+      "map": "Map & Access",
+      "jobs": "Join Us / Careers"
+    },
+    "sub-about": {
+      "hero": "Group Overview",
+      "profile": "Company Profile",
+      "history": "History & Milestones",
+      "honor": "Certifications & Honors",
+      "teams": "Core Team",
+      "culture": "Corporate Culture",
+      "csr": "Corporate Social Responsibility (CSR)"
+    }
   },
   "footer": {
     "rights": "© 2025 MicroMyu Technology Co., Ltd. | All Rights Reserved",
@@ -66,8 +113,8 @@
     },
     "newsletter": {
       "text": "Subscribe to our newsletter to receive the latest technology insights.",
-      "placeholder":"Enter your email address",
-      "success":"Subscription successful! Thank you for following us."
+      "placeholder": "Enter your email address",
+      "success": "Subscription successful! Thank you for following us."
     },
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -193,7 +240,8 @@
       "title2": "Open Ecosystem",
       "description2": "Through standardized interfaces, transparent algorithms, and industry collaboration, we empower partners and developers to accelerate digital transformation across vertical industries.",
       "title3": "Measurable Business & Environmental Impact",
-      "description3": "We translate technological value into long-term social benefits, creating quantifiable outcomes in both business growth and environmental sustainability."
+      "description3": "We translate technological value into long-term social benefits, creating quantifiable outcomes in both business growth and environmental sustainability.",
+      "statement": "Our vision is to redefine the boundaries of future production and daily life through intelligent technology.MyuTech is committed to seamlessly integrating AI, XR, IoT, and Cloud capabilities to build scalable, low-power, and auditable intelligent systems that empower enterprises to achieve efficient decision-making and sustainable growth."
     },
     "scope": {
       "title": "Core Service Scope",
@@ -358,21 +406,49 @@
   },
   "contact": {
     "hero": {
-      "title": "Contact Us",
-      "sub": "MicroMyu – Connecting the Future"
+      "title": "Connect with the MyuTech Team",
+      "sub": "Begin Your Intelligent Transformation Journey"
+    },
+    "contact": {
+      "title": "Quick Consultation",
+      "description": "Fill in your requirements and we will contact you within 24 hours. Whether you need AI model customization, XR experience design, IoT deployment, or cloud architecture, we provide end-to-end technical delivery and implementation support.",
+      "why": "Why Choose Us",
+      "why1": "Enterprise-grade Delivery Capability",
+      "why2": "Rapid Prototype Validation",
+      "why3": "Scalable Architecture",
+      "why4": "Measurable ROI"
     },
     "info": {
-      "title": "Company Info",
-      "name": "MicroMyu Co., Ltd.",
-      "addr": "1-2-3 Hakata, Fukuoka, Japan",
-      "tel": "Tel: +81-92-xxx-xxxx"
+      "title": "Contact Directly",
+      "label1": "Business Email",
+      "value1": "partner@micro-myu.com",
+      "label2": "Sales & Consulting",
+      "value2": "+86 400-800-****",
+      "note2": "Monday–Friday, 9:00–18:00",
+      "label3": "Technical Support",
+      "value3": "support@micro-myu.com",
+      "label4": "Headquarters",
+      "value4": "No. 88, ** District, Hangzhou, China",
+      "btn1": "Schedule a Visit",
+      "btn2": "Download Whitepaper"
     },
     "form": {
-      "title": "Get in Touch",
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send"
+      "company": "Company Name",
+      "contact": "Contact Person",
+      "position": "Position / Department",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "type": "Interest Area",
+      "value": "Please Select",
+      "value1": "AI (Artificial Intelligence)",
+      "value2": "XR (Extended Reality)",
+      "value3": "IoT (Internet of Things)",
+      "value4": "Cloud & Architecture",
+      "value5": "System Integration",
+      "value6": "Other",
+      "description": "Project Brief (within 200 characters)",
+      "privacy": "Privacy & Confidentiality: All business information is strictly protected. NDA signing is supported.",
+      "submit": "Submit and Book a Dedicated Consultant"
     }
   },
   "about": {
