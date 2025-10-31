@@ -153,54 +153,37 @@
       "action": "Take Action Now"
     },
     "industry": {
-      "title": "Industry Applications",
-      "subtitle": "MicroMyu brings cutting-edge technologies into key industries, driving efficiency, user experience, and sustainable growth. Each deployment is scenario-oriented, integrating AI, XR, IoT, and cloud computing to deliver measurable business results.",
-      "title1": "Smart Manufacturing",
-      "subtitle1": "Predictive Maintenance and Flexible Production",
-      "description1": "Through Industrial IoT and edge AI, we build real-time digital twins and predictive maintenance platforms for manufacturers, reducing unplanned downtime by over 40% and improving production efficiency by 30%.",
-      "kpi1": {
-        "value": "-40%",
-        "label": "Downtime"
-      },
+      "title": "Industry Solutions",
+      "subtitle": "MyuTech brings cutting-edge technologies into key industries to enhance efficiency, user experience, and sustainable growth. Every implementation is scenario-driven, integrating AI, XR, IoT, and cloud computing to deliver measurable business impact.",
+      "title1": "Smart Tourism",
+      "subtitle1": "AI-Powered Immersive Travel Experience",
+      "description1": "By integrating Artificial Intelligence, XR (Extended Reality), and Big Data analytics, MyuTech enables destinations, hotels, and tourism enterprises with intelligent tour guides, visitor flow forecasting, and multilingual interactive services. Through real-time sensing and personalized recommendations, travelers enjoy an immersive digital experience that empowers the tourism industry to achieve smarter operations and sustainable growth.",
+      "btn1": "Consult Solution",
       "title2": "Smart City",
       "subtitle2": "Data-Driven Urban Operations",
-      "description2": "In smart transportation, energy management, and public safety, MicroMyu deploys cloud-based sensing networks and multimodal data fusion engines to achieve traffic congestion prediction, energy optimization, and rapid incident response.",
+      "description2": "In the fields of smart transportation, energy management, and public safety, MyuTech deploys cloud-based sensing networks and multimodal data fusion engines to achieve traffic congestion prediction, energy optimization, and rapid incident response.",
       "btn2": "View Case Studies",
       "title3": "Healthcare",
       "subtitle3": "AI-Assisted Diagnosis and Remote Collaboration",
-      "description3": "We integrate AI medical imaging, wearable IoT, and XR-based remote collaboration to enable rapid screening, teleconsultation, and rehabilitation training. This improves diagnostic efficiency and reduces healthcare costs.",
+      "description3": "By integrating AI image analysis, wearable IoT devices, and XR remote collaboration, MyuTech provides medical institutions with rapid screening, remote consultation, and rehabilitation training solutions that improve diagnostic efficiency and reduce medical costs.",
       "btn3": "Learn More",
-      "title4": "Retail & Experience Economy",
-      "subtitle4": "Omnichannel Experience Powered by Intelligent Perception",
-      "description4": "Combining computer vision and personalized recommendation engines, MicroMyu helps retailers achieve in-store behavior analytics, intelligent restocking, and immersive XR displays—boosting average order value and conversion rates.",
-      "btn4": "Consult Us",
+      "title4": "Smart Manufacturing",
+      "subtitle4": "Predictive Maintenance and Flexible Production",
+      "description4": "Leveraging Industrial IoT and edge AI, MyuTech builds real-time digital twins and predictive maintenance platforms for manufacturing enterprises, reducing unplanned downtime by over 40% and increasing production efficiency by 30%.",
+      "kpi4": {
+        "value": "-40%",
+        "label": "Downtime"
+      },
       "title5": "Energy & Sustainability",
-      "subtitle5": "Intelligent Scheduling and Carbon Reduction in Practice",
-      "description5": "For energy enterprises, we offer distributed energy management and load forecasting solutions. By combining IoT sensing with cloud optimization algorithms, we enable precise scheduling and visualized carbon reduction reporting.",
+      "subtitle5": "Intelligent Scheduling and Carbon Reduction",
+      "description5": "For energy enterprises, MyuTech provides distributed energy management and load forecasting solutions that combine IoT sensing and cloud optimization algorithms to enable precise scheduling and visualized carbon reduction reporting.",
       "kpi5": {
         "value": "ESG",
         "label": "Quantified Progress"
       },
       "title6": "Why Choose Us",
-      "description6": "Scenario-Driven: Solutions designed from real business challenges. Scalability: Modular architecture adaptable to organizations of all sizes and complexity. Measurable Results: KPI-aligned delivery that is transparent and data-driven.",
-      "btn6": "View Industry Whitepaper"
-    },
-    "updates": {
-      "title": "Latest Updates",
-      "subtitle": "Myu Express: Stay Ahead of the Future — We regularly share product progress, research achievements, and industry insights to help you stay ahead in the era of intelligence.",
-      "label1": "Milestone",
-      "title1": "MyuCore 2.0 Officially Released",
-      "description1": "Achieves edge–cloud synergy with 60% lower response latency, supporting over 20 industry scenarios.",
-      "metric1": "-60%",
-      "date1": "January 2025",
-      "label2": "Strategic Partnership",
-      "title2": "Collaboration with a Global Manufacturing Leader",
-      "description2": "Launched an XR + IoT smart factory pilot project, covering predictive maintenance and digital twin applications.",
-      "date2": "December 2024",
-      "label3": "Honor",
-      "title3": "Nominated as Innovative Tech Enterprise of the Year",
-      "description3": "Our research team published three top-tier conference papers and received industry recognition in edge inference and explainable AI.",
-      "date3": "November 2024"
+      "description6": "Scenario-Driven: We design practical technology pathways based on real business challenges. Scalability: Modular architecture that adapts to organizations of any size or complexity. Measurable Outcomes: Transparent delivery aligned with key KPIs and data-driven performance.",
+      "btn6": "View White Paper"
     },
     "insights": {
       "panel": "Tech Insights",
