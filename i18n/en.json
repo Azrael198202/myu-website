@@ -185,6 +185,23 @@
       "description6": "Scenario-Driven: We design practical technology pathways based on real business challenges. Scalability: Modular architecture that adapts to organizations of any size or complexity. Measurable Outcomes: Transparent delivery aligned with key KPIs and data-driven performance.",
       "btn6": "View White Paper"
     },
+    "updates": {
+      "title": "Latest Updates",
+      "subtitle": "MaiYu Express: Capturing the Pulse of the Future — We regularly share product developments, research findings, and industry insights to help you stay ahead in the wave of intelligent transformation.",
+      "label1": "Milestone",
+      "title1": "MyuCore 2.0 Officially Released",
+      "description1": "Achieves edge AI and cloud collaboration, reducing response latency by 60% and adapting to 20+ industry scenarios.",
+      "metric1": "-60%",
+      "date1": "Jan 2025",
+      "label2": "Partnership",
+      "title2": "Collaboration with Global Manufacturing Leader",
+      "description2": "Launched a smart factory XR+IoT pilot project, covering predictive maintenance and digital twin scenarios.",
+      "date2": "Dec 2024",
+      "label3": "Award",
+      "title3": "Annual Innovative Tech Enterprise Nomination",
+      "description3": "The R&D team published three top-tier conference papers, gaining industry recognition in edge inference and explainable AI.",
+      "date3": "Nov 2024"
+    },
     "insights": {
       "panel": "Tech Insights",
       "media": "Media & Opinions"

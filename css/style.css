@@ -41,6 +41,19 @@
 
   --panel-border:rgba(0, 224, 255, .25);
   --radius:#00e0ff;
+
+    --primary-color: #00d4ff;
+    --secondary-color: #7c3aed;
+    --accent-color: #f59e0b;
+    --dark-bg: #0a0e27;
+    --darker-bg: #050814;
+    --card-bg: #1a1f3a;
+    --text-primary: #ffffff;
+    --text-secondary: #a8b3cf;
+    --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --gradient-tech: linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%);
 }
 
 /* ---------- Reset ---------- */

@@ -1,20 +1,131 @@
 // js/i18n.js
 let I18N = null;
 
+const STORAGE_KEY = "site.lang";
+
+function getCurrentLang() {
+  const urlLang = new URLSearchParams(location.search).get("lang");
+  let saved = "en";
+  try { saved = localStorage.getItem(STORAGE_KEY) || "en"; } catch (e) { }
+  return urlLang || saved || "en";
+}
+function setCurrentLang(lang) {
+  try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { }
+  const u = new URL(location.href);
+  u.searchParams.set("lang", lang);
+  history.replaceState({}, "", u);
+  document.documentElement.lang = lang;
+  return lang;
+}
+function isSameOrigin(url) {
+  try { const u = new URL(url, location.href); return u.origin === location.origin; }
+  catch { return false; }
+}
+function buildUrlWithLang(url, lang) {
+  const u = new URL(url, location.href);
+  // 忽略锚点/外链/特殊协议
+  if (u.origin !== location.origin) return url;
+  if (u.protocol === "mailto:" || u.protocol === "tel:" || u.protocol === "javascript:") return url;
+  // 保留已有查询参数，强制写入/覆盖 lang
+  u.searchParams.set("lang", lang);
+  return u.toString();
+}
+
+// === 新增：改写所有站内链接 ===
+function rewriteAllLinks(lang) {
+  document.querySelectorAll('a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('javascript:')) return;
+    if (a.dataset.keepLang === "false") return; // 可用 data-keep-lang="false" 跳过
+    if (!isSameOrigin(href)) return;
+    a.setAttribute('href', buildUrlWithLang(href, lang));
+  });
+}
+
+// === 新增：改写所有表单（GET/POST 都携带 lang） ===
+function rewriteAllForms(lang) {
+  document.querySelectorAll('form').forEach(form => {
+    const method = (form.getAttribute('method') || 'GET').toUpperCase();
+    if (method === 'GET') {
+      const action = form.getAttribute('action') || location.pathname;
+      form.setAttribute('action', buildUrlWithLang(action, lang));
+    } else {
+      // POST: 用隐藏域提交 lang
+      if (!form.querySelector('input[name="lang"]')) {
+        const hid = document.createElement('input');
+        hid.type = 'hidden';
+        hid.name = 'lang';
+        hid.value = lang;
+        form.appendChild(hid);
+      } else {
+        form.querySelector('input[name="lang"]').value = lang;
+      }
+    }
+  });
+}
+
+// === 新增：点击拦截兜底（处理运行时动态 href 变更/JS 导航等） ===
+function attachClickInterceptor(getLang) {
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href]');
+    if (!a) return;
+    if (a.target && a.target !== "_self") return; // 新窗口不拦截
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('javascript:')) return;
+    if (!isSameOrigin(href)) return;
+    if (a.dataset.keepLang === "false") return;
+    const lang = getLang();
+    const finalUrl = buildUrlWithLang(href, lang);
+    if (finalUrl !== a.href) {
+      e.preventDefault();
+      window.location.href = finalUrl;
+    }
+  }, { capture: true });
+}
+
+
 const qs = (sel, root = document) => root.querySelector(sel);
 const qsa = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 const get = (obj, path) => path.split(".").reduce((o, k) => (o && o[k] != null) ? o[k] : undefined, obj);
 const txt = (sel, v) => { const el = qs(sel); if (el && v != null) el.textContent = v; };
 
+function deepMerge(target, src) {
+  if (Array.isArray(target) && Array.isArray(src)) return src.slice(); // 以页面数组覆盖
+  if (typeof target === 'object' && typeof src === 'object') {
+    const out = { ...target };
+    for (const k of Object.keys(src)) {
+      out[k] = (k in target) ? deepMerge(target[k], src[k]) : src[k];
+    }
+    return out;
+  }
+  return src; // 以页面值覆盖
+}
+
 async function loadPack(lang) {
-  const supported = ["zh","ja","en"];
+  const supported = ["zh", "ja", "en"];
   const L = supported.includes(lang) ? lang : "en";
-  // 用根路径，避免子目录 404
-  const res = await fetch(`/i18n/${L}.json`, { cache: "no-store" });
-  if (!res.ok) throw new Error("i18n load failed: " + res.status);
-  I18N = await res.json();
+  const page = getPageName();
+
+  // 先全局
+  const baseRes = await fetch(`/i18n/${L}.json`, { cache: "no-store" });
+  if (!baseRes.ok) throw new Error("i18n base load failed: " + baseRes.status);
+  const base = await baseRes.json();
+
+  // 再页面（可不存在）
+  let merged = base;
+  try {
+    const pageRes = await fetch(`/i18n/${page}/${L}.json`, { cache: "no-store" });
+    if (pageRes.ok) {
+      const pagePack = await pageRes.json();
+      merged = deepMerge(base, pagePack); // 页面覆盖全局
+    }
+  } catch (_) { }
+
+  I18N = merged;
   return L;
 }
+
+
 
 function applyI18n() {
   const L = I18N;
@@ -119,39 +230,50 @@ function renderPrivacySections() {
 }
 
 async function initI18n() {
-  const urlLang = new URLSearchParams(location.search).get("lang");
-  let saved = "en";
-  try { saved = localStorage.getItem(STORAGE_KEY) || "en"; } catch(e){}
-  const lang = urlLang || saved || "en";
+  // 1) 读取并固化到 <html lang> + URL + localStorage
+  let lang = getCurrentLang();
+  lang = setCurrentLang(lang);
 
-  document.documentElement.lang = lang;
+  // 2) 加载包并渲染
   await loadPack(lang);
-
-  // 先翻译模板（template.content），再把模板克隆到页面，再翻译整个页面
   translateAllTemplates();
-  //mountAllSubmenus(); // 若你已有挂载逻辑，这行可删
   applyI18n();
   renderPrivacySections();
 
+  // 3) 改写站内链接与表单
+  rewriteAllLinks(lang);
+  rewriteAllForms(lang);
+
+  // 4) 监听语言下拉切换
   const sel = document.getElementById("langSelect");
   if (sel) {
     sel.value = lang;
     sel.addEventListener("change", async (e) => {
       const l = e.target.value;
-      const u = new URL(location.href);
-      u.searchParams.set("lang", l);
-      history.replaceState({}, "", u);
-      try { localStorage.setItem(STORAGE_KEY, l); } catch(e){}
-      document.documentElement.lang = l;
+      setCurrentLang(l);
       await loadPack(l);
       translateAllTemplates();
       applyI18n();
       renderPrivacySections();
+      rewriteAllLinks(l);
+      rewriteAllForms(l);
     });
   }
+
+  // 5) 监听 DOM 变化（模板/异步插入的新链接/表单也带 lang）
+  const mo = new MutationObserver(() => {
+    const cur = getCurrentLang();
+    rewriteAllLinks(cur);
+    rewriteAllForms(cur);
+  });
+  mo.observe(document.documentElement, { childList: true, subtree: true });
+
+  // 6) 安装点击拦截兜底
+  attachClickInterceptor(getCurrentLang);
 }
 
 window.addEventListener("DOMContentLoaded", initI18n);
+
 
 function translateNode(root) {
   if (!I18N) return;
@@ -180,4 +302,14 @@ function translateAllTemplates() {
     const frag = tpl.content;    // DocumentFragment
     translateNode(frag);
   });
+}
+
+
+function getPageName() {
+  // /a/b/services-ai.html -> "services-ai"
+  // /index.html 或根路径 -> "index"
+  let p = location.pathname;
+  if (p.endsWith('/')) p = p.slice(0, -1);
+  const base = p.split('/').pop() || 'index';
+  return base.replace(/\.(html?|php|asp|aspx)$/, '') || 'index';
 }

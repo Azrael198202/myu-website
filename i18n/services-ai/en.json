@@ -1,0 +1,136 @@
+{
+    "page_title": "AI Business Scope - Technology Innovation Leads the Future",
+    "hero": {
+      "title": "AI Artificial Intelligence Solutions",
+      "subtitle": "Leading Digital Transformation, Empowering Enterprise Intelligent Future",
+      "button": "Explore Our Services"
+    },
+    "services": {
+      "generative_ai": {
+        "title": "Generative AI / Multimodal Technology",
+        "description": "Utilize advanced generative AI technology to support multimodal content generation and understanding including text, images, audio, and video. Based on large language models (LLM) and diffusion models, provide enterprises with intelligent content creation, automated design, and multimodal interaction solutions.",
+        "features": [
+          "Large Language Model Applications",
+          "Image Generation and Editing",
+          "Multimodal Content Understanding",
+          "Intelligent Dialogue Systems"
+        ],
+        "benefits": {
+          "title": "Core Advantages",
+          "items": [
+            "Support integration with mainstream large models like ChatGPT, GPT-4, Claude",
+            "Achieve cross-modal understanding and generation of text, images, audio, and video",
+            "Provide customized model fine-tuning and prompt engineering services",
+            "Significantly improve content creation efficiency and reduce labor costs"
+          ]
+        },
+        "image_alt": "Generative AI Technology",
+        "overlay_text": "Generative AI Multimodal Applications"
+      },
+      "rag": {
+        "title": "RAG / Enterprise Knowledge Intelligence",
+        "description": "Retrieval-Augmented Generation (RAG) technology combines vector databases with large language models to deeply integrate enterprise private knowledge with AI capabilities. Build intelligent knowledge bases to achieve precise information retrieval and intelligent Q&A, maximizing the value of enterprise data assets.",
+        "features": [
+          "Vector Database Construction",
+          "Intelligent Knowledge Retrieval",
+          "Enterprise-level Q&A Systems",
+          "Knowledge Graph Construction"
+        ],
+        "benefits": {
+          "title": "Core Advantages",
+          "items": [
+            "Break through the timeliness limitations of large models, real-time access to the latest enterprise data",
+            "Reduce AI hallucinations, provide traceable accurate answer sources",
+            "Support multiple document format parsing (PDF, Word, Excel, etc.)",
+            "Protect enterprise data privacy, support private deployment"
+          ]
+        },
+        "image_alt": "RAG Enterprise Knowledge Intelligence",
+        "overlay_text": "Enterprise Knowledge Intelligent Management"
+      },
+      "mlops": {
+        "title": "Data & Model Engineering (MLOps)",
+        "description": "Provide end-to-end machine learning operations solutions covering the entire lifecycle management of data processing, model training, deployment, and monitoring. Establish standardized MLOps processes to achieve rapid model iteration and scalable deployment, ensuring the stability and maintainability of AI systems.",
+        "features": [
+          "Automated Data Pipelines",
+          "Model Version Management",
+          "Continuous Training and Deployment",
+          "Performance Monitoring and Optimization"
+        ],
+        "benefits": {
+          "title": "Core Advantages",
+          "items": [
+            "Shorten the cycle from model development to production, improve R&D efficiency",
+            "Support A/B testing and canary release, reduce deployment risks",
+            "Real-time monitoring of model performance, timely detection and resolution of data drift issues",
+            "Integrate mainstream MLOps toolchains (Kubeflow, MLflow, DVC, etc.)"
+          ]
+        },
+        "image_alt": "MLOps Data Model Engineering",
+        "overlay_text": "Complete MLOps Solutions"
+      },
+      "edge_ai": {
+        "title": "Edge AI / IoT & Embedded Systems",
+        "description": "Deploy AI capabilities to edge devices and embedded systems to achieve low-latency, high-security localized intelligent decision-making. Support intelligent upgrades for IoT devices, providing real-time AI inference capabilities in scenarios such as smart manufacturing, smart cities, and autonomous driving.",
+        "features": [
+          "Model Lightweight Optimization",
+          "Edge Device Deployment",
+          "IoT Data Intelligent Analysis",
+          "Real-time Inference Acceleration"
+        ],
+        "benefits": {
+          "title": "Core Advantages",
+          "items": [
+            "Reduce cloud transmission costs, achieve millisecond-level response speed",
+            "Enhance data privacy protection, sensitive data doesn't need to be uploaded to the cloud",
+            "Support offline operation,不受network environment restrictions",
+            "Compatible with mainstream platforms like NVIDIA Jetson, Raspberry Pi, ARM"
+          ]
+        },
+        "image_alt": "Edge AI and IoT",
+        "overlay_text": "Edge Computing Intelligence"
+      },
+      "ai_robots": {
+        "title": "AI Robots",
+        "description": "Integrate computer vision, natural language processing, motion control and other AI technologies to create intelligent robot solutions. From industrial robots to service robots, from embodied intelligence to humanoid robots, provide intelligent automation upgrade services for various industries.",
+        "features": [
+          "Visual Perception and Recognition",
+          "Natural Interaction Capabilities",
+          "Autonomous Navigation Planning",
+          "Collaborative Operation Control"
+        ],
+        "benefits": {
+          "title": "Core Advantages",
+          "items": [
+            "Integrate advanced multimodal large models to achieve intelligent understanding and decision-making",
+            "Support visual algorithms like visual SLAM, object detection, semantic segmentation",
+            "Provide ROS/ROS2 robot operating system development support",
+            "Application scenarios cover warehousing logistics, medical rehabilitation, education entertainment and other fields"
+          ]
+        },
+        "image_alt": "AI Robots",
+        "overlay_text": "Intelligent Robot Systems"
+      },
+      "digital_humans": {
+        "title": "Digital Humans / Virtual Avatars",
+        "description": "Combine speech synthesis, expression driving and natural language interaction technologies to build human-like digital characters and anime-style virtual avatars. Support multilingual dialogue, emotional expression and multi-scenario applications, achieving intelligent upgrades in brand communication, content creation, customer service, etc.",
+        "features": [
+          "Human-like Speech and Lip Sync",
+          "Multi-emotion Facial Driving",
+          "Real-time Voice Dialogue",
+          "Virtual Human Forms and Anime Characters"
+        ],
+        "benefits": {
+          "title": "Core Advantages",
+          "items": [
+            "Integrate TTS speech synthesis, 3D animation binding, AI-driven lip matching technology",
+            "Support multilingual speech recognition and emotion recognition in Chinese, Japanese, and English",
+            "Provide virtual avatar customization and real-time live streaming plugin interfaces",
+            "Applicable to scenarios like enterprise customer service, education training, virtual idols, digital hosts"
+          ]
+        },
+        "image_alt": "Digital Humans / Virtual Avatars",
+        "overlay_text": "AI Digital Human Systems"
+      }
+    }
+  }

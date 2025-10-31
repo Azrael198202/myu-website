@@ -1,0 +1,246 @@
+.hero{
+    max-height: 300px;
+}
+
+#tsparticles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* 动画 */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 1s ease-out 0.3s backwards;
+}
+
+.animate-fade-in-delay-2 {
+    animation: fadeIn 1s ease-out 0.6s backwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 区块标题 */
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: var(--gradient-tech);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+/* 业务范围 */
+.services {
+    margin-top: -100px;
+    padding: 100px 0;
+    /* background: var(--darker-bg); */
+}
+
+.service-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    /* margin-bottom: 6rem; */
+    align-items: center;
+}
+
+.service-item.reverse {
+    direction: rtl;
+}
+
+.service-item.reverse>* {
+    direction: ltr;
+}
+
+.service-content {
+    padding: 2rem;
+}
+
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-tech);
+    border-radius: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+
+.service-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.service-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.service-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feature-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.feature-tag i {
+    font-size: 0.8rem;
+}
+
+.service-benefits {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.service-benefits h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.service-benefits ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-benefits li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-secondary);
+}
+
+.service-benefits li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.service-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-image:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.service-image:hover .image-overlay {
+    transform: translateY(0);
+}
+
+.image-overlay span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* color: var(--primary-color); */
+}
+
+/* === 修正 hero 在窄屏过高的问题 === */
+
+/* 背景/粒子层绝对定位，避免撑高布局 */
+#home .hero-bg,
+#home #tsparticles,
+#home .hero-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 让内容层成为定位上下文，并把层级放到前面 */
+#home .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* 控制 hero 的高度：不用固定 vh，改用 clamp + dvh/svh 回退 */
+#home.hero {
+  /* 移除可能存在的固定 height 或超大 padding */
+  height: auto !important;
+  padding-block: clamp(48px, 10svh, 96px) !important; /* 上下内边距自适应 */
+  min-height: clamp(220px, 45svh, 520px) !important;  /* 最小/最大高度限制 */
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+/* 兼容支持 d(v)h 设备视口单位的浏览器，避免移动端地址栏导致 100vh 异常 */
+@supports (height: 100dvh) {
+  #home.hero {
+    padding-block: clamp(48px, 10dvh, 96px) !important;
+    min-height: clamp(220px, 45dvh, 520px) !important;
+  }
+}
