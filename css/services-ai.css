@@ -1,4 +1,4 @@
-.hero{
+.hero {
     max-height: 300px;
 }
 
@@ -213,34 +213,46 @@
 #home .hero-bg,
 #home #tsparticles,
 #home .hero-overlay {
-  position: absolute !important;
-  inset: 0 !important;
-  height: 100% !important;
-  width: 100% !important;
-  pointer-events: none;
-  z-index: 0;
+    position: absolute !important;
+    inset: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    pointer-events: none;
+    z-index: 0;
 }
 
 /* 让内容层成为定位上下文，并把层级放到前面 */
 #home .hero-content {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 /* 控制 hero 的高度：不用固定 vh，改用 clamp + dvh/svh 回退 */
 #home.hero {
-  /* 移除可能存在的固定 height 或超大 padding */
-  height: auto !important;
-  padding-block: clamp(48px, 10svh, 96px) !important; /* 上下内边距自适应 */
-  min-height: clamp(220px, 45svh, 520px) !important;  /* 最小/最大高度限制 */
-  margin: 0 !important;
-  overflow: hidden;
+    /* 移除可能存在的固定 height 或超大 padding */
+    height: auto !important;
+    padding-block: clamp(48px, 10svh, 96px) !important;
+    /* 上下内边距自适应 */
+    min-height: clamp(220px, 45svh, 520px) !important;
+    /* 最小/最大高度限制 */
+    margin: 0 !important;
+    overflow: hidden;
 }
 
 /* 兼容支持 d(v)h 设备视口单位的浏览器，避免移动端地址栏导致 100vh 异常 */
 @supports (height: 100dvh) {
-  #home.hero {
-    padding-block: clamp(48px, 10dvh, 96px) !important;
-    min-height: clamp(220px, 45dvh, 520px) !important;
-  }
+    #home.hero {
+        padding-block: clamp(48px, 10dvh, 96px) !important;
+        min-height: clamp(220px, 45dvh, 520px) !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .service-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        /* margin-bottom: 6rem; */
+        align-items: center;
+    }
 }
