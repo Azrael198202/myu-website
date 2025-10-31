@@ -362,7 +362,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    right: -160px; 
+    right: -130px; 
     padding-right: clamp(0px, 2.5vw, 16px);
   }
 
