@@ -123,7 +123,7 @@
         </div>
       </div>
       <div class="footer-bottom-right">
-        <button class="footer-back-to-top" id="footerBackToTop" aria-label="返回顶部"  data-i18n="footer.top">▲ 返回顶部</button>
+        <button class="footer-back-to-top" id="footerBackToTop" aria-label="返回顶部"  data-i18n="footer.top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">▲ 返回顶部</button>
       </div>
     </div>
   </div>
@@ -131,7 +131,7 @@
 <div class="background"></div>
 <script>
   document.getElementById('footerBackToTop')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  document.querySelector('.footer-newsletter-form')?.addEventListener('submit', e => {
+  document.querySelector('.footer-newsletter-form')?.addEventListener('click', e => {
     e.preventDefault();
     const msgKey = 'footer.newsletter.success';
 
