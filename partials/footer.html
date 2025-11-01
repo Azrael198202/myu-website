@@ -129,14 +129,3 @@
   </div>
 </footer>
 <div class="background"></div>
-<script>
-  document.getElementById('footerBackToTop')?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  document.querySelector('.footer-newsletter-form')?.addEventListener('click', e => {
-    e.preventDefault();
-    const msgKey = 'footer.newsletter.success';
-
-    const input = e.currentTarget.querySelector('.footer-newsletter-input');
-    const msg = window.i18n?.t ? window.i18n.t(msgKey) : '订阅成功，感谢关注！';
-    if (input.value) { alert(msg); input.value = ''; }
-  });
-</script>

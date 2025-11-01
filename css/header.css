@@ -363,7 +363,7 @@
     align-items: center;
     justify-content: space-between;
     right: -130px; 
-    padding-right: clamp(0px, 2.5vw, 16px);
+    padding-right: clamp(0px, 0vw, 16px);
   }
 
   /* 左侧 Logo/站点名：禁止换行，占据可伸缩空间 */
