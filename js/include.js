@@ -24,16 +24,16 @@ document.addEventListener('click', (e) => {
 });
 
 // 订阅表单：用 submit 事件 + 委托（Enter/点击按钮都可触发）
-document.addEventListener('submit', (e) => {
+document.addEventListener('submit', async (e) => {
   const form = e.target.closest('.footer-newsletter-form');
   if (!form) return;
 
   e.preventDefault();
   const input = form.querySelector('.footer-newsletter-input');
   const msgKey = 'footer.newsletter.success';
-  const t = (window.i18n?.t) ? window.i18n.t.bind(window.i18n) : (k)=>({
-    'footer.newsletter.success':'订阅成功，感谢关注！',
-    'footer.newsletter.invalid':'请输入有效邮箱',
+  const t = (window.i18n?.t) ? window.i18n.t.bind(window.i18n) : (k) => ({
+    'footer.newsletter.success': '订阅成功，感谢关注！',
+    'footer.newsletter.invalid': '请输入有效邮箱',
   }[k] || k);
 
   const email = (input?.value || '').trim();
@@ -42,9 +42,17 @@ document.addEventListener('submit', (e) => {
     return;
   }
 
-  // TODO: 在这里发起你的订阅请求（fetch 到后端）
-  // await fetch('/api/subscribe', {method:'POST', body: JSON.stringify({ email })})
-
-  alert(t(msgKey));
-  input.value = '';
+  try {
+    await fetch('https://myu-api.vercel.app/api/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    });
+    alert(t(msgKey));
+    input.value = '';
+  } catch (err) {
+    console.error(err);
+    alert('发送失败，请稍后再试');
+  }
 });
+
