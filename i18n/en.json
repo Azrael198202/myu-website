@@ -68,21 +68,23 @@
     },
     "services": {
       "title": "Products & Services",
-      "item1": "AI Solutions",
-      "item2": "Extended Reality (XR) Technology",
+      "item1": "AI & Artificial Intelligence",
+      "item2": "XR (Extended Reality)",
       "item3": "IoT Platforms",
-      "item4": "Cloud Computing Services",
-      "item5": "Customized Software Development",
-      "item6": "Smart Hardware Design"
+      "item4": "Cloud & Architecture",
+      "item5": "Custom Software Development",
+      "item6": "BPO / ITO Services",
+      "item7": "Data Analytics & Visualization",
+      "item8": "Technical Consulting & Training"
     },
     "solution": {
       "title": "Solutions",
-      "item1": "Enterprise Digital Transformation",
-      "item2": "System Integration",
-      "item3": "Technology Consulting",
-      "item4": "Intelligent Automation",
-      "item5": "Data Analytics",
-      "item6": "Information Security"
+      "item1": "Smart Tourism",
+      "item2": "Smart City",
+      "item3": "Smart Manufacturing",
+      "item4": "Education & Training",
+      "item5": "Healthcare & Medical",
+      "item6": "Energy & Carbon Management"
     },
     "about": {
       "title": "About Us",
