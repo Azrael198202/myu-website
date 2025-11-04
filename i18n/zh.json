@@ -6,7 +6,7 @@
   "nav": {
     "menu": "菜单",
     "homepage": "首页",
-    "about": "关于我们",
+    "about": "关于迈域",
     "scope": "业务范围",
     "solutions": "解决方案",
     "team": "团队",
@@ -88,7 +88,7 @@
       "item6": "能源与碳管理"
     },
     "about": {
-      "title": "关于我们",
+      "title": "关于迈域",
       "item1": "公司概况",
       "item2": "核心团队",
       "item3": "加入我们",
