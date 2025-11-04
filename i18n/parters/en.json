@@ -1,0 +1,65 @@
+{
+  "partners": {
+    "hero": {
+      "title": "Partners & Suppliers",
+      "sub": "Building an open ecosystem with world-class partners"
+    },
+    "keyapps": "Key Applications",
+    "regions": { "label": "Regions Supported:" },
+    "contact": { "label": "Contact:" },
+    "tel": "TEL",
+    "website": "Website",
+    "inspur": {
+      "name": "Inspur Group Co., Ltd.",
+      "addr": "No. 1036, Langchao Road, High-Tech Zone, Jinan, Shandong, China",
+      "tags": ["Manufacturer (Server & Cloud Products)", "System Integrator"],
+      "apps": [
+        "Cloud computing infrastructure",
+        "AI servers & data center solutions",
+        "Big data platform construction",
+        "Government & enterprise digital transformation"
+      ],
+      "regions": "Worldwide",
+      "tel": "+86 531-8510 8888"
+    },
+    "huawei": {
+      "name": "Huawei Technologies Co., Ltd.",
+      "addr": "Huawei Base, Bantian, Longgang District, Shenzhen, China",
+      "tags": ["Manufacturer (ICT Infrastructure)", "Solution Provider"],
+      "apps": [
+        "5G and cloud network solutions",
+        "AI computing & edge devices",
+        "Smart city & IoT platforms",
+        "Enterprise digitalization services"
+      ],
+      "regions": "Worldwide",
+      "tel": "+86 755-28780808"
+    },
+    "byd": {
+      "name": "BYD Company Limited",
+      "addr": "No.3009, BYD Road, Pingshan District, Shenzhen, China",
+      "tags": ["Manufacturer (EV & Battery Products)", "Technology Innovator"],
+      "apps": [
+        "Electric vehicles & green transportation",
+        "Battery energy storage systems",
+        "Solar energy solutions",
+        "Smart manufacturing & robotics"
+      ],
+      "regions": "Worldwide",
+      "tel": "+86 755-89888888"
+    },
+    "yidian": {
+      "name": "Yidian Technology Co., Ltd.",
+      "addr": "2F, Building A, Zhongguancun Innovation Park, Beijing, China",
+      "tags": ["AI & IoT Solution Provider"],
+      "apps": [
+        "AI smart terminals",
+        "IoT devices & data platforms",
+        "Intelligent transportation systems",
+        "Digital twin & smart manufacturing"
+      ],
+      "regions": "Asia Pacific",
+      "tel": "+86 10-8888 6666"
+    }
+  }
+}
