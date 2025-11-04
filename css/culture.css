@@ -3,6 +3,17 @@
    符合 MicroMyu UI v2 风格
    ========================================================= */
 
+.sub-hero {
+  position: relative;
+  width: 100%;
+  height: 340px; /* 可根据需要调整高度 */
+  background: url("/assets/bgs/bg2.jpeg") center/cover no-repeat; /* 修改为你的图片路径 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* ========== 企业文化部分 ========== */
 
 .culture-section {
