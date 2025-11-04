@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="">Our Locations</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/locations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet"  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+</head>
+
+<body>
+
+  <div data-include="header"></div>
+
+  <section class="maps-section">
+    <div class="maps-header">
+      <img src="assets/icons/locations.svg" alt="" class="partners-icon" />
+      <h2 data-i18n="locations.hero.title">Our Locations</h2>
+      <p data-i18n="locations.hero.sub">Hangzhou · Tokyo · Fukuoka · Qingdao · Jinan</p>
+    </div>
+
+    <div class="maps-grid">
+      <!-- 杭州 -->
+      <article class="map-card">
+        <h3 data-i18n="locations.maps.0">中国 · 杭州</h3>
+        <div class="tag" data-i18n="locations.tags.0">Hangzhou, China</div>
+        <div id="map-hangzhou" class="map"></div>
+      </article>
+
+      <!-- 东京 -->
+      <article class="map-card">
+        <h3  data-i18n="locations.maps.1">日本 · 东京</h3>
+        <div class="tag" data-i18n="locations.tags.1">Tokyo, Japan</div>
+        <div id="map-tokyo" class="map"></div>
+      </article>
+
+      <!-- 福冈 -->
+      <article class="map-card">
+        <h3  data-i18n="locations.maps.2">日本 · 福冈</h3>
+        <div class="tag" data-i18n="locations.tags.2">Fukuoka, Japan</div>
+        <div id="map-fukuoka" class="map"></div>
+      </article>
+
+      <!-- 青岛 -->
+      <article class="map-card">
+        <h3  data-i18n="locations.maps.3">中国 · 青岛</h3>
+        <div class="tag" data-i18n="locations.tags.3">Qingdao, China</div>
+        <div id="map-qingdao" class="map"></div>
+      </article>
+
+      <!-- 济南-->
+      <article class="map-card">
+        <h3  data-i18n="locations.maps.4">中国 · 济南</h3>
+        <div class="tag" data-i18n="locations.tags.4">Jinan, China</div>
+        <div id="map-jinan" class="map"></div>
+      </article>
+    </div>
+  </section>
+
+  <div data-include="footer"></div>
+
+  <script src="js/lang.js"></script>
+  <script src="js/nav-active.js"></script>
+  <script src="js/include.js"></script>
+
+  <script>
+    // 坐标
+    const spots = [
+      { id: 'map-hangzhou', name: '杭州 Hangzhou', lat: 30.2741, lng: 120.1551, zoom: 11 },
+      { id: 'map-tokyo', name: '东京 Tokyo', lat: 35.6762, lng: 139.6503, zoom: 11 },
+      { id: 'map-fukuoka', name: '福冈 Fukuoka', lat: 33.5902, lng: 130.4017, zoom: 12 },
+      { id: 'map-qingdao', name: '青岛 Qingdao', lat: 36.0671, lng: 120.3826, zoom: 12 },
+      { id: 'map-jinan', name: '济南 Jinan', lat: 36.6512, lng: 117.1201, zoom: 12 }
+    ];
+
+    // 公共底图（OpenStreetMap）
+    const osm = (map) =>
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+
+    // 渲染每张地图
+    spots.forEach(s => {
+      const map = L.map(s.id, { scrollWheelZoom: false }).setView([s.lat, s.lng], s.zoom);
+      osm(map);
+      const marker = L.marker([s.lat, s.lng]).addTo(map);
+      marker.bindPopup(`<b>${s.name}</b>`).openPopup();
+    });
+
+    // 处理在隐藏容器中初始化导致的尺寸问题（如果有折叠菜单时）
+    window.addEventListener('resize', () => {
+      spots.forEach(s => {
+        const m = L.map ? L.map(s.id) : null;
+        // 此处仅为占位说明：如果你用框架复用实例，需保留 map 实例引用并调用 invalidateSize()
+      });
+    });
+  </script>
+</body>
+
+</html>

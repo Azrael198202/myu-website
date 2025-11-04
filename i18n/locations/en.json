@@ -1,0 +1,22 @@
+{
+  "locations": {
+    "hero": {
+      "title": "Our Locations",
+      "sub": "Hangzhou · Tokyo · Fukuoka · Qingdao · Jinan"
+    },
+    "maps": [
+      "Hangzhou, China",
+      "Tokyo, Japan",
+      "Fukuoka, Japan",
+      "Qingdao, China",
+      "Jinan, China"
+    ],
+    "tags": [
+      "Hangzhou, China",
+      "Tokyo, Japan",
+      "Fukuoka, Japan",
+      "Qingdao, China",
+      "Jinan, China"
+    ]
+  }
+}

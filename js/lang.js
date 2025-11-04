@@ -282,6 +282,8 @@ async function initI18n() {
   rewriteAllLinks(lang);
   rewriteAllForms(lang);
 
+  document.dispatchEvent(new Event("i18nUpdated"));
+
   // 4) 监听语言下拉切换
   const sel = document.getElementById("langSelect");
   if (sel) {
