@@ -125,52 +125,90 @@ async function loadPack(lang) {
   return L;
 }
 
+function escapeHTML(str) {
+  return String(str)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
 
+// {name} 占位符替换
+function interpolate(tpl, params = {}, { html = false } = {}) {
+  if (typeof tpl !== 'string') return '';
+  return tpl.replace(/\{(\w+)\}/g, (_, k) => {
+    const v = params[k];
+    if (v == null) return '';
+    return html ? String(v) : escapeHTML(String(v));
+  });
+}
+
+function parseParams(el) {
+  try {
+    const raw = el.getAttribute('data-i18n-params');
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
 
 function applyI18n() {
   const L = I18N;
   if (!L) return;
 
   // 基本文案
-  qsa("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    const val = get(L, key);
-    if (typeof val === "string") el.textContent = val;
+  qsa('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const params = parseParams(el);
+    const val = get(L, key, '');
+    if (typeof val === 'string') {
+      el.textContent = interpolate(val, params, { html: false });
+    }
   });
 
   // 列表渲染
-  qsa("[data-i18n-list]").forEach(ul => {
-    const key = ul.getAttribute("data-i18n-list");
+  qsa('[data-i18n-list]').forEach(ul => {
+    const key = ul.getAttribute('data-i18n-list');
     const arr = get(L, key) || [];
-    ul.innerHTML = "";
+    ul.innerHTML = '';
     arr.forEach(v => {
-      const li = document.createElement("li");
-      li.textContent = v;
+      const li = document.createElement('li');
+      li.textContent = typeof v === 'string' ? v : '';
       ul.appendChild(li);
     });
   });
 
   // 团队卡片（按顺序覆盖）
-  qsa("[data-i18n-team]").forEach((wrap, idx) => {
-    const member = get(L, "teams.members." + idx);
+  qsa('[data-i18n-team]').forEach((wrap, idx) => {
+    const member = get(L, 'teams.members.' + idx);
     if (!member) return;
-    const nameEl = qs(".member-name", wrap);
-    const roleEl = qs(".member-role", wrap);
-    const bioEl = qs(".member-bio", wrap);
-    const linkEl = qs(".member-link", wrap);
-    if (nameEl) nameEl.textContent = member.name;
-    if (roleEl) roleEl.textContent = member.role;
-    if (bioEl) bioEl.textContent = member.bio;
+    const nameEl = qs('.member-name', wrap);
+    const roleEl = qs('.member-role', wrap);
+    const bioEl = qs('.member-bio', wrap);
+    const linkEl = qs('.member-link', wrap);
+    if (nameEl) nameEl.textContent = member.name || '';
+    if (roleEl) roleEl.textContent = member.role || '';
+    if (bioEl) bioEl.textContent = member.bio || '';
     if (linkEl) {
       if (member.link) {
         linkEl.href = member.link;
-        const label = get(L, "ui.viewProfile") || "View";
+        const label = get(L, 'ui.viewProfile') || 'View';
         linkEl.textContent = label;
-        linkEl.style.display = "";
+        linkEl.style.display = '';
       } else {
-        linkEl.removeAttribute("href");
-        linkEl.style.display = "none";
+        linkEl.removeAttribute('href');
+        linkEl.style.display = 'none';
       }
+    }
+  });
+
+  qsa('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    const params = parseParams(el);
+    const val = get(L, key, '');
+    if (typeof val === 'string') {
+      el.innerHTML = interpolate(val, params, { html: true });
     }
   });
 

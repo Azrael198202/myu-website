@@ -7,12 +7,11 @@
     },
     "brand": {
       "story_title": "MyuTech MicroMyu — Meaning of the Name",
-      "text1": "\"Mai\" (迈): means \"stride, leap, advance\"—a spirit of innovation, progress, and breaking limits. In a tech context, it symbolizes \"striding into the future\" and \"crossing technological frontiers.\"",
-      "text2": "\"Yu\" (域): means \"domain, territory, space\"—often used for \"digital domain\" or \"intelligent domain\" in tech, representing new spaces for technology and new frontiers of the world.",
-      "highlight_line1": "\"Stride into New Domains\" — continuously expanding technological frontiers",
-      "highlight_line2": "\"Enter the Future Domain\" — a spirit of exploration and innovation for the future",
-      "text3": "Myu (迈域): its pronunciation echoes μ (micro/myu), aligning with \"Micro Technology\" and \"μ-Intelligence\" (intelligent innovation).",
-      "domain_label": "Website:"
+      "text1": "<strong>“Mai”</strong>: Means “stride, cross, advance” — symbolizing innovation, progress, and breaking boundaries. In a technological context, it represents “striding into the future” and “crossing technological frontiers.”",
+    "text2": "<strong>“Yu”</strong>: Means “domain, territory, space” — commonly used in terms like “digital domain” or “intelligent domain,” representing the space and frontiers of new technologies.",
+      "highlight_line2": "<strong>“Enter the Future Domain”</strong> — Symbolizing exploration and innovation for the future",
+      "text3": "<strong>Myu</strong>: The pronunciation resembles μ (micro/myu), aligning with the concepts of <strong>Micro Technology</strong> and <strong>μ-Intelligence</strong> — representing microscopic technology and intelligent innovation.",
+      "domain_label": "Website: {link}" 
     },
     "values": {
       "title": "Core Values",

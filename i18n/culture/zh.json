@@ -7,12 +7,12 @@
     },
     "brand": {
       "story_title": "迈域 MicroMyu — 名字的寓意",
-      "text1": "「迈」：意为「迈步、跨越、进取」，代表创新、前进、突破界限的精神。在科技语境中，象征「迈向未来」「跨越技术的疆界」。",
-      "text2": "「域」：意为「领域、疆域、空间」，在科技领域常指「数码领域」「智能领域」等。代表新技术的空间、新世界的疆域。",
-      "highlight_line1": "「迈向新域」—— 不断开拓新的科技疆界",
-      "highlight_line2": "「迈入未来之域」—— 象征企业面向未来的探索与创新精神",
-      "text3": "Myu（迈域）：英文发音与 μ（micro/myu）接近，暗合「微观科技（Micro Technology）与智能创新（μ-Intelligence）」的概念。",
-      "domain_label": "公司网址："
+      "text1": "<strong>“迈”</strong>：意为“迈步、跨越、进取”，代表创新、前进、突破界限的精神。在科技语境中，象征“迈向未来”“跨越技术的疆界”。",
+      "text2": "<strong>“域”</strong>：意为“领域、疆域、空间”，在科技领域常指“数码领域”“智能领域”等。代表新技术的空间、新世界的疆域。",
+      "highlight_line1": "<strong>“迈向新域”</strong> — 不断开拓新的科技疆界",
+      "highlight_line2": "<strong>“迈入未来之域”</strong> — 象征企业面向未来的探索与创新精神",
+      "text3": "<strong>Myu（迈域）</strong>：英文发音上与 μ（micro/myu）接近，暗合 <strong>微观科技（Micro Technology）与智能创新（μ-Intelligence）</strong> 的概念。",
+      "domain_label": "公司网址：{link}"
     },
     "values": {
       "title": "核心价值观",
