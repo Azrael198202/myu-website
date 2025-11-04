@@ -1,0 +1,98 @@
+{
+  "page_title": "Corporate Culture & Social Responsibility - MyuTech MicroMyu",
+  "responsibility": {
+    "hero": {
+      "title": "Social Responsibility",
+      "sub": "Empowering society through technology — the 'AI+' strategy driving sustainable growth",
+      "mission": "MyuTech deeply understands the social responsibilities of a technology company. We are committed to applying artificial intelligence in scientific research, industrial upgrading, public welfare, and social governance, promoting sustainable development and global cooperation to make technology truly benefit humanity."
+    },
+    "ai_plus": {
+      "science": {
+        "title": "\"AI+\" Science & Technology",
+        "description": "Accelerate scientific discovery: use AI algorithms to speed up drug development, gene analysis, and materials research — reducing R&D cycles and costs.",
+        "bullets": [
+          "Support universities and research institutes in AI-assisted studies",
+          "Open core technology platforms to empower researchers",
+          "Publish academic papers to promote innovation and knowledge sharing",
+          "Establish industry–academia–research alliances for technology transfer"
+        ]
+      },
+      "industry": {
+        "title": "\"AI+\" Industrial Development",
+        "description": "Drive industrial intelligence: empower manufacturing, logistics, and energy sectors with AI to improve efficiency and competitiveness.",
+        "bullets": [
+          "Smart manufacturing: predictive maintenance reduces downtime by 40%+",
+          "Smart logistics: optimize routes and reduce carbon emissions",
+          "Energy management: AI-driven scheduling improves energy efficiency",
+          "Empowering SMEs with affordable intelligent solutions"
+        ]
+      },
+      "consumer": {
+        "title": "\"AI+\" Consumer Experience",
+        "description": "Enhance consumption quality: provide personalized and immersive experiences through AI and XR technologies.",
+        "bullets": [
+          "Intelligent recommendation: AI-based personalized shopping experience",
+          "AR/VR shopping: virtual try-on and home preview experiences",
+          "Smart customer service: 24/7 multilingual AI support",
+          "Quality assurance: AI visual inspection ensures product reliability"
+        ]
+      },
+      "wellbeing": {
+        "title": "\"AI+\" Public Well-being",
+        "description": "Improve people's livelihood: apply AI to healthcare, education, and elderly care to enhance public services.",
+        "bullets": [
+          "Smart healthcare: AI image diagnosis improves early detection rates",
+          "Smart education: personalized learning platforms promote equality",
+          "Smart elderly care: IoT health monitoring supports senior living",
+          "Accessibility: speech and image recognition help people with disabilities"
+        ],
+        "impact": {
+          "value": "Millions of people",
+          "label": "benefit from our public welfare projects"
+        }
+      },
+      "governance": {
+        "title": "\"AI+\" Governance Capability",
+        "description": "Enhance modern governance: help governments and enterprises achieve intelligent decision-making and refined management.",
+        "bullets": [
+          "Smart cities: traffic optimization, environment monitoring, and safety alerts",
+          "Emergency management: AI-based disaster prediction and rapid response",
+          "Data governance: transparent and auditable data systems",
+          "E-government: one-stop intelligent administration services"
+        ]
+      },
+      "global": {
+        "title": "\"AI+\" Global Collaboration",
+        "description": "Collaborate globally for the future: actively engage in international cooperation for responsible AI development and global sharing.",
+        "bullets": [
+          "AI ethics and safety: participation in international standard-setting",
+          "Cross-border projects with global tech companies and research institutes",
+          "Technology aid for developing countries",
+          "Open-source contributions to share innovation results"
+        ]
+      }
+    },
+    "sustainability": {
+      "title": "Commitment to Sustainability",
+      "text": "MyuTech integrates sustainability into corporate strategy and daily operations. We commit to technological innovation while focusing on environmental protection, energy efficiency, and social equity — achieving balance among economic benefit, social responsibility, and environmental care.",
+      "pillars": {
+        "green_computing": {
+          "title": "Green Computing",
+          "text": "Optimize algorithm efficiency, reduce energy consumption, and promote carbon-neutral data centers"
+        },
+        "privacy": {
+          "title": "Data Privacy",
+          "text": "Strictly comply with data protection laws to safeguard user privacy and data security"
+        },
+        "ethics": {
+          "title": "AI Ethics",
+          "text": "Develop transparent and fair AI systems to avoid algorithmic bias and discrimination"
+        },
+        "community": {
+          "title": "Community Engagement",
+          "text": "Support public welfare initiatives and contribute to community development"
+        }
+      }
+    }
+  }
+}

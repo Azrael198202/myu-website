@@ -1,0 +1,624 @@
+/* =========================================================
+   Culture & Responsibility Page Styles
+   符合 MicroMyu UI v2 风格
+   ========================================================= */
+
+/* ========== 企业文化部分 ========== */
+
+.culture-section {
+  padding: var(--sp-8) 0;
+  background: var(--bg);
+}
+
+.culture-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--sp-5);
+}
+
+/* 文化英雄区 */
+.culture-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--sp-7);
+  align-items: start;
+  margin-bottom: var(--sp-8);
+  padding: var(--sp-6);
+  background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.culture-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 224, 255, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.culture-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 42px;
+  color: var(--primary);
+  margin: 0 0 var(--sp-3);
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: var(--muted-2);
+  margin-bottom: var(--sp-5);
+  line-height: 1.6;
+}
+
+.brand-story-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 24px;
+  color: var(--primary);
+  margin-bottom: var(--sp-3);
+  font-weight: 600;
+}
+
+.brand-story-text {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: var(--sp-3);
+}
+
+.brand-story-text strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.brand-story-highlight {
+  background: var(--primary-12);
+  border-left: 3px solid var(--primary);
+  padding: var(--sp-3) var(--sp-4);
+  margin: var(--sp-4) 0;
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.8;
+  border-radius: var(--r-sm);
+}
+
+.brand-story-highlight strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.brand-domain {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+  padding: var(--sp-3);
+  background: var(--primary-08);
+  border: 1px solid var(--primary);
+  border-radius: var(--r-md);
+}
+
+.domain-icon {
+  font-size: 24px;
+}
+
+.domain-text {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.domain-text a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity var(--dur) var(--ease);
+}
+
+.domain-text a:hover {
+  opacity: 0.8;
+}
+
+.culture-hero-visual {
+  position: relative;
+  z-index: 2;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--glow);
+}
+
+.culture-hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--dur) var(--ease);
+}
+
+.culture-hero-visual:hover img {
+  transform: scale(1.05);
+}
+
+/* 核心价值观 */
+.culture-values {
+  margin-bottom: var(--sp-8);
+}
+
+.subsection-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 32px;
+  color: var(--primary);
+  margin-bottom: var(--sp-5);
+  text-align: center;
+  font-weight: 600;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--sp-5);
+}
+
+.value-card {
+  background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5);
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: var(--glow);
+}
+
+.value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: var(--primary-12);
+  border-radius: var(--r-md);
+  margin-bottom: var(--sp-4);
+  color: var(--primary);
+}
+
+.value-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 20px;
+  color: var(--primary);
+  margin-bottom: var(--sp-3);
+  font-weight: 600;
+}
+
+.value-description {
+  font-size: 15px;
+  color: var(--muted-2);
+  line-height: 1.7;
+}
+
+/* 文化特色 */
+.culture-highlights {
+  margin-bottom: var(--sp-8);
+}
+
+.highlights-wrapper {
+  display: grid;
+  gap: var(--sp-5);
+}
+
+.highlight-card {
+  background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5);
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.highlight-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+.highlight-card-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-6);
+  padding: var(--sp-6);
+}
+
+.highlight-visual {
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.highlight-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.highlight-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.highlight-label {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--primary-12);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: var(--r-sm);
+  margin-bottom: var(--sp-3);
+  width: fit-content;
+}
+
+.highlight-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 24px;
+  color: var(--primary);
+  margin-bottom: var(--sp-3);
+  font-weight: 600;
+}
+
+.highlight-description {
+  font-size: 15px;
+  color: var(--muted-2);
+  line-height: 1.7;
+}
+
+/* ========== 社会责任部分 ========== */
+
+.responsibility-section {
+  padding: var(--sp-8) 0;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--panel) 100%);
+}
+
+.responsibility-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--sp-5);
+}
+
+.responsibility-hero {
+  text-align: center;
+  margin-bottom: var(--sp-8);
+  padding: var(--sp-6);
+  background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+}
+
+.responsibility-mission {
+  font-size: 17px;
+  color: var(--text);
+  line-height: 1.8;
+  max-width: 900px;
+  margin: var(--sp-5) auto 0;
+}
+
+/* "人工智能+" 卡片网格 */
+.ai-plus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: var(--sp-6);
+  margin-bottom: var(--sp-8);
+}
+
+.ai-plus-card {
+  background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+
+.ai-plus-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: var(--glow);
+}
+
+.ai-plus-card-highlight {
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.2);
+}
+
+.ai-plus-header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-5) var(--sp-5) var(--sp-3);
+}
+
+.ai-plus-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--primary-12);
+  border-radius: var(--r-md);
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.ai-plus-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 20px;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0;
+}
+
+.ai-plus-visual {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.ai-plus-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--dur) var(--ease);
+}
+
+.ai-plus-card:hover .ai-plus-visual img {
+  transform: scale(1.05);
+}
+
+.ai-plus-content {
+  padding: var(--sp-4) var(--sp-5) var(--sp-5);
+}
+
+.ai-plus-description {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: var(--sp-3);
+}
+
+.ai-plus-description strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.ai-plus-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ai-plus-list li {
+  font-size: 14px;
+  color: var(--muted-2);
+  line-height: 1.7;
+  padding-left: 20px;
+  margin-bottom: var(--sp-2);
+  position: relative;
+}
+
+.ai-plus-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.ai-plus-list li strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.ai-plus-impact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+  padding: var(--sp-3);
+  background: var(--primary-08);
+  border-radius: var(--r-md);
+  border: 1px solid var(--primary);
+}
+
+.impact-value {
+  font-family: Orbitron, sans-serif;
+  font-size: 28px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.impact-label {
+  font-size: 14px;
+  color: var(--muted-2);
+}
+
+/* 可持续发展承诺 */
+.sustainability-commitment {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--sp-7);
+  align-items: center;
+  padding: var(--sp-7);
+  background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.sustainability-commitment::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 224, 255, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.commitment-content {
+  position: relative;
+  z-index: 2;
+}
+
+.commitment-text {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: var(--sp-5);
+}
+
+.commitment-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-4);
+}
+
+.pillar {
+  padding: var(--sp-4);
+  background: var(--primary-08);
+  border: 1px solid var(--border-2);
+  border-radius: var(--r-md);
+  transition: border-color var(--dur) var(--ease);
+}
+
+.pillar:hover {
+  border-color: var(--primary);
+}
+
+.pillar-icon {
+  font-size: 32px;
+  margin-bottom: var(--sp-2);
+}
+
+.pillar-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 16px;
+  color: var(--primary);
+  margin-bottom: var(--sp-2);
+  font-weight: 600;
+}
+
+.pillar-text {
+  font-size: 14px;
+  color: var(--muted-2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.commitment-visual {
+  position: relative;
+  z-index: 2;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--glow);
+}
+
+.commitment-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========== 响应式设计 ========== */
+
+@media (max-width: 1024px) {
+  .culture-hero,
+  .highlight-card-featured,
+  .sustainability-commitment {
+    grid-template-columns: 1fr;
+  }
+
+  .commitment-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-plus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+  }
+
+  .subsection-title {
+    font-size: 26px;
+  }
+
+  .culture-hero,
+  .responsibility-hero {
+    padding: var(--sp-5);
+  }
+
+  .commitment-pillars {
+    gap: var(--sp-3);
+  }
+
+  .ai-plus-grid {
+    gap: var(--sp-4);
+  }
+
+  .ai-plus-visual {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .subsection-title {
+    font-size: 22px;
+  }
+
+  .brand-story-title {
+    font-size: 20px;
+  }
+
+  .culture-container,
+  .responsibility-container {
+    padding: 0 var(--sp-3);
+  }
+
+  .value-icon,
+  .ai-plus-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .ai-plus-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "page_title": "Corporate Culture & Social Responsibility - MyuTech MicroMyu",
+  "culture": {
+    "hero": {
+      "title": "Corporate Culture",
+      "sub": "Into the Future Domain — Break boundaries with innovation, shape tomorrow with technology"
+    },
+    "brand": {
+      "story_title": "MyuTech MicroMyu — Meaning of the Name",
+      "text1": "\"Mai\" (迈): means \"stride, leap, advance\"—a spirit of innovation, progress, and breaking limits. In a tech context, it symbolizes \"striding into the future\" and \"crossing technological frontiers.\"",
+      "text2": "\"Yu\" (域): means \"domain, territory, space\"—often used for \"digital domain\" or \"intelligent domain\" in tech, representing new spaces for technology and new frontiers of the world.",
+      "highlight_line1": "\"Stride into New Domains\" — continuously expanding technological frontiers",
+      "highlight_line2": "\"Enter the Future Domain\" — a spirit of exploration and innovation for the future",
+      "text3": "Myu (迈域): its pronunciation echoes μ (micro/myu), aligning with \"Micro Technology\" and \"μ-Intelligence\" (intelligent innovation).",
+      "domain_label": "Website:"
+    },
+    "values": {
+      "title": "Core Values",
+      "items": [
+        {
+          "title": "Innovation-Driven",
+          "desc": "We make technological innovation our core advantage, explore frontiers, and transform research into real-world applications to lead industry change."
+        },
+        {
+          "title": "Beyond Boundaries",
+          "desc": "We break technical and industry silos, integrating AI, XR, IoT and more to create cross-domain intelligent solutions."
+        },
+        {
+          "title": "Pursuit of Excellence",
+          "desc": "We insist on top quality—refining every detail from product design to service delivery to ensure reliability and great user experience."
+        },
+        {
+          "title": "Customer First",
+          "desc": "We are needs-driven, delivering tailored solutions, growing with customers, and creating measurable business value."
+        },
+        {
+          "title": "Open Collaboration",
+          "desc": "We build an open ecosystem and work closely with partners, developers, and academia to share knowledge and co-create the future."
+        },
+        {
+          "title": "Sustainability",
+          "desc": "We balance innovation with environmental protection, promote green computing, and align economic returns with social responsibility."
+        }
+      ]
+    },
+    "highlights": {
+      "title": "Cultural Highlights",
+      "cards": [
+        {
+          "label": "Innovation Climate",
+          "title": "Encourage exploration, tolerate trial & error",
+          "desc": "We foster a free and innovative environment and encourage bold ideas. With dedicated Innovation Time, engineers explore frontier tech. Failure is part of innovation—we learn and continuously improve."
+        },
+        {
+          "label": "Learning & Growth",
+          "title": "Keep learning, grow together",
+          "desc": "We offer comprehensive training and resources—tech talks, conferences, online courses, and mentorship. We support open-source and academic work, staying connected to the global tech community."
+        },
+        {
+          "label": "Work–Life Balance",
+          "title": "Care for well-being",
+          "desc": "We implement flexible schedules and remote work, respect personal time, and provide health checks, counseling, and team activities so everyone finds a healthy balance."
+        }
+      ]
+    }
+  }
+}
