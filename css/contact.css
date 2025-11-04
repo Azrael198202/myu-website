@@ -1,6 +1,53 @@
 /* =========================================
    Contact
 ========================================= */
+.sub-hero {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    /* 可按需要调整，比如 300~480px 都可以 */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 背景视频 */
+.sub-hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* 关键：确保不变形铺满 */
+}
+
+/* 遮罩，让文字更清晰 */
+.sub-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    /* 可调深浅 */
+    backdrop-filter: blur(1.5px);
+    /* 轻柔科技感，可选 */
+    z-index: 2;
+}
+
+/* 文字内容置顶 */
+.sub-hero-content {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+}
+
+
+
 .contact {
     max-width: 1200px;
     margin: 0 auto;
