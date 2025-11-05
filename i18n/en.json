@@ -448,7 +448,10 @@
       "value3": "IoT (Internet of Things)",
       "value4": "Cloud & Architecture",
       "value5": "System Integration",
-      "value6": "Other",
+      "value6": "BPO / ITO Services",
+      "value7": "Data Analytics & Visualization ",
+      "value8": "Technical Consulting & Training",
+      "value9": "Others",
       "description": "Project Brief (within 200 characters)",
       "privacy": "Privacy & Confidentiality: All business information is strictly protected. NDA signing is supported.",
       "submit": "Submit and Book a Dedicated Consultant"

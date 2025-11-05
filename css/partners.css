@@ -1,4 +1,4 @@
-body{
+body {
   background: white;
 }
 
@@ -12,8 +12,10 @@ body{
 
 .partners-header img {
   display: block;
-  margin: 0 auto 10px; /* 上下留白可调 */
-  width: 60px; /* 可根据需要调整图标大小 */
+  margin: 0 auto 10px;
+  /* 上下留白可调 */
+  width: 60px;
+  /* 可根据需要调整图标大小 */
   height: auto;
 }
 
@@ -70,4 +72,24 @@ body{
   border-radius: 8px;
   min-width: 130px;
   /* color: #999; */
+}
+
+@media (max-width: 900px) {
+  .partner-tags .tag {
+    display: block;
+    /* 改为块级，让每个tag独占一行 */
+    margin-bottom: 6px;
+    /* 每个tag之间增加一点间距 */
+    margin-right: 0;
+    /* 移除右侧间距 */
+    width: fit-content;
+    /* 自动适应文字宽度 */
+  }
+
+}
+
+@media (max-width: 560px) {
+  .partner-logo.placeholder {
+    min-width: 90px;
+  }
 }

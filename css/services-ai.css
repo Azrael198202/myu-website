@@ -1,16 +1,65 @@
-.hero {
-    max-height: 300px;
+/* 业务页面专用样式 */
+
+/* Hero区域 - 业务页面 */
+.sub-hero {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    /* 可按需要调整，比如 300~480px 都可以 */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-#tsparticles {
+/* 背景视频 */
+.sub-hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* 关键：确保不变形铺满 */
+}
+
+/* 遮罩，让文字更清晰 */
+.sub-hero-overlay {
     position: absolute;
     inset: 0;
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.35);
+    /* 可调深浅 */
+    backdrop-filter: blur(1.5px);
+    /* 轻柔科技感，可选 */
+    z-index: 2;
 }
 
-.hero-content {
+/* 文字内容置顶 */
+.sub-hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 3;
+    color: #ffffff;
+}
+
+.hero-icon {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero h1{
+    margin:30px 10px 10px 10px;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
 
 /* 动画 */
@@ -36,6 +85,12 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.btn{
+    margin: 12px;;
+    font-size: 14px;
 }
 
 /* 区块标题 */
@@ -255,4 +310,57 @@
         /* margin-bottom: 6rem; */
         align-items: center;
     }
+}
+
+/* CTA区域 */
+.cta-section {
+    text-align: center;
+    padding: 20px 40px;
+    background: var(--gradient-tech);
+    border-radius: 30px;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-content .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--primary);
+    background: var(--primary-08);
+    color: #b9f3ff;
+    cursor: pointer;
+    transition: transform var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+
+.cta-content .btn-primary {
+    background: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--primary);
+    background: var(--primary-08);
+    color: #b9f3ff;
+    cursor: pointer;
+    transition: transform var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+
+.cta-content .btn-primary:hover {
+    background: rgba(255, 255, 255, 0.2);
 }

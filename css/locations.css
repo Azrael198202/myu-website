@@ -13,7 +13,7 @@ body {
   background: #fff;
 }
 
-.map{
+.map {
   z-index: 0;
 }
 
@@ -27,8 +27,10 @@ body {
 
 .maps-header img {
   display: block;
-  margin: 0 auto 10px; /* 上下留白可调 */
-  width: 60px; /* 可根据需要调整图标大小 */
+  margin: 0 auto 10px;
+  /* 上下留白可调 */
+  width: 60px;
+  /* 可根据需要调整图标大小 */
   height: auto;
 }
 
@@ -56,6 +58,25 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--card-gap);
+}
+
+#map-hangzhou,
+#map-tokyo,
+#map-fukuoka,
+#map-qingdao,
+#map-jinan {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.leaflet-tooltip.map-badge {
+  background: #eef5ff;
+  border: 1px solid #cfe2ff;
+  color: #1b4f9c;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 }
 
 @media (min-width: 720px) {

@@ -1,0 +1,54 @@
+{
+  "page": {
+    "title": "Custom Software Development - Intelligent Technology"
+  },
+  "hero": {
+    "title": "Custom Software Development",
+    "subtitle": "Tailored to your business",
+    "description": "Our expert team delivers solutions precisely aligned with your requirements.",
+    "cta": "Learn more"
+  },
+  "overview": {
+    "title": "What We Offer",
+    "p1": "Full-stack custom development across web, mobile, enterprise systems and e-commerce. Deep expertise in Java, Python, Go, React and Vue.",
+    "p2": "End-to-end delivery from discovery and design to build, test and deployment. Agile process to adapt quickly and deliver on schedule."
+  },
+  "stats": {
+    "projects": { "number": "200+", "label": "Successful projects" },
+    "satisfaction": { "number": "95%", "label": "Client satisfaction" },
+    "leadtime": { "number": "30 days", "label": "Average lead time" }
+  },
+  "services": {
+    "title": "Development Types",
+    "web": {
+      "title": "Web Applications",
+      "intro": "Responsive apps, optimized for all devices.",
+      "items": ["Corporate/portal sites", "Admin consoles", "SaaS platforms", "PWA apps"]
+    },
+    "mobile": {
+      "title": "Mobile Applications",
+      "intro": "Native and cross-platform development.",
+      "items": ["iOS/Android native", "React Native", "Flutter", "Mini-programs"]
+    },
+    "enterprise": {
+      "title": "Enterprise Systems",
+      "intro": "Custom solutions for complex business processes.",
+      "items": ["ERP/CRM/OA", "Supply chain management", "Financial systems", "HR systems"]
+    }
+  },
+  "process": {
+    "title": "Delivery Process",
+    "steps": [
+      { "no": "1", "title": "Discovery", "desc": "Understand objectives and define a clear specification." },
+      { "no": "2", "title": "Design", "desc": "Architecture, database and UX design with a concrete plan." },
+      { "no": "3", "title": "Agile Development", "desc": "Iterative build with frequent demos and feedback." },
+      { "no": "4", "title": "Test & Deploy", "desc": "Functional, performance and security tests, then production rollout." },
+      { "no": "5", "title": "Operations & Support", "desc": "Ongoing maintenance and technical support for stability." }
+    ]
+  },
+  "cta": {
+    "title": "Kick off your project",
+    "sub": "Contact us for professional custom development services.",
+    "button": "Free consultation"
+  }
+}

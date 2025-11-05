@@ -1,0 +1,75 @@
+{
+  "page": {
+    "title": "Data Analytics & Visualization - Intelligent Technology"
+  },
+  "hero": {
+    "title": "Data Analytics & Visualization",
+    "subtitle": "Turn data into insight. Drive decisions.",
+    "description": "Transform data into visual insights to support smarter business decisions.",
+    "cta": "Explore our services"
+  },
+  "overview": {
+    "title": "Analytics & Visualization Services",
+    "p1": "We deliver end-to-end services from data collection, cleaning, analysis to visualization. With advanced tools and techniques, we build interactive dashboards and reporting systems that extract real value from your data.",
+    "p2": "Expertise in Python, R, Tableau, Power BI and ECharts. We provide data-warehouse buildout, enterprise BI systems and real-time dashboards to make data truly drive growth."
+  },
+  "stats": {
+    "capacity": { "number": "TB-scale", "label": "Processing capacity" },
+    "templates": { "number": "100+", "label": "Visualization templates" },
+    "realtime":  { "number": "Real-time", "label": "Data updates" }
+  },
+  "services": {
+    "title": "What We Do",
+    "data_engineering": {
+      "title": "Data Engineering",
+      "intro": "Build a complete data processing pipeline.",
+      "items": ["Data ingestion & integration", "Cleaning & transformation", "Data warehouse build", "ETL pipeline development"]
+    },
+    "data_analysis": {
+      "title": "Data Analysis",
+      "intro": "Unlock value and deliver insights.",
+      "items": ["Descriptive analytics", "Predictive analytics", "Diagnostic analytics", "Prescriptive analytics"]
+    },
+    "data_viz": {
+      "title": "Data Visualization",
+      "intro": "Turn data into intuitive visuals.",
+      "items": ["Interactive dashboards", "Real-time big screens", "Mobile reports", "Custom visualization components"]
+    }
+  },
+  "capabilities": {
+    "title": "Core Capabilities",
+    "items": [
+      { "title": "High-performance processing", "desc": "Real-time processing and analytics on TB-scale data with fast response and parallel queries." },
+      { "title": "Rich chart library", "desc": "100+ chart types with customizable styles and interactions." },
+      { "title": "Multi-device ready", "desc": "Responsive design for desktop, tablet and mobile." },
+      { "title": "Real-time updates", "desc": "WebSocket-based synchronization to ensure data freshness." },
+      { "title": "Access control", "desc": "Fine-grained permissions for security and compliance." },
+      { "title": "Data export", "desc": "Export to Excel, PDF and images for easy sharing and reporting." }
+    ]
+  },
+  "viz_types": {
+    "title": "Visualization Types",
+    "cards": [
+      { "title": "Business Dashboards", "desc": "Real-time monitoring of sales, operations and finance KPIs" },
+      { "title": "Data Walls", "desc": "Enterprise-grade large screens for command centers and showrooms" },
+      { "title": "Reports", "desc": "Custom reports with scheduling and subscription" },
+      { "title": "Geo Visualization", "desc": "Heatmaps and regional distribution on maps" },
+      { "title": "Relationship Graphs", "desc": "Knowledge graphs and networks for complex relations" },
+      { "title": "Trend Analysis", "desc": "Time-series and forecasting visual analytics" }
+    ]
+  },
+  "advantages": {
+    "title": "Technical Advantages",
+    "items": [
+      { "no": "01", "title": "Multi-source integration", "desc": "Connect to MySQL, PostgreSQL, MongoDB, Elasticsearch and more for cross-DB/platform analytics." },
+      { "no": "02", "title": "Intelligent analytics engine", "desc": "ML-powered pattern and anomaly detection with recommendations and forecasting." },
+      { "no": "03", "title": "Self-service analytics", "desc": "Drag-and-drop visual builder enables no-code report creation." },
+      { "no": "04", "title": "Enterprise-grade security", "desc": "Encrypted transport, row-level access control and audit logs." }
+    ]
+  },
+  "cta": {
+    "title": "Unlock data value",
+    "sub": "Contact us to build your dedicated analytics platform.",
+    "button": "Free consultation"
+  }
+}

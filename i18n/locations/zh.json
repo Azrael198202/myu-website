@@ -4,6 +4,8 @@
     "maps": [
       "中国 · 杭州", "日本 · 东京", "日本 · 福冈", "中国 · 青岛", "中国 · 济南"],
     "tags": [
+      "Hangzhou, China", "Tokyo, Japan", "Fukuoka, Japan", "Qingdao, China", "Jinan, China"],
+    "addresses": [
       "Hangzhou, China", "Tokyo, Japan", "Fukuoka, Japan", "Qingdao, China", "Jinan, China"]
     }
 }

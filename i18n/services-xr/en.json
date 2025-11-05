@@ -1,0 +1,73 @@
+{
+  "page": { "title": "XR Extended Reality - Intelligent Technology" },
+  "hero": {
+    "title": "XR Extended Reality",
+    "subtitle": "A seamless blend of the real and the virtual",
+    "description": "Unifying AR, VR, and MR to deliver immersive experiences and lead the next computing wave.",
+    "cta": "Explore our services"
+  },
+  "overview": {
+    "title": "What is XR?",
+    "p1": "XR (Extended Reality) is an umbrella term covering AR, VR, and MR. It blurs the boundary between the physical and digital worlds to enable new forms of interaction.",
+    "p2": "Our XR solutions combine computer vision, spatial computing, and sensing to deliver end-to-end services—from concept to deployment—for education, healthcare, retail, manufacturing, and more."
+  },
+  "stats": {
+    "satisfaction": { "number": "98%", "label": "User satisfaction" },
+    "cases": { "number": "50+", "label": "Successful projects" },
+    "latency": { "number": "15ms", "label": "Avg. response latency" }
+  },
+  "types": {
+    "title": "XR Technologies",
+    "ar": {
+      "title": "AR — Augmented Reality",
+      "intro": "Overlays digital content on the real world for navigation, education, and marketing.",
+      "items": ["Mobile AR apps", "AR glasses apps", "Marker-based AR", "Markerless tracking"]
+    },
+    "vr": {
+      "title": "VR — Virtual Reality",
+      "intro": "Fully immersive virtual environments for training, entertainment, and virtual meetings.",
+      "items": ["VR training simulators", "Virtual showrooms & expos", "VR games & entertainment", "Virtual collaboration"]
+    },
+    "mr": {
+      "title": "MR — Mixed Reality",
+      "intro": "Combines strengths of AR and VR so digital objects interact with the real world; ideal for industrial design and healthcare.",
+      "items": ["Spatial computing apps", "Holographic collaboration", "MR training", "Industrial maintenance assist"]
+    }
+  },
+  "capabilities": {
+    "title": "Core Capabilities",
+    "items": [
+      { "title": "3D Content Creation", "desc": "Professional modeling, texturing, and animation for realistic scenes and assets." },
+      { "title": "Tracking & Localization", "desc": "Accurate 6DoF via SLAM with seamless indoor/outdoor mapping." },
+      { "title": "Multimodal Interaction", "desc": "Gesture, voice, and eye-tracking for natural interactions." },
+      { "title": "Multi-user Collaboration", "desc": "Real-time sync for teamwork in shared virtual spaces." },
+      { "title": "Performance Optimization", "desc": "Rendering optimizations for various hardware to ensure 60fps+." },
+      { "title": "System Integration", "desc": "Seamless integration with existing enterprise systems and workflows." }
+    ]
+  },
+  "scenarios": {
+    "title": "Typical Use Cases",
+    "cards": [
+      { "title": "Manufacturing", "desc": "Assembly training, remote maintenance, design review, digital twin visualization" },
+      { "title": "Education & Training", "desc": "Immersive lessons, virtual labs, historical reconstructions, skill practice" },
+      { "title": "Healthcare", "desc": "Surgical planning & simulation, rehabilitation, medical education, telemedicine support" },
+      { "title": "Retail & E-commerce", "desc": "Virtual try-on, 3D product display, virtual stores, AR shopping assistants" },
+      { "title": "Real Estate & AEC", "desc": "Virtual tours, architectural visualization, interior previews, progress tracking" },
+      { "title": "Entertainment & Tourism", "desc": "VR games, virtual tourism, heritage digitization, immersive exhibitions" }
+    ]
+  },
+  "advantages": {
+    "title": "Technical Advantages",
+    "items": [
+      { "no": "01", "title": "Cross-platform Support", "desc": "Meta Quest, HoloLens, Magic Leap, Apple Vision Pro, plus iOS/Android mobile AR." },
+      { "no": "02", "title": "Advanced Rendering", "desc": "PBR materials, real-time ray tracing, dynamic shadows for photorealism." },
+      { "no": "03", "title": "AI-powered Enhancements", "desc": "Computer vision and ML for intelligent recognition, scene understanding, and content generation." },
+      { "no": "04", "title": "Cloud XR", "desc": "Cloud rendering and edge compute lower device requirements and broaden access to high-quality XR." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to start your XR journey?",
+    "sub": "Talk to our experts for a tailored XR solution.",
+    "button": "Free consultation"
+  }
+}

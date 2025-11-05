@@ -17,6 +17,13 @@
       "Fukuoka（日本）",
       "Qingdao（中国）",
       "Jinan（中国）"
+    ],
+    "addresses": [
+      "Hangzhou, China",
+      "Tokyo, Japan",
+      "Fukuoka, Japan",
+      "Qingdao, China",
+      "Jinan, China"
     ]
   }
 }

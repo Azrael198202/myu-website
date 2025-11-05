@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "Cloud & Architecture - Intelligent Technology"
+  },
+  "hero": {
+    "title": "Cloud & Architecture",
+    "subtitle": "Elastic, reliable, cloud-powered",
+    "description": "Build modern cloud-native architecture to drive digital transformation and business innovation.",
+    "cta": "Learn more"
+  },
+  "overview": {
+    "title": "Cloud Architecture Solutions",
+    "p1": "We deliver end-to-end design and implementation across public, private, and hybrid clouds. On AWS, Azure, Alibaba Cloud, and Tencent Cloud, we leverage cloud-native stacks to build highly available, scalable, and secure applications.",
+    "p2": "With containers, microservices, and DevOps, we enable rapid deployments and continuous delivery. We provide cloud migration, optimization, and operations to reduce IT costs and increase agility."
+  },
+  "stats": {
+    "availability": { "number": "99.95%", "label": "Service availability" },
+    "cost_optimized": { "number": "70%", "label": "Cost optimization rate" },
+    "deploy_boost": { "number": "10×", "label": "Deployment efficiency" }
+  },
+  "services": {
+    "title": "Core Services",
+    "arch": {
+      "title": "Architecture Design",
+      "intro": "Design highly available and scalable cloud architectures.",
+      "items": ["Multi-cloud & hybrid", "Microservices design", "Containerized deployment", "High-availability design"]
+    },
+    "migration": {
+      "title": "Cloud Migration",
+      "intro": "Secure, efficient migration of apps and data to the cloud.",
+      "items": ["Assessment & planning", "Data migration & sync", "App refactoring & optimization", "Migration validation & testing"]
+    },
+    "security": {
+      "title": "Security & Compliance",
+      "intro": "Comprehensive cloud security and compliance management.",
+      "items": ["Identity & access management", "Encryption & backup", "Security audit & monitoring", "Compliance assessment"]
+    }
+  },
+  "advantages": {
+    "title": "Technical Advantages",
+    "items": [
+      { "no": "01", "title": "Cloud-native stack", "desc": "Kubernetes, Docker, and Istio for containerization and microservices to improve maintainability and scalability." },
+      { "no": "02", "title": "DevOps practices", "desc": "CI/CD pipelines for automated build, test, and deployment—shorter release cycles and higher productivity." },
+      { "no": "03", "title": "Cost optimization", "desc": "Scheduling, autoscaling, and reserved instances to cut cloud spend by 30%–70%." },
+      { "no": "04", "title": "Multi-cloud management", "desc": "Unified management for cross-cloud orchestration and data sync to avoid vendor lock-in."}
+    ]
+  },
+  "cta": {
+    "title": "Start your cloud journey",
+    "sub": "Let us help you build a modern cloud architecture.",
+    "button": "Free consultation"
+  }
+}

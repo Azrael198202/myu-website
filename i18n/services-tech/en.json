@@ -1,0 +1,73 @@
+{
+  "page": { "title": "Technical Consulting & Training - Intelligent Technology" },
+  "hero": {
+    "title": "Technical Consulting & Training",
+    "subtitle": "Empower your team for the future",
+    "description": "End-to-end advisory and structured training to elevate skills and accelerate delivery.",
+    "cta": "Learn more"
+  },
+  "overview": {
+    "title": "What We Offer",
+    "p1": "Senior experts provide full-stack advisory from technology selection and architecture design to implementation, plus structured training to help teams master new technologies fast.",
+    "p2": "Covers cloud, big data, AI, microservices, and DevOps. Hybrid online/offline delivery with hands-on focus. Custom corporate training and public classes available."
+  },
+  "stats": {
+    "trainees": { "number": "10,000+", "label": "Trainees" },
+    "courses":  { "number": "50+",     "label": "Courses" },
+    "rating":   { "number": "4.8/5",   "label": "Average rating" }
+  },
+  "services": {
+    "title": "Services",
+    "consulting": {
+      "title": "Technical Consulting",
+      "intro": "Pragmatic guidance for sound decisions and successful delivery.",
+      "items": ["Tech selection & evaluation", "Architecture design & review", "Hard problem solving", "Technology roadmap planning"]
+    },
+    "corpTraining": {
+      "title": "Corporate Training",
+      "intro": "Business-aligned, customized programs for teams.",
+      "items": ["Custom curriculum design", "Online + onsite hybrid", "Project-based learning", "Outcome assessment"]
+    },
+    "cert": {
+      "title": "Certification Prep",
+      "intro": "Training and bootcamps for major vendor certifications.",
+      "items": ["Cloud certifications", "Big data certifications", "AI engineer certifications", "DevOps certifications"]
+    }
+  },
+  "courses": {
+    "title": "Course Catalog",
+    "items": [
+      { "title": "Cloud", "desc": "AWS / Azure / Alibaba Cloud and cloud-native architecture." },
+      { "title": "Artificial Intelligence", "desc": "ML, DL, NLP, CV and real-world applications." },
+      { "title": "Big Data", "desc": "Hadoop, Spark, Flink for large-scale data processing." },
+      { "title": "Microservices", "desc": "Spring Cloud, Kubernetes, service mesh, and observability." },
+      { "title": "DevOps", "desc": "CI/CD, automation, ops, monitoring & alerting, engineering velocity." },
+      { "title": "Programming Languages", "desc": "Python, Java, Go, JavaScript in production." }
+    ]
+  },
+  "formats": {
+    "title": "Delivery Formats",
+    "cards": [
+      { "title": "In-house Training", "desc": "Onsite, tailored to your business scenarios." },
+      { "title": "Public Classes", "desc": "Small cohorts, highly interactive, scheduled sessions." },
+      { "title": "Online Learning", "desc": "Live + recorded, flexible and repeatable." },
+      { "title": "Bootcamps", "desc": "Project-driven, intensive upskilling." },
+      { "title": "1-on-1 Mentoring", "desc": "Personalized guidance on critical challenges." },
+      { "title": "Tech Workshops", "desc": "Topic-focused sharing and discussions." }
+    ]
+  },
+  "advantages": {
+    "title": "Why Us",
+    "items": [
+      { "no": "01", "title": "Veteran Instructors", "desc": "10+ years average experience; depth in theory and hands-on delivery." },
+      { "no": "02", "title": "Structured Curriculum", "desc": "Progressive learning path with a strong theory-practice loop." },
+      { "no": "03", "title": "Project-based Learning", "desc": "Real enterprise cases to convert knowledge into outcomes quickly." },
+      { "no": "04", "title": "Ongoing Support", "desc": "Post-class Q&A and community to reinforce best practices." }
+    ]
+  },
+  "cta": {
+    "title": "Start your learning journey",
+    "sub": "Contact us for a customized consulting & training plan.",
+    "button": "Free consultation"
+  }
+}

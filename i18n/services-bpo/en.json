@@ -1,0 +1,75 @@
+{
+  "page": {
+    "title": "BPO / ITO Services - Intelligent Technology"
+  },
+  "hero": {
+    "title": "BPO / ITO Services",
+    "subtitle": "Professional outsourcing, seamless efficiency",
+    "description": "Business Process Outsourcing and IT Outsourcing to reduce cost and boost efficiency.",
+    "cta": "Learn more"
+  },
+  "overview": {
+    "title": "BPO / ITO Overview",
+    "p1": "BPO and ITO help enterprises focus on core business and improve operational efficiency. We offer end-to-end outsourcing across customer service, data processing, software development, and system operations.",
+    "p2": "With experienced teams and standardized processes, we deliver high-quality, cost-effective solutions via offshore, nearshore, and onshore models."
+  },
+  "stats": {
+    "saving":   { "number": "40%",  "label": "Average cost reduction" },
+    "partners": { "number": "150+", "label": "Partner companies" },
+    "service":  { "number": "24/7", "label": "Around-the-clock service" }
+  },
+  "services": {
+    "title": "Service Types",
+    "bpo": {
+      "title": "Business Process Outsourcing (BPO)",
+      "intro": "Outsource non-core processes to lower operating costs.",
+      "items": ["Contact center", "Data entry & processing", "Finance & accounting", "HR outsourcing"]
+    },
+    "ito": {
+      "title": "IT Outsourcing (ITO)",
+      "intro": "Outsource IT services to enhance capabilities.",
+      "items": ["Software development", "System operations", "Technical support", "Testing & QA"]
+    },
+    "team": {
+      "title": "Team Outsourcing",
+      "intro": "On-site or remote professional teams.",
+      "items": ["Specialist staffing", "Project team setup", "Talent delivery", "Flexible workforce"]
+    }
+  },
+  "capabilities": {
+    "title": "Core Advantages",
+    "items": [
+      { "title": "Cost optimization", "desc": "30%–50% OPEX savings through labor and management efficiency." },
+      { "title": "Quality assurance", "desc": "ISO-certified processes ensure reliable delivery." },
+      { "title": "Rapid response", "desc": "Flexible team sizing to meet changing demands quickly." },
+      { "title": "Global delivery", "desc": "Multi-timezone, multi-language delivery capability." },
+      { "title": "Data security", "desc": "Strict protection and NDAs to safeguard information." },
+      { "title": "Continuous improvement", "desc": "Regular reviews and optimizations to提升 service quality." }
+    ]
+  },
+  "industries": {
+    "title": "Industries",
+    "cards": [
+      { "title": "Financial Services", "desc": "Customer service, data processing, risk review, ops" },
+      { "title": "E-commerce & Retail", "desc": "CX, order processing, inventory, analytics" },
+      { "title": "Healthcare", "desc": "Patient support, records, booking, data entry" },
+      { "title": "Education & Training", "desc": "Student support, course management, academic systems" },
+      { "title": "Logistics & Warehousing", "desc": "Orders, inventory, customer support, analytics" },
+      { "title": "Enterprise Services", "desc": "Finance BPO, HR, admin, IT operations" }
+    ]
+  },
+  "advantages": {
+    "title": "Service Strengths",
+    "items": [
+      { "no": "01", "title": "Expert teams", "desc": "500+ professionals across CS, engineering and data." },
+      { "no": "02", "title": "Standardized processes", "desc": "Well-defined standards and quality system (ISO9001)." },
+      { "no": "03", "title": "Flexible delivery", "desc": "On-site / remote / hybrid with scalable sizing." },
+      { "no": "04", "title": "Tech-driven", "desc": "RPA and AI enable automation and higher efficiency." }
+    ]
+  },
+  "cta": {
+    "title": "Start your outsourcing",
+    "sub": "Contact us for a tailored BPO / ITO solution.",
+    "button": "Free consultation"
+  }
+}

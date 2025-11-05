@@ -3,6 +3,7 @@
   "hero": {
     "title": "AI人工智能解决方案",
     "subtitle": "引领数字化转型，赋能企业智慧未来",
+    "description": "融合生成式 AI、RAG、多模态与自动化技术，助力企业数字化升级。",
     "button": "探索我们的业务"
   },
   "services": {
@@ -132,5 +133,10 @@
       "image_alt": "数字人 / 虚拟形象",
       "overlay_text": "AI数字人系统"
     }
+  },
+  "cta": {
+    "title": "开启您的 AI 智能化之旅",
+    "sub": "联系我们，获取专业的 AI 解决方案咨询",
+    "button": "免费咨询"
   }
 }

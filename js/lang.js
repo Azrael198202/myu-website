@@ -31,7 +31,7 @@ function buildUrlWithLang(url, lang) {
   return u.toString();
 }
 
-// === 新增：改写所有站内链接 ===
+// === 改写所有站内链接 ===
 function rewriteAllLinks(lang) {
   document.querySelectorAll('a[href]').forEach(a => {
     const href = a.getAttribute('href');
@@ -42,7 +42,7 @@ function rewriteAllLinks(lang) {
   });
 }
 
-// === 新增：改写所有表单（GET/POST 都携带 lang） ===
+// === 改写所有表单（GET/POST 都携带 lang） ===
 function rewriteAllForms(lang) {
   document.querySelectorAll('form').forEach(form => {
     const method = (form.getAttribute('method') || 'GET').toUpperCase();
@@ -64,7 +64,7 @@ function rewriteAllForms(lang) {
   });
 }
 
-// === 新增：点击拦截兜底（处理运行时动态 href 变更/JS 导航等） ===
+// === 点击拦截兜底（处理运行时动态 href 变更/JS 导航等） ===
 function attachClickInterceptor(getLang) {
   document.addEventListener('click', (e) => {
     const a = e.target.closest('a[href]');
@@ -122,6 +122,7 @@ async function loadPack(lang) {
   } catch (_) { }
 
   I18N = merged;
+
   return L;
 }
 
@@ -276,6 +277,7 @@ async function initI18n() {
   await loadPack(lang);
   translateAllTemplates();
   applyI18n();
+  window.MapGlue?.mount();
   renderPrivacySections();
 
   // 3) 改写站内链接与表单
@@ -294,6 +296,9 @@ async function initI18n() {
       await loadPack(l);
       translateAllTemplates();
       applyI18n();
+
+      window.MapGlue?.mount();
+
       renderPrivacySections();
       rewriteAllLinks(l);
       rewriteAllForms(l);
@@ -344,7 +349,6 @@ function translateAllTemplates() {
   });
 }
 
-
 function getPageName() {
   // /a/b/services-ai.html -> "services-ai"
   // /index.html 或根路径 -> "index"
@@ -353,3 +357,120 @@ function getPageName() {
   const base = p.split('/').pop() || 'index';
   return base.replace(/\.(html?|php|asp|aspx)$/, '') || 'index';
 }
+
+// === MapGlue: Leaflet + i18n（页面每次刷新/切换语言后统一挂载） ===
+window.MapGlue = (() => {
+  const POINTS = [
+    { id: "map-hangzhou", lat: 30.2741, lng: 120.1551, zoom: 11, i18nIdx: 0 },
+    { id: "map-tokyo",    lat: 35.6762, lng: 139.6503, zoom: 11, i18nIdx: 1 },
+    { id: "map-fukuoka",  lat: 33.5902, lng: 130.4017, zoom: 12, i18nIdx: 2 },
+    { id: "map-qingdao",  lat: 36.0671, lng: 120.3826, zoom: 12, i18nIdx: 3 },
+    { id: "map-jinan",    lat: 36.6512, lng: 117.1201, zoom: 12, i18nIdx: 4 }
+  ];
+
+  const maps = {};
+  const markers = {};
+
+  const hasLeaflet = () => !!window.L;
+  const hasAnyContainer = () => POINTS.some(p => document.getElementById(p.id));
+
+  // 名称取法：优先沿用你旧项目 window.i18n.t('locations.maps.N')
+  // 取不到再回退到合并后的 window.I18N.locations.maps[N]
+  function nameOf(idx) {
+    try {
+      const key = `locations.addresses.${idx}`;
+      if (I18N?.t) {
+        const v = I18N.t(key);
+        if (v && v !== key) return v;
+      }
+      const arr = I18N?.locations?.maps;
+      if (Array.isArray(arr)) return arr[idx] || "";
+      return "";
+    } catch (e) {
+      console.warn("[MapGlue] nameOf failed:", e);
+      return "";
+    }
+  }
+
+  function initOne(p) {
+    const el = document.getElementById(p.id);
+    if (!el) return;
+
+    // 避免重复初始化
+    if (el._mapInited) return;
+
+    const map = L.map(p.id, { scrollWheelZoom: false }).setView([p.lat, p.lng], p.zoom);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "&copy; OpenStreetMap contributors"
+    }).addTo(map);
+
+    const marker = L.marker([p.lat, p.lng]).addTo(map);
+
+    // Popup（点击显示的气泡）
+    marker.bindPopup(`<b>${nameOf(p.i18nIdx) || "…中国 杭州 ○○区 科技园"}</b>`);
+
+    // Tooltip（常驻的小徽标）
+    marker.bindTooltip(
+      `<span>${nameOf(p.i18nIdx) || "…"}</span>`,
+      { permanent: true, direction: 'top', offset: [0, -10], opacity: 1, className: 'map-badge' }
+    ).openTooltip();
+
+    maps[p.id] = map;
+    markers[p.id] = marker;
+    el._mapInited = true;
+  }
+
+  function initAll() {
+    if (!hasLeaflet() || !hasAnyContainer()) return;
+    POINTS.forEach(initOne);
+    // include 头部/尾部后，主动修正尺寸
+    setTimeout(() => Object.values(maps).forEach(m => m.invalidateSize()), 0);
+  }
+
+  function refresh() {
+    POINTS.forEach(p => {
+      const marker = markers[p.id];
+      const map = maps[p.id];
+      if (!marker || !map) return;
+
+      const html = `<b>${nameOf(p.i18nIdx) || "…中国 杭州 ○○区 科技园"}</b>`;
+      const popup = marker.getPopup();
+      if (popup) {
+        const opened = map.hasLayer(popup);
+        popup.setContent(html);
+        if (opened) marker.openPopup();
+      } else {
+        marker.bindPopup(html);
+      }
+
+      const tipHtml = `<span>${nameOf(p.i18nIdx) || "…中国 杭州 ○○区 科技园"}</span>`;
+      const tip = marker.getTooltip();
+      if (tip) tip.setContent(tipHtml);
+      else marker.bindTooltip(tipHtml, { permanent: true, direction: 'top', offset: [0, -10], opacity: 1, className: 'map-badge' })
+                 .openTooltip();
+    });
+  }
+
+  function mount() {
+    // DOM 未就绪时推迟
+    const run = () => { initAll(); refresh(); };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", run, { once: true });
+    } else {
+      run();
+    }
+  }
+
+  // 语言切换时自动刷新
+  document.addEventListener("i18nUpdated", refresh);
+
+  // 窗口尺寸变化时修正
+  window.addEventListener("resize", () => {
+    Object.values(maps).forEach(m => m.invalidateSize());
+  });
+
+  return { mount, refresh };
+})();
+
+

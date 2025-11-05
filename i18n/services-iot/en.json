@@ -1,0 +1,75 @@
+{
+  "page": {
+    "title": "IoT Platform - Intelligent Technology"
+  },
+  "hero": {
+    "title": "IoT Platform",
+    "subtitle": "Connect everything, power intelligence",
+    "description": "Build an enterprise-grade IoT platform with full device lifecycle management to accelerate digital transformation.",
+    "cta": "Learn more"
+  },
+  "overview": {
+    "title": "What is an IoT Platform?",
+    "p1": "An IoT platform bridges physical devices and the digital world. Our enterprise platform unifies device management, data ingestion, protocol adaptation, analytics, and app development to rapidly build and deploy IoT solutions.",
+    "p2": "It supports massive device connectivity with powerful stream processing and a flexible dev environment across smart cities, industrial IoT, smart homes, and connected vehicles. Edge–cloud collaboration ensures high availability, scalability, and security."
+  },
+  "stats": {
+    "devices":   { "number": "10M+",  "label": "Device connectivity" },
+    "uptime":    { "number": "99.99%", "label": "Platform availability" },
+    "protocols": { "number": "50+",   "label": "Supported protocols" }
+  },
+  "architecture": {
+    "title": "Core Architecture",
+    "ingress": {
+      "title": "Device Ingress",
+      "intro": "Multi-protocol, multi-method onboarding for stable, large-scale device access.",
+      "items": ["MQTT / CoAP / HTTP(S)", "NB-IoT / LoRa / 5G", "Device auth & access control", "Protocol conversion & adapters"]
+    },
+    "stream": {
+      "title": "Data Processing",
+      "intro": "High-throughput, low-latency stream processing for real-time analytics.",
+      "items": ["Real-time stream processing", "Rule engine & alerts", "Data cleansing & transformation", "Time-series storage"]
+    },
+    "enablement": {
+      "title": "Application Enablement",
+      "intro": "Standardized APIs/SDKs to accelerate integration and app development.",
+      "items": ["RESTful APIs", "Visual dev tools", "Device shadow & digital twin", "OTA remote upgrades"]
+    }
+  },
+  "features": {
+    "title": "Key Platform Features",
+    "items": [
+      { "title": "Device Management", "desc": "End-to-end lifecycle management from registration to maintenance." },
+      { "title": "Security", "desc": "End-to-end encryption, device identity, and privacy protection aligned with global standards." },
+      { "title": "Analytics", "desc": "Built-in engine for real-time monitoring, historical analysis, and forecasting." },
+      { "title": "Rule Engine", "desc": "Flexible rules to automate alerts, actuation, and business triggers." },
+      { "title": "Edge–Cloud Collaboration", "desc": "Lower latency and bandwidth costs with improved responsiveness." },
+      { "title": "OTA Updates", "desc": "Remote firmware upgrades with batch, staged rollout, and rollback." }
+    ]
+  },
+  "scenarios": {
+    "title": "Use Cases",
+    "cards": [
+      { "title": "Smart City", "desc": "Smart lighting, environmental monitoring, smart parking, waste, public safety" },
+      { "title": "Industrial IoT", "desc": "Equipment monitoring, predictive maintenance, production data, energy management, traceability" },
+      { "title": "Smart Home", "desc": "Appliance control, security, climate, energy, scenes" },
+      { "title": "Connected Vehicles", "desc": "Location tracking, remote diagnostics, driving behavior, dispatching, fleet" },
+      { "title": "Smart Agriculture", "desc": "Env monitoring, precise irrigation, pest alerts, agri-machinery, provenance" },
+      { "title": "Energy Management", "desc": "Smart meters, consumption, load forecasting, demand response, distributed energy" }
+    ]
+  },
+  "advantages": {
+    "title": "Technical Advantages",
+    "items": [
+      { "no": "01", "title": "Massive scale & low latency", "desc": "Distributed architecture supports tens of millions online; push latency < 100 ms." },
+      { "no": "02", "title": "Multi-protocol compatibility", "desc": "MQTT / CoAP / LwM2M / Modbus and 50+ others to reduce integration costs." },
+      { "no": "03", "title": "Private deployment", "desc": "Public/private/hybrid options to meet security and compliance requirements." },
+      { "no": "04", "title": "Open ecosystem", "desc": "Comprehensive APIs/SDKs for easy integration with third-party systems." }
+    ]
+  },
+  "cta": {
+    "title": "Start your IoT journey",
+    "sub": "Talk to us for a tailored enterprise IoT platform solution.",
+    "button": "Free consultation"
+  }
+}
