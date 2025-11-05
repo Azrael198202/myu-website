@@ -14,9 +14,9 @@
     "p2": "要件定義〜設計〜実装〜テスト〜デプロイまで一貫対応。アジャイルで素早く変更に追随し、納期順守を徹底します。"
   },
   "stats": {
-    "projects": { "number": "200+", "label": "納品プロジェクト" },
+    "projects": { "number": "N+", "label": "納品プロジェクト" },
     "satisfaction": { "number": "95%", "label": "顧客満足度" },
-    "leadtime": { "number": "30日", "label": "平均リードタイム" }
+    "leadtime": { "number": "30～90日", "label": "平均リードタイム" }
   },
   "services": {
     "title": "開発タイプ",

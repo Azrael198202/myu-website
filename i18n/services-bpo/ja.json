@@ -15,7 +15,7 @@
   },
   "stats": {
     "saving":   { "number": "40%",  "label": "平均コスト削減" },
-    "partners": { "number": "150+", "label": "提携企業" },
+    "partners": { "number": "N+", "label": "提携企業" },
     "service":  { "number": "24/7", "label": "年中無休のサービス" }
   },
   "services": {

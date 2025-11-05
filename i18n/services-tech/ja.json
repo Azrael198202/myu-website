@@ -12,8 +12,8 @@
     "p2": "クラウド・ビッグデータ・AI・マイクロサービス・DevOps など注目領域を網羅。オンライン／オフラインのハイブリッド形式、企業内研修のカスタムにも対応します。"
   },
   "stats": {
-    "trainees": { "number": "10000+", "label": "受講者数" },
-    "courses":  { "number": "50+",    "label": "提供コース" },
+    "trainees": { "number": "N+", "label": "受講者数" },
+    "courses":  { "number": "N+",    "label": "提供コース" },
     "rating":   { "number": "4.8/5",  "label": "受講満足度" }
   },
   "services": {

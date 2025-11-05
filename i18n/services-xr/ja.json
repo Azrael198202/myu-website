@@ -13,7 +13,7 @@
   },
   "stats": {
     "satisfaction": { "number": "98%", "label": "ユーザー満足度" },
-    "cases": { "number": "50+", "label": "導入実績" },
+    "cases": { "number": "N+", "label": "導入実績" },
     "latency": { "number": "15ms", "label": "平均レイテンシ" }
   },
   "types": {

@@ -12,8 +12,8 @@
     "p2": "Covers cloud, big data, AI, microservices, and DevOps. Hybrid online/offline delivery with hands-on focus. Custom corporate training and public classes available."
   },
   "stats": {
-    "trainees": { "number": "10,000+", "label": "Trainees" },
-    "courses":  { "number": "50+",     "label": "Courses" },
+    "trainees": { "number": "N+", "label": "Trainees" },
+    "courses":  { "number": "N+",     "label": "Courses" },
     "rating":   { "number": "4.8/5",   "label": "Average rating" }
   },
   "services": {

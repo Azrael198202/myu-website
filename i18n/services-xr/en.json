@@ -13,7 +13,7 @@
   },
   "stats": {
     "satisfaction": { "number": "98%", "label": "User satisfaction" },
-    "cases": { "number": "50+", "label": "Successful projects" },
+    "cases": { "number": "N+", "label": "Successful projects" },
     "latency": { "number": "15ms", "label": "Avg. response latency" }
   },
   "types": {

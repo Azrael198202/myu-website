@@ -14,9 +14,9 @@
     "p2": "从需求分析到系统设计，从代码实现到测试部署，提供全流程的软件开发服务。采用敏捷开发模式，快速响应需求变化，确保项目按时交付。"
   },
   "stats": {
-    "projects": { "number": "200+", "label": "成功项目" },
+    "projects": { "number": "N+", "label": "成功项目" },
     "satisfaction": { "number": "95%", "label": "客户满意度" },
-    "leadtime": { "number": "30天", "label": "平均交付周期" }
+    "leadtime": { "number": "30～90天", "label": "平均交付周期" }
   },
   "services": {
     "title": "开发类型",

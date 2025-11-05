@@ -14,9 +14,9 @@
     "p2": "End-to-end delivery from discovery and design to build, test and deployment. Agile process to adapt quickly and deliver on schedule."
   },
   "stats": {
-    "projects": { "number": "200+", "label": "Successful projects" },
+    "projects": { "number": "N+", "label": "Successful projects" },
     "satisfaction": { "number": "95%", "label": "Client satisfaction" },
-    "leadtime": { "number": "30 days", "label": "Average lead time" }
+    "leadtime": { "number": "30 ～ 90days", "label": "Average lead time" }
   },
   "services": {
     "title": "Development Types",

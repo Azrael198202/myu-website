@@ -13,7 +13,7 @@
   },
   "stats": {
     "satisfaction": { "number": "98%", "label": "用户体验满意度" },
-    "cases": { "number": "50+", "label": "成功项目案例" },
+    "cases": { "number": "N+", "label": "成功项目案例" },
     "latency": { "number": "15ms", "label": "平均响应延迟" }
   },
   "types": {

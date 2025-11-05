@@ -15,7 +15,7 @@
   },
   "stats": {
     "saving":   { "number": "40%",  "label": "平均成本降低" },
-    "partners": { "number": "150+", "label": "合作企业" },
+    "partners": { "number": "N+", "label": "合作企业" },
     "service":  { "number": "24/7", "label": "全天候服务" }
   },
   "services": {

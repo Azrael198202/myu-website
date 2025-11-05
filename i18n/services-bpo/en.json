@@ -15,7 +15,7 @@
   },
   "stats": {
     "saving":   { "number": "40%",  "label": "Average cost reduction" },
-    "partners": { "number": "150+", "label": "Partner companies" },
+    "partners": { "number": "N+", "label": "Partner companies" },
     "service":  { "number": "24/7", "label": "Around-the-clock service" }
   },
   "services": {

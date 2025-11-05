@@ -12,8 +12,8 @@
     "p2": "覆盖云计算、大数据、人工智能、微服务与 DevOps 等热门领域；支持线上+线下混合教学，理论与实战并重，可提供企业内训定制与公开课。"
   },
   "stats": {
-    "trainees": { "number": "10000+", "label": "培训学员" },
-    "courses":  { "number": "50+",    "label": "培训课程" },
+    "trainees": { "number": "N+", "label": "培训学员" },
+    "courses":  { "number": "N+",    "label": "培训课程" },
     "rating":   { "number": "4.8/5",  "label": "学员评分" }
   },
   "services": {
