@@ -54,6 +54,8 @@
     --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     --gradient-tech: linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%);
+
+    --functions-bg: #fff;
 }
 
 /* ---------- Reset ---------- */
