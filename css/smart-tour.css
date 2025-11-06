@@ -63,7 +63,7 @@
 
 .visual2 img,
 .visual2 video {
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
     opacity: .95;
 }
@@ -164,4 +164,37 @@
     background: var(--border-2);
     margin: var(--sp-4) 0;
     opacity: .6;
+}
+
+/* Products 占位图样式与基本排版 */
+.product-visual {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.02));
+    margin-bottom: 12px;
+}
+
+.img-placeholder {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    color: #6b7280;
+    /* 灰色文字 */
+    border: 1px dashed #9ca3af;
+    background: repeating-linear-gradient(45deg,
+            rgba(156, 163, 175, .1) 0 10px,
+            rgba(156, 163, 175, .05) 10px 20px);
+}
+
+#products .bullets {
+    margin: 10px 0 0;
+    padding-left: 18px;
+    /* color: var(--text-subtle, #4b5563); */
+    color:#fff;
+    line-height: 1.6;
 }

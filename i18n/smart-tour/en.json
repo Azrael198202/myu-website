@@ -178,5 +178,49 @@
         "solve": "Ads, partnerships, digital merch, premium and corporate tours."
       }
     ]
+  },
+  "products": {
+    "kicker": "Products",
+    "title": "Standard Hardware & Apps for Smart Tourism",
+    "lead": "Designed for a seamless ‘Vehicle–Human–Scenery–Cloud’ experience, offering plug-and-play hardware and mobile apps for instant deployment.",
+    "placeholder": "None",
+    "items": [
+      {
+        "title": "MR Glasses",
+        "desc": "Immersive touring with multilingual narration, gesture/voice interaction, scene triggers, and offline support.",
+        "points": [
+          "Gesture recognition / Voice control",
+          "MR/AR overlay interpretation and route guidance",
+          "Edge inference for stable use under weak networks"
+        ]
+      },
+      {
+        "title": "Smart Health Band",
+        "desc": "Monitors heart rate and blood oxygen, supports GPS-based positioning, detachment alerts, and one-touch SOS.",
+        "points": [
+          "Heart rate / SpO₂ / step monitoring",
+          "GPS + team gathering reminder",
+          "Extreme weather / abnormal condition alerts"
+        ]
+      },
+      {
+        "title": "Headset",
+        "desc": "Multilingual translation and tour narration headset with noise cancellation and group broadcast mode.",
+        "points": [
+          "Clear narration and guide playback",
+          "Multilingual translation / subtitle sync",
+          "Team channel / emergency broadcast"
+        ]
+      },
+      {
+        "title": "In-Vehicle Mobile App",
+        "desc": "All-in-one passenger app for itineraries, tickets, reminders, interactions, and repurchase — with offline cache and router optimization.",
+        "points": [
+          "Itinerary cards / ticket QR codes",
+          "Station linkage / boarding alerts",
+          "Multilingual guide / points mall"
+        ]
+      }
+    ]
   }
 }
