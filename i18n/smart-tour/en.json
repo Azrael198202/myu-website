@@ -1,0 +1,182 @@
+{
+  "page": {
+    "title": "Myu Smart Tour · Integrated Intelligent Travel Solution"
+  },
+  "hero": {
+    "kicker": "Myu SMART TOUR",
+    "title": "Myu Smart Tour · Integrated Intelligent Travel Solution",
+    "sub": "Five-layer architecture × Seven core technologies | A closed-loop AI tourism platform covering planning, departure, transportation, destination, and re-engagement.",
+    "cta": {
+      "learn": "Learn More",
+      "video": "Watch Video"
+    }
+  },
+  "intro": {
+    "kicker": "Overview",
+    "title": "Five Layers · Full Coverage",
+    "lead": "Built on Core Engine, Infrastructure, Intelligent Services, Traveler Experience, and Data Insight, connecting the full journey from pre-trip to post-trip through AI, big data, cloud-edge computing, IoT sensing, multimodal interaction, and digital guides.",
+    "core": {
+      "title": "Core Engine:",
+      "desc": "AI model & data engine driving intelligent recommendation and forecasting."
+    },
+    "infra": {
+      "title": "Infrastructure:",
+      "desc": "Cloud-native + edge nodes (scenic hubs) for flexibility and low latency."
+    },
+    "services": {
+      "title": "Intelligent Services:",
+      "desc": "NLP, multimodal recognition, itinerary and language adaptation."
+    },
+    "experience": {
+      "title": "Traveler Experience:",
+      "desc": "Digital guide, humanized interaction, immersive MR/AR."
+    },
+    "data": {
+      "title": "Data Insight:",
+      "desc": "Profiles, routes, transactions, and feedback for remarketing and compliance."
+    },
+    "tags": [
+      "AI Models",
+      "Edge Nodes",
+      "IoT Wristband",
+      "Digital Guide",
+      "Multilingual"
+    ]
+  },
+  "video": {
+    "kicker": "Video",
+    "title": "Experience Smart Tourism in One Glimpse",
+    "lead": "From AI theme planning to traffic coordination, safety alerts, immersive site interactions, and post-trip incentives — a full smart travel loop.",
+    "stat": "8",
+    "badge": "Covers the full chain (Platform / App / Bus / Digital Human / IoT / Monitoring / Device / Interaction).",
+    "cta": {
+      "functions": "View All Functions"
+    }
+  },
+  "functions": {
+    "kicker": "Functions Overview",
+    "title": "Platform & Terminals · In Sync",
+    "lead": "Planning → Distribution → Execution → Interaction → Insight → Re-engagement.",
+    "items": [
+      {
+        "title": "AI Planning & Analytics Center",
+        "desc": "Theme planning, channel distribution, dashboards, and forecasting."
+      },
+      {
+        "title": "Consumer App & Mini Programs",
+        "desc": "Registration, itineraries, tickets, reminders, and social sharing."
+      },
+      {
+        "title": "Tour Bus Control System",
+        "desc": "Team grouping, stop coordination, health monitoring, emergency response."
+      },
+      {
+        "title": "IoT Wearables & Positioning",
+        "desc": "Heart rate & SpO₂, GPS synergy, straying alert, and rally reminders."
+      },
+      {
+        "title": "Digital Guide & Multimodal",
+        "desc": "Voice/gesture interaction, MR/AR narration, cross-language Q&A."
+      },
+      {
+        "title": "Smart Monitoring & Safety Alerts",
+        "desc": "Crowd heatmap, weather, risk detection, and dispatch."
+      },
+      {
+        "title": "Tourism Data Asset Platform",
+        "desc": "Profiles, transactions, feedback driving data-driven operations."
+      },
+      {
+        "title": "New Energy & Onboard Power",
+        "desc": "Flexible PV energy supports MR glasses, routers, and multiple devices."
+      }
+    ]
+  },
+  "bus": {
+    "title": "Vehicle Collaboration & Energy Replenishment",
+    "desc": "Bus system × flexible PV and storage provide power for guide screens, MR headsets, seat charging, and onboard routers for reliability.",
+    "tags": [
+      "Onboard Router",
+      "Seat Power",
+      "LED Display",
+      "Flexible PV"
+    ]
+  },
+  "mr": {
+    "title": "MR/AR Immersive Guidance",
+    "desc": "Digital human + sandbox + multilingual navigation with geofencing and scene triggers for time rewind, structure view, and cultural narration.",
+    "tags": [
+      "Gesture Recognition",
+      "Scene Trigger",
+      "Offline Pack",
+      "Edge Inference"
+    ]
+  },
+  "benefits": {
+    "kicker": "Why Myu Smart Tour",
+    "title": "Six Transformations in Travel Experience",
+    "items": [
+      {
+        "title": "Immersive Experience:",
+        "desc": "MR/AR and digital guides bring history and culture to life."
+      },
+      {
+        "title": "AI Assistant:",
+        "desc": "Navigation, translation, story explanation, and dining suggestions instantly."
+      },
+      {
+        "title": "Multilingual Access:",
+        "desc": "Simultaneous multilingual speech and subtitles for seamless communication."
+      },
+      {
+        "title": "Safety Visualization:",
+        "desc": "Crowd heatmap, alerts, weather integration, and vital sign visibility."
+      },
+      {
+        "title": "Personalized Journey:",
+        "desc": "Profile-driven itinerary optimization and dynamic queuing."
+      },
+      {
+        "title": "Sustainable Operation:",
+        "desc": "Flexible PV energy + data assets to enhance retention and profitability."
+      }
+    ]
+  },
+  "problems": {
+    "kicker": "Industry → Solution",
+    "title": "Key Challenges & Smart Solutions",
+    "solutionLabel": "Solution:",
+    "items": [
+      {
+        "title": "Homogenization",
+        "desc": "Lack of differentiated content and immersion.",
+        "solve": "Digital human + scripted MR/AR; AI theme planning and UGC."
+      },
+      {
+        "title": "Language Barrier",
+        "desc": "High cost for multilingual service.",
+        "solve": "Real-time translation and captions; multilingual Q&A automation."
+      },
+      {
+        "title": "Safety & Emergency",
+        "desc": "Straying, lost travelers, extreme weather risks.",
+        "solve": "IoT tracking, alerts, weather-crowd command, one-tap SOS."
+      },
+      {
+        "title": "Uneven Traffic",
+        "desc": "Overcrowded hot spots lower experience.",
+        "solve": "AI queue optimization, off-peak recommendations, edge inference."
+      },
+      {
+        "title": "Weak Re-engagement",
+        "desc": "Post-trip operations disconnected.",
+        "solve": "Data assets, precision marketing, loyalty points and packages."
+      },
+      {
+        "title": "Single Revenue Source",
+        "desc": "Overreliance on tickets and guides.",
+        "solve": "Ads, partnerships, digital merch, premium and corporate tours."
+      }
+    ]
+  }
+}
