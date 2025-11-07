@@ -1,0 +1,37 @@
+{
+  "site": {
+    "name": "MicroMyu",
+    "motto": "Intelligence · Integration · Innovation · Connected Future"
+  },
+  "uc": {
+    "meta": { "title": "Under Construction | MicroMyu" },
+    "hero": {
+      "title": "Under Construction",
+      "sub": "We are polishing a better About page experience"
+    },
+    "badge": "WIP · In Progress",
+    "title": "New page coming soon",
+    "sub": "Company info, history, and core team sections are being prepared. Thank you for your interest!",
+    "next": "Coming soon",
+    "items": {
+      "0": "Smart City",
+      "1": "Smart Manufacturing",
+      "2": "Education & Training",
+      "3": "Healthcare",
+      "4": "Energy & Carbon Management",
+      "5": "Company Overview",
+      "6": "Core Team",
+      "7": "News",
+      "8": "Milestones",
+      "9": "Certifications & Awards",
+      "10": "Media Coverage",
+      "11": "Exhibitions & Events",
+      "12": "Tech Insights",
+      "13": "Group Introduction"
+    },
+    "cta": {
+      "contact": "Contact Us",
+      "back": "Back to Home"
+    }
+  }
+}

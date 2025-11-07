@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="uc.meta.title">页面建设中 | MicroMyu</title>
+
+    <!-- Reuse your existing styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Under‑construction module (keeps MicroMyu neon tech style) */
+        .uc-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .uc-card {
+            position: relative;
+            background: linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .02));
+            border: 1px solid var(--border-2);
+            border-radius: var(--r-lg);
+            padding: var(--sp-6);
+            box-shadow: var(--glow);
+            overflow: clip;
+        }
+
+        .uc-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--primary);
+            background: var(--primary-08);
+            color: #b9f3ff;
+            font-size: 13px;
+            letter-spacing: .2px;
+        }
+
+        .uc-title {
+            font-family: Orbitron, sans-serif;
+            color: var(--primary);
+            margin: 10px 0 6px;
+            font-size: 28px;
+        }
+
+        .uc-sub {
+            color: var(--muted-2);
+            margin: 0 0 18px;
+        }
+
+        /* Animated progress */
+        .uc-progress {
+            position: relative;
+            height: 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .06);
+            overflow: hidden;
+            border: 1px solid var(--border-2);
+        }
+
+        .uc-progress>i {
+            position: absolute;
+            inset: 0;
+            display: block;
+            background: linear-gradient(90deg, transparent, var(--primary-12), var(--primary-16), var(--primary-12), transparent);
+            animation: ucSweep 2.4s var(--ease) infinite;
+        }
+
+        @keyframes ucSweep {
+            from {
+                transform: translateX(-60%);
+            }
+
+            to {
+                transform: translateX(60%);
+            }
+        }
+
+        .uc-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 22px;
+            margin-top: 22px;
+        }
+
+        .uc-panel {
+            background: var(--panel-2);
+            border: 1px solid var(--border-2);
+            border-radius: var(--r-md);
+            padding: var(--sp-5);
+        }
+
+        .uc-panel h3 {
+            margin: 0 0 10px;
+            color: var(--muted-2);
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .uc-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            gap: 10px;
+        }
+
+        .uc-list li {
+            display: grid;
+            grid-template-columns: 22px 1fr;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .uc-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-top: 6px;
+            background: var(--primary);
+            box-shadow: 0 0 0 4px var(--primary-08);
+        }
+
+        .uc-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .uc-actions .btn {
+            min-width: 160px;
+        }
+
+        /* Light watermark gears */
+        .uc-card::after {
+            content: "";
+            position: absolute;
+            right: -40px;
+            bottom: -40px;
+            width: 260px;
+            height: 260px;
+            opacity: .12;
+            background: radial-gradient(circle at 60% 40%, var(--primary-16), transparent 55%),
+                radial-gradient(circle at 30% 70%, rgba(255, 255, 255, .06), transparent 50%);
+            filter: blur(2px);
+        }
+
+        /* Mobile */
+        @media (max-width: 860px) {
+            .uc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .uc-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include="header"></div>
+
+    <!-- Sub‑hero kept for page continuity -->
+    <section class="sub-hero">
+        <div class="sub-hero-content">
+            <h1 data-i18n="uc.hero.title">页面建设中</h1>
+            <p data-i18n="uc.hero.sub">我们正在打磨更好的公司介绍体验</p>
+        </div>
+    </section>
+
+    <main class="about uc-wrap" aria-live="polite">
+        <div class="uc-card">
+            <span class="uc-badge" data-i18n="uc.badge">WIP · 正在施工</span>
+            <h2 class="uc-title" data-i18n="uc.title">新页面即将上线</h2>
+            <p class="uc-sub" data-i18n="uc.sub">公司信息、发展历程与核心团队版块正在完善中。感谢您的关注！</p>
+
+            <div class="uc-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="loading">
+                <i></i>
+            </div>
+
+            <div class="uc-grid">
+                <section class="uc-panel">
+                    <h3 data-i18n="uc.next">即将包含</h3>
+                    <ul class="uc-list">
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.0">智慧城市</span></li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.1">智能制造</span></li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.2">教育与培训</span>
+                        </li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.3">医疗健康</span></li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.4">能源与碳管理</span>
+                        </li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.5">公司概况</span></li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.6">核心团队</span></li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.7">公司新闻</span></li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.8">发展历程</span></li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.9">资质荣誉</span></li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.10">媒体报道</span>
+                        </li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.11">展会活动</span>
+                        </li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.12">技术洞察</span>
+                        </li>
+                        <li><span class="uc-dot" aria-hidden="true"></span><span data-i18n="uc.items.13">集团介绍</span>
+                        </li>
+                    </ul>
+                    <div class="uc-actions">
+                        <a class="btn" href="/contact.html" data-i18n="uc.cta.contact">联系我们</a>
+                        <a class="btn btn-outline" href="/index.html" data-i18n="uc.cta.back">返回首页</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div data-include="footer"></div>
+
+    <!-- existing scripts -->
+    <script src="js/lang.js"></script>
+    <script src="js/nav-active.js"></script>
+    <script src="js/include.js"></script>
+</body>
+
+</html>
