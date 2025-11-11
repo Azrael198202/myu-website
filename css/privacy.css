@@ -1,0 +1,16 @@
+.policy { 
+  width: 100%;
+  max-width: 1100px; 
+  margin: 0 auto;
+  padding: var(--sp-8) 10%;
+}
+
+.policy h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.policy p,
+.policy li {
+  line-height: 1.75;
+}
