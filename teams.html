@@ -1,67 +1,388 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="nav.team">团队</title>
+  <title data-i18n="page_title">团队</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/team.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <div data-include="header"></div>
 
   <section class="sub-hero">
+    <div class="hero-background">
+      <img src="/assets/team/teams1.png">
+    </div>
+
+    <div class="sub-hero-overlay"></div>
+
     <div class="sub-hero-content">
-      <h1 id="teams-hero-title" data-i18n="teams.hero.title">我们的团队</h1>
-      <p id="teams-hero-sub" data-i18n="teams.hero.sub">跨学科 · 融合创新 · 面向未来</p>
+      <h1 class="hero-title animate-fade-in" data-i18n="hero.title">我们的团队</h1>
+      <p class="hero-subtitle animate-fade-in-delay" data-i18n="hero.subtitle">专业·创新·协作 | 用技术驱动未来</p>
+      <p class="hero-description" data-i18n="hero.description">汇聚顶尖AI人才，打造世界级技术团队</p>
     </div>
   </section>
 
-  <section class="team">
-    <h2 id="teams-title" data-i18n="teams.title">核心成员</h2>
-
-    <div class="team-grid">
-      <article class="member-card" data-i18n-team="0">
-        <img src="assets/team/Alex.jpg" alt="Alex Chen" />
-        <div class="member-info">
-          <h3 class="member-name">Alex Chen</h3>
-          <p class="member-role">CEO</p>
-          <p class="member-bio">...</p>
-          <a class="member-link btn-secondary" href="mailto:contact@micro-myu.com?subject=To%20Alex%20Chen" target="_blank" rel="noopener">联系/档案</a>
+  <!-- 团队概览 -->
+  <section class="team-overview">
+    <div class="container">
+      <div class="overview-header">
+        <h2 class="section-title" data-i18n="overview.title">团队全景</h2>
+        <p class="section-desc" data-i18n="overview.desc">从调研到开发，从销售到推广，完整的技术服务生态链</p>
+      </div>
+      <div class="overview-stats">
+        <div class="stat-item">
+          <div class="stat-number" >N+</div>
+          <div class="stat-label" data-i18n="overview.stats.members">团队成员</div>
         </div>
-      </article>
-
-      <article class="member-card" data-i18n-team="1">
-        <img src="assets/team/Mei.jpg" alt="Mei Nakamura" />
-        <div class="member-info">
-          <h3 class="member-name">Mei Nakamura</h3>
-          <p class="member-role">CTO</p>
-          <p class="member-bio">...</p>
-          <a class="member-link btn-secondary" href="mailto:contact@micro-myu.com?subject=To%20Mei%20Nakamura" target="_blank" rel="noopener">联系/档案</a>
+        <div class="stat-item">
+          <div class="stat-number">N+</div>
+          <div class="stat-label" data-i18n="overview.stats.avg_years">年平均经验</div>
         </div>
-      </article>
-
-      <article class="member-card" data-i18n-team="2">
-        <img src="assets/team/Ryo.jpg" alt="Ryo Suzuki" />
-        <div class="member-info">
-          <h3 class="member-name">Ryo Suzuki</h3>
-          <p class="member-role">Head of Product</p>
-          <p class="member-bio">...</p>
-          <a class="member-link btn-secondary" href="mailto:contact@micro-myu.com?subject=To%20Ryo%20Suzuki" target="_blank" rel="noopener">联系/档案</a>
+        <div class="stat-item">
+          <div class="stat-number">N+</div>
+          <div class="stat-label" data-i18n="overview.stats.projects">成功项目</div>
         </div>
-      </article>
-
-      <article class="member-card" data-i18n-team="3">
-        <img src="assets/team/Lily.jpg" alt="Lily Wang" />
-        <div class="member-info">
-          <h3 class="member-name">Lily Wang</h3>
-          <p class="member-role">Solution Architect</p>
-          <p class="member-bio">...</p>
-          <a class="member-link btn-secondary" href="mailto:contact@micro-myu.com?subject=To%20Lily%20Wang" target="_blank" rel="noopener">联系/档案</a>
+        <div class="stat-item">
+          <div class="stat-number">N+</div>
+          <div class="stat-label" data-i18n="overview.stats.members">patents</div>
         </div>
-      </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 团队组成 -->
+  <section class="team-structure">
+    <div class="container-wide">
+      <!-- AI研发团队 -->
+      <div class="team-section" data-aos="fade-up">
+        <div class="team-header">
+          <div class="team-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="team-title-group">
+            <h3 class="team-title" data-i18n="structure.ai.title">AI研发团队</h3>
+            <p class="team-subtitle" data-i18n="structure.ai.subtitle">核心技术研发与创新</p>
+          </div>
+        </div>
+        <div class="team-content">
+          <div class="team-description">
+            <!-- <p>由国内外顶尖AI专家组成，专注于前沿人工智能技术研发。团队成员来自清华、北大、MIT、Stanford等知名高校，拥有丰富的学术背景和工程实践经验。</p> -->
+            <p data-i18n="structure.ai.desc">由国内外顶尖AI专家组成，专注于前沿人工智能技术研发。</p>
+            <div class="team-specialties">
+              <span class="specialty-tag" data-i18n="structure.ai.tags.0">生成式AI</span>
+              <span class="specialty-tag" data-i18n="structure.ai.tags.1">多模态大模型</span>
+              <span class="specialty-tag" data-i18n="structure.ai.tags.2">RAG技术</span>
+              <span class="specialty-tag" data-i18n="structure.ai.tags.3">MLOps</span>
+              <span class="specialty-tag" data-i18n="structure.ai.tags.4">边缘AI</span>
+              <span class="specialty-tag" data-i18n="structure.ai.tags.5">AI机器人</span>
+            </div>
+          </div>
+          <div class="team-image">
+            <img src="/assets/team/ai develop.webp">
+          </div>
+        </div>
+        <!-- <div class="team-details">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-users"></i></div>
+            <div class="detail-info">
+              <h5>团队规模</h5>
+              <p>80+ 核心研发人员</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-award"></i></div>
+            <div class="detail-info">
+              <h5>技术专利</h5>
+              <p>30+ AI相关专利</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="detail-info">
+              <h5>核心项目</h5>
+              <p>100+ AI应用落地</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- MR及IoT设备团队 -->
+      <div class="team-section" data-aos="fade-up">
+        <div class="team-header">
+          <div class="team-icon">
+            <i class="fas fa-vr-cardboard"></i>
+          </div>
+          <div class="team-title-group">
+            <h3 class="team-title" data-i18n="structure.xr_iot.title">MR及IoT设备团队</h3>
+            <p class="team-subtitle" data-i18n="structure.xr_iot.subtitle">沉浸式体验与物联网创新</p>
+          </div>
+        </div>
+        <div class="team-content reverse">
+          <div class="team-image">
+            <img
+              src="/assets/team/VRAR.jpg"
+              >
+          </div>
+          <div class="team-description">
+            <p data-i18n="structure.xr_iot.desc">专注于XR扩展现实技术和物联网设备研发，打造沉浸式交互体验。团队在AR/VR/MR、智能传感器、可穿戴设备等领域拥有深厚技术积累。</p>
+            <div class="team-specialties">
+              <span class="specialty-tag" data-i18n="structure.xr_iot.tags.0">AR/VR/MR</span>
+              <span class="specialty-tag" data-i18n="structure.xr_iot.tags.1">空间计算</span>
+              <span class="specialty-tag" data-i18n="structure.xr_iot.tags.2">IoT平台</span>
+              <span class="specialty-tag" data-i18n="structure.xr_iot.tags.3">智能传感器</span>
+              <span class="specialty-tag" data-i18n="structure.xr_iot.tags.4">可穿戴设备</span>
+              <span class="specialty-tag" data-i18n="structure.xr_iot.tags.5">边缘计算</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="team-details">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-users"></i></div>
+            <div class="detail-info">
+              <h5>团队规模</h5>
+              <p>50+ 硬件软件工程师</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-cubes"></i></div>
+            <div class="detail-info">
+              <h5>设备类型</h5>
+              <p>20+ 智能设备产品线</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-link"></i></div>
+            <div class="detail-info">
+              <h5>IoT连接</h5>
+              <p>支持千万级设备接入</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- IT系统开发团队 -->
+      <div class="team-section" data-aos="fade-up">
+        <div class="team-header">
+          <div class="team-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="team-title-group">
+            <h3 class="team-title" data-i18n="structure.it.title">IT系统开发团队</h3>
+            <p class="team-subtitle" data-i18n="structure.it.subtitle">全栈技术与云原生架构</p>
+          </div>
+        </div>
+        <div class="team-content">
+          <div class="team-description">
+            <p data-i18n="structure.it.desc">资深全栈工程师团队，精通云原生架构、微服务、DevOps等现代化技术栈。为企业提供从需求分析到系统部署的全流程技术服务。</p>
+            <div class="team-specialties">
+              <span class="specialty-tag" data-i18n="structure.it.tags.0">云与架构</span>
+              <span class="specialty-tag" data-i18n="structure.it.tags.1">微服务</span>
+              <span class="specialty-tag" data-i18n="structure.it.tags.2">Web开发</span>
+              <span class="specialty-tag" data-i18n="structure.it.tags.3">移动应用</span>
+              <span class="specialty-tag" data-i18n="structure.it.tags.4">数据分析</span>
+              <span class="specialty-tag" data-i18n="structure.it.tags.5">DevOps</span>
+            </div>
+          </div>
+          <div class="team-image">
+            <img
+              src="/assets/team/it.jpg"
+              >
+          </div>
+        </div>
+        <!-- <div class="team-details">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-users"></i></div>
+            <div class="detail-info">
+              <h5>团队规模</h5>
+              <p>60+ 全栈开发工程师</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="detail-info">
+              <h5>技术栈</h5>
+              <p>20+ 主流开发技术</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-rocket"></i></div>
+            <div class="detail-info">
+              <h5>交付项目</h5>
+              <p>200+ 成功交付项目</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- 市场与运营团队 -->
+      <div class="team-section" data-aos="fade-up">
+        <div class="team-header">
+          <div class="team-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <div class="team-title-group">
+            <h3 class="team-title" data-i18n="structure.marketing.title">市场与运营团队</h3>
+            <p class="team-subtitle" data-i18n="structure.marketing.subtitle">销售推广与客户成功</p>
+          </div>
+        </div>
+        <div class="team-content reverse">
+          <div class="team-image">
+            <img
+              src="/assets/team/smart.jpg">
+          </div>
+          <div class="team-description">
+            <p data-i18n="structure.marketing.desc">经验丰富的市场营销和客户服务团队，深谙行业需求。从市场调研、品牌推广到客户成功，提供全方位的商业支持服务。</p>
+            <div class="team-specialties">
+              <span class="specialty-tag" data-i18n="structure.marketing.tags.0">市场调研</span>
+              <span class="specialty-tag" data-i18n="structure.marketing.tags.1">品牌推广</span>
+              <span class="specialty-tag" data-i18n="structure.marketing.tags.2">销售管理</span>
+              <span class="specialty-tag" data-i18n="structure.marketing.tags.3">客户服务</span>
+              <span class="specialty-tag" data-i18n="structure.marketing.tags.4">技术培训</span>
+              <span class="specialty-tag" data-i18n="structure.marketing.tags.5">咨询服务</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="team-details">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-users"></i></div>
+            <div class="detail-info">
+              <h5>团队规模</h5>
+              <p>40+ 市场运营人员</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-handshake"></i></div>
+            <div class="detail-info">
+              <h5>合作客户</h5>
+              <p>300+ 企业客户</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="fas fa-star"></i></div>
+            <div class="detail-info">
+              <h5>客户满意度</h5>
+              <p>95% 好评率</p>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      </div>
+  </section>
+
+  <!-- 工作流程 -->
+  <section class="workflow-section">
+    <div class="container">
+      <div class="workflow-header">
+        <h2 class="section-title" data-i18n="workflow.title">从调研到推广的完整流程</h2>
+        <p class="section-desc" data-i18n="workflow.desc">专业团队协作，确保项目成功交付</p>
+      </div>
+      <div class="workflow-timeline">
+        <div class="workflow-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-search"></i></div>
+            <h4 data-i18n="workflow.steps.s01.title">市场调研</h4>
+            <p data-i18n="workflow.steps.s01.desc">市场团队深入了解客户需求，分析行业趋势，制定项目方案</p>
+          </div>
+        </div>
+        <div class="workflow-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+            <h4 data-i18n="workflow.steps.s02.title">方案设计</h4>
+            <p data-i18n="workflow.steps.s02.desc">AI研发团队与IT团队协作，设计技术架构和实施方案</p>
+          </div>
+        </div>
+        <div class="workflow-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-laptop-code"></i></div>
+            <h4 data-i18n="workflow.steps.s03.title">开发实施</h4>
+            <p data-i18n="workflow.steps.s03.desc">各技术团队协同开发，采用敏捷方法，快速迭代交付</p>
+          </div>
+        </div>
+        <div class="workflow-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-vial"></i></div>
+            <h4 data-i18n="workflow.steps.s04.title">测试验证</h4>
+            <p data-i18n="workflow.steps.s04.desc">全面测试系统功能、性能和安全性，确保高质量交付</p>
+          </div>
+        </div>
+        <div class="workflow-step">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-rocket"></i></div>
+            <h4 data-i18n="workflow.steps.s05.title">部署上线</h4>
+            <p data-i18n="workflow.steps.s05.desc">IT团队负责系统部署，确保平稳上线和稳定运行</p>
+          </div>
+        </div>
+        <div class="workflow-step">
+          <div class="step-number">06</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-bullhorn"></i></div>
+            <h4 data-i18n="workflow.steps.s06.title">推广运营</h4>
+            <p data-i18n="workflow.steps.s06.desc">市场团队制定推广策略，提供持续的运营支持和优化</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 团队文化 -->
+  <section class="culture-section">
+    <div class="container">
+      <div class="culture-header">
+        <h2 class="section-title" data-i18n="culture.title">团队文化与价值观</h2>
+        <p class="section-desc" data-i18n="culture.desc">我们相信的力量</p>
+      </div>
+      <div class="culture-grid">
+        <div class="culture-card">
+          <i class="fas fa-lightbulb"></i>
+          <h4 data-i18n="culture.cards.innovation.title">创新驱动</h4>
+          <p data-i18n="culture.cards.innovation.desc">持续探索前沿技术，勇于创新突破，引领行业发展</p>
+        </div>
+        <div class="culture-card">
+          <i class="fas fa-users"></i>
+          <h4 data-i18n="culture.cards.collaboration.title">协作共赢</h4>
+          <p data-i18n="culture.cards.collaboration.desc">跨团队紧密协作，发挥集体智慧，实现共同目标</p>
+        </div>
+        <div class="culture-card">
+          <i class="fas fa-trophy"></i>
+          <h4 data-i18n="culture.cards.excellence.title">追求卓越</h4>
+          <p data-i18n="culture.cards.excellence.desc">对质量精益求精，不断提升专业能力，交付优质产品</p>
+        </div>
+        <div class="culture-card">
+          <i class="fas fa-heart"></i>
+          <h4 data-i18n="culture.cards.customer.title">客户至上</h4>
+          <p data-i18n="culture.cards.customer.desc">以客户需求为导向，提供超出预期的服务体验</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 加入我们 -->
+  <section class="join-us-section">
+    <div class="container">
+      <div class="join-content">
+        <h2 data-i18n="join.title">加入我们，共创未来</h2>
+        <p data-i18n="join.desc">我们正在寻找充满激情的技术人才，一起推动AI技术发展</p>
+        <div class="join-buttons">
+          <a href="#" class="btn-join-secondary" data-i18n="join.more">了解更多</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -71,4 +392,5 @@
   <script src="js/nav-active.js"></script>
   <script src="js/include.js"></script>
 </body>
+
 </html>

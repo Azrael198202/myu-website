@@ -1,0 +1,74 @@
+{
+  "page_title": "Our Team - MyuTech MicroMyu",
+  "nav": {
+    "team": "Our Team"
+  },
+  "hero": {
+    "title": "Our Team",
+    "subtitle": "Professional · Innovative · Collaborative | Tech that drives the future",
+    "description": "A world-class engineering team united by AI excellence"
+  },
+  "overview": {
+    "title": "Team Overview",
+    "desc": "From research to development, from sales to growth marketing — a full technical service value chain",
+    "stats": {
+      "members": "Team Members",
+      "avg_years": "Avg. Years of Experience",
+      "projects": "Successful Projects",
+      "patents": "Technology Patents"
+    }
+  },
+  "structure": {
+    "ai": {
+      "title": "AI R&D Team",
+      "subtitle": "Core technology research & innovation",
+      "desc": "Formed by top AI experts from home and abroad, focusing on cutting-edge AI research.",
+      "tags": ["Generative AI", "Multimodal LLMs", "RAG", "MLOps", "Edge AI", "AI Robotics"]
+    },
+    "xr_iot": {
+      "title": "MR & IoT Devices Team",
+      "subtitle": "Immersive experience & IoT innovation",
+      "desc": "Dedicated to XR and IoT device R&D to build immersive interactions. Deep expertise in AR/VR/MR, smart sensors, and wearables.",
+      "tags": ["AR/VR/MR", "Spatial Computing", "IoT Platform", "Smart Sensors", "Wearables", "Edge Computing"]
+    },
+    "it": {
+      "title": "IT Systems Development Team",
+      "subtitle": "Full-stack engineering & cloud-native architecture",
+      "desc": "Senior full-stack engineers mastering cloud-native, microservices, and DevOps, delivering end-to-end services from requirements to deployment.",
+      "tags": ["Cloud & Architecture", "Microservices", "Web Development", "Mobile Apps", "Data Analytics", "DevOps"]
+    },
+    "marketing": {
+      "title": "Marketing & Operations Team",
+      "subtitle": "Sales enablement & customer success",
+      "desc": "Experienced marketing and customer success professionals. From research and branding to success enablement, we provide comprehensive business support.",
+      "tags": ["Market Research", "Brand Marketing", "Sales Management", "Customer Service", "Technical Training", "Consulting"]
+    }
+  },
+  "workflow": {
+    "title": "End-to-End Project Flow",
+    "desc": "Cross-functional collaboration to ensure successful delivery",
+    "steps": {
+      "s01": { "title": "Research", "desc": "Understand needs, analyze trends, and plan the project" },
+      "s02": { "title": "Solution Design", "desc": "AI & IT teams co-design the architecture and implementation plan" },
+      "s03": { "title": "Development", "desc": "Agile, collaborative development with rapid iteration" },
+      "s04": { "title": "Testing", "desc": "Comprehensive testing for functionality, performance, and security" },
+      "s05": { "title": "Deployment", "desc": "Smooth go-live and stable operations ensured by the IT team" },
+      "s06": { "title": "Growth & Ops", "desc": "Marketing drives promotion with ongoing operational optimization" }
+    }
+  },
+  "culture": {
+    "title": "Team Culture & Values",
+    "desc": "What we believe in",
+    "cards": {
+      "innovation": { "title": "Innovation-Driven", "desc": "Explore the frontier, embrace breakthroughs, and lead the industry" },
+      "collaboration": { "title": "Collaborate to Win", "desc": "Tight cross-team collaboration to achieve shared goals" },
+      "excellence": { "title": "Pursuit of Excellence", "desc": "Relentless quality and professional growth for top-notch delivery" },
+      "customer": { "title": "Customer First", "desc": "Needs-oriented service that exceeds expectations" }
+    }
+  },
+  "join": {
+    "title": "Join Us and Build the Future",
+    "desc": "We’re hiring passionate engineers to advance AI together",
+    "more": "Learn More"
+  }
+}
