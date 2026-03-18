@@ -1,0 +1,86 @@
+{
+  "page_title": "Terms of Service - MicroMyu",
+  "hero": {
+    "title": "Terms of Service",
+    "subtitle": "Please read carefully before using our services.",
+    "updated": "Last updated: November 2025",
+    "language": "English version"
+  },
+  "sidebar": {
+    "title": "Contents",
+    "links": [
+      "Acceptance of Terms",
+      "Service Description",
+      "User Account",
+      "Use Rules",
+      "Intellectual Property",
+      "Privacy & Data",
+      "Paid Services",
+      "Service Changes & Termination",
+      "Disclaimer",
+      "Limitation of Liability",
+      "Dispute Resolution",
+      "Other Terms"
+    ]
+  },
+  "welcome": {
+    "title": "Welcome to MicroMyu Services",
+    "text": "Thank you for choosing our AI intelligent solutions and technical services. Please read the following Terms of Service carefully. These terms form a legally binding agreement between you and us. By using our services, you agree to comply with these terms."
+  },
+  "sections": [
+    {
+      "title": "Acceptance of Terms",
+      "content": "<h3>1.1 Agreement</h3><p>By accessing, registering for, or using any services, products, websites, applications, or platforms (collectively, \"Services\") provided by MicroMyu Intelligence Technology (\"we\", \"us\", or \"the Company\"), you (\"user\" or \"you\") agree to accept and comply with all provisions of these Terms of Service.</p><h3>1.2 Changes to the Agreement</h3><p>We reserve the right to modify these Terms of Service at any time. If we make material changes, we will notify you by one or more of the following methods:</p><ul><li>Posting a notice on the website or application</li><li>Sending an email to your registered account</li><li>Displaying a pop-up notice when you log in</li><li>Notifying you via SMS or other communication channels</li></ul><p>The revised terms become effective immediately after being posted. If you continue to use our services after a change, you agree to the revised terms.</p><h3>1.3 Eligibility</h3><div class=\"info-box\"><div class=\"info-icon\"><i class=\"fas fa-user-check\"></i></div><div class=\"info-content\"><h4>Eligibility Requirements</h4><p>To use our services, you must meet the following conditions:</p><ul><li>Be at least 18 years old or have reached the legal age of adulthood in your jurisdiction</li><li>Have full legal capacity to enter into a binding agreement</li><li>Not be prohibited from using the services by us</li><li>Not violate any applicable laws in your jurisdiction</li></ul><p>If you are using the services on behalf of a company, organization, or other legal entity, you represent and warrant that you have the authority to bind that entity to these Terms.</p></div></div>"
+    },
+    {
+      "title": "Service Description",
+      "content": "<h3>2.1 Scope of Services</h3><p>We provide the following categories of AI intelligent solutions and technical services:</p><div class=\"service-grid\"><div class=\"service-card\"><div class=\"card-icon\"><i class=\"fas fa-brain\"></i></div><h4>AI Technology</h4><ul><li>Generative AI / Multimodal Technology</li><li>RAG / Enterprise Knowledge Intelligence</li><li>MLOps Machine Learning Operations</li><li>Edge AI / IoT Intelligence</li><li>AI Robotics</li></ul></div><div class=\"service-card\"><div class=\"card-icon\"><i class=\"fas fa-laptop-code\"></i></div><h4>Integrated Technical Services</h4><ul><li>XR Extended Reality (AR/VR/MR)</li><li>IoT Platform</li><li>Cloud Computing & Architecture</li><li>Custom Software Development</li><li>BPO/ITO Outsourcing</li><li>Data Analytics & Visualization</li><li>Technical Consulting & Training</li></ul></div></div><h3>2.2 Service Delivery</h3><p>We may provide services through one or more of the following methods:</p><ul><li><strong>Cloud SaaS platform:</strong> accessed via web browser or mobile app</li><li><strong>On-premises deployment:</strong> deployed on customers’ servers or data centers</li><li><strong>Hybrid cloud services:</strong> combining cloud and on-premises architectures</li><li><strong>API interfaces:</strong> integrated via RESTful APIs or SDKs</li><li><strong>Custom development:</strong> bespoke solutions tailored to customer needs</li><li><strong>Consulting and training:</strong> professional consulting services and technical training</li></ul><h3>2.3 Service Availability</h3><div class=\"info-box warning\"><div class=\"info-icon\"><i class=\"fas fa-exclamation-triangle\"></i></div><div class=\"info-content\"><h4>Service Availability Notice</h4><p>We strive to keep the service continuously available but cannot guarantee 100% uptime. The following situations may cause temporary interruptions:</p><ul><li>Scheduled maintenance and system upgrades</li><li>Emergency security fixes</li><li>Force majeure events (natural disasters, war, government actions, etc.)</li><li>Third-party service provider failures</li><li>Network connectivity issues</li></ul><p>For planned maintenance, we will notify users in advance. For emergency maintenance, we will restore service as soon as possible and notify you promptly.</p></div></div>"
+    },
+    {
+      "title": "User Account",
+      "content": "<h3>3.1 Account Registration</h3><p>To use certain services, you must create an account. During registration, you must provide accurate, complete, and up-to-date information, including but not limited to:</p><ul><li>Real name or company name</li><li>Valid email address</li><li>Contact phone number</li><li>Company information (if applicable)</li><li>Other required registration information</li></ul><h3>3.2 Account Security</h3><div class=\"highlight-box\"><div class=\"highlight-icon\"><i class=\"fas fa-shield-alt\"></i></div><div class=\"highlight-content\">Your account security is important. You are responsible for keeping your login credentials confidential and for all activities performed under your account. Notify us immediately if you suspect unauthorized access.</div></div>"
+    },
+    {
+      "title": "Use Rules",
+      "content": "<h3>4.1 Acceptable Use</h3><p>You agree to use our services in compliance with all applicable laws and regulations and not to engage in any activity that violates public order or good morals.</p><h3>4.2 Prohibited Conduct</h3><p>The following activities are strictly prohibited:</p><ul><li>Using the services to infringe on others’ intellectual property rights or privacy rights</li><li>Uploading malware, viruses, or harmful code</li><li>Collecting or harvesting other users’ data without consent</li><li>Engaging in actions that damage system stability or performance</li><li>Spreading false information, rumors, or harmful content</li></ul><p>We reserve the right to suspend or terminate your account if you violate these rules.</p>"
+    },
+    {
+      "title": "Intellectual Property",
+      "content": "<p>The content, designs, trademarks, logos, and all other intellectual property on our services are owned or licensed by us. You may not copy, distribute, modify, or create derivative works without our prior written consent. If you believe your intellectual property rights have been infringed, please contact us promptly.</p>"
+    },
+    {
+      "title": "Privacy & Data",
+      "content": "<p>Our collection and use of personal information is governed by our Privacy Policy. Please refer to the Privacy Policy for details on what data we collect, how we use it, and how we protect it. By using our services, you consent to the processing of your data in accordance with the Privacy Policy.</p>"
+    },
+    {
+      "title": "Paid Services",
+      "content": "<h3>7.1 Fees</h3><p>Paid services may require fees. We will inform you of the pricing and payment terms before you purchase.</p><h3>7.2 Refunds</h3><p>Refund policies vary by product and service; please refer to the specific service agreement or order terms.</p><h3>7.3 Payment</h3><p>Payment may be made via bank transfer, online payment platforms, or other methods we specify. You agree to pay all fees in a timely manner.</p>"
+    },
+    {
+      "title": "Service Changes & Termination",
+      "content": "<h3>8.1 Service Changes</h3><p>We may modify, suspend, or discontinue parts of the service at any time. We will try to notify you in advance when possible.</p><h3>8.2 Termination</h3><p>We may terminate or suspend your access if you violate these Terms or if required by law. You may also terminate your account at any time following the procedures in the service.</p><h3>8.3 Suspension</h3><p>We may temporarily suspend your account or access if we suspect suspicious activity, security issues, or violations of these Terms.</p>"
+    },
+    {
+      "title": "Disclaimer",
+      "content": "<p>The services are provided \"as is\" and \"as available\". To the fullest extent permitted by law, we disclaim all warranties, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not guarantee that the services will be uninterrupted, error-free, or suitable for your needs.</p>"
+    },
+    {
+      "title": "Limitation of Liability",
+      "content": "<p>To the fullest extent permitted by law, our liability to you for any claim arising from or related to these Terms or our services is limited to the amount you actually paid us in the past twelve months. We are not liable for indirect, incidental, special, or consequential damages, including lost profits, data loss, or business interruption.</p>"
+    },
+    {
+      "title": "Dispute Resolution",
+      "content": "<p>These Terms are governed by the laws of the jurisdiction where our company is registered. Any disputes arising from these Terms shall be resolved through friendly consultation. If consultation fails, disputes may be submitted to the competent court in our registered location.</p>"
+    },
+    {
+      "title": "Other Terms",
+      "content": "<p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in effect. Our failure to enforce any right under these Terms does not constitute a waiver of that right. These Terms constitute the entire agreement between you and us regarding the services.</p>"
+    }
+  ],
+  "contact": {
+    "content": "<h3>Contact Us</h3><p>If you have any questions, feedback, or need further information regarding these Terms of Service, please contact us using the following methods:</p><div class=\"contact-details\"><div class=\"contact-item\"><i class=\"fas fa-building\"></i><div><h4>Company Name</h4><p>MicroMyu Intelligence Technology Co., Ltd.</p></div></div><div class=\"contact-item\"><i class=\"fas fa-envelope\"></i><div><h4>Email</h4><p><a href=\"mailto:support@maiyu-tech.com\">support@maiyu-tech.com</a></p><p><a href=\"mailto:legal@maiyu-tech.com\">legal@maiyu-tech.com</a> (Legal)</p></div></div><div class=\"contact-item\"><i class=\"fas fa-phone\"></i><div><h4>Customer Service</h4><p>400-XXX-XXXX (Mon–Fri 9:00–18:00)</p></div></div><div class=\"contact-item\"><i class=\"fas fa-map-marker-alt\"></i><div><h4>Mailing Address</h4><p>[Address]</p></div></div></div><p class=\"contact-note\">We strive to respond within 5 business days. For urgent matters, please include \"Urgent\" in the email subject.</p>"
+  },
+  "notice": {
+    "content": "<h4>Important Notice</h4><p>These Terms of Service were last updated in November 2024. We recommend reviewing this page regularly for any changes. Continued use of our services indicates acceptance of the latest version of the Terms of Service.</p><div class=\"notice-links\"><a href=\"privacy.html\"><i class=\"fas fa-shield-alt\"></i> Privacy Policy</a><a href=\"index.html\"><i class=\"fas fa-home\"></i> Back to Home</a></div>"
+  }
+}
